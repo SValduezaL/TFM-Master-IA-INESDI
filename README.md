@@ -25,5 +25,10 @@ Componentes del Grupo 03:
 Tutor:
     Carlos Mérida
 
-Tablero MIRO con el Plan: https://miro.com/welcomeonboard/QXprU1Y2WDViSkpGdURKN3ZDQ2hYZGg0elV3S1dRVWltZld1Ykc5YXFkSlUyZFJpSEJJUElBVE1JeWhNUWRNUHwzNDU4NzY0NTc2Mzc4ODkyMjUyfDI=?share_link_id=92732525414
-Flujograma en LUCID: https://lucid.app/lucidchart/4b33e34c-4331-44c4-a502-66c6f4e65397/edit?viewport_loc=-1354%2C-1356%2C4490%2C2086%2C0_0&invitationId=inv_74bdde9d-b825-4ecb-bd0d-7de6484144e6
+Tablero MIRO con el Plan:
+
+https://miro.com/welcomeonboard/QXprU1Y2WDViSkpGdURKN3ZDQ2hYZGg0elV3S1dRVWltZld1Ykc5YXFkSlUyZFJpSEJJUElBVE1JeWhNUWRNUHwzNDU4NzY0NTc2Mzc4ODkyMjUyfDI=?share_link_id=92732525414
+
+Flujograma en LUCID:
+
+https://lucid.app/lucidchart/4b33e34c-4331-44c4-a502-66c6f4e65397/edit?viewport_loc=-1354%2C-1356%2C4490%2C2086%2C0_0&invitationId=inv_74bdde9d-b825-4ecb-bd0d-7de6484144e6
