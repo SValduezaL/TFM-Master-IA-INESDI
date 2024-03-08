@@ -1,0 +1,199 @@
+[
+  {
+    "id": "243e6bc4-4fb9-4b11-a106-737621ffcb4f",
+    "data": [
+      {
+        "text": "Como pido los ",
+        "userDefined": false
+      },
+      {
+        "text": "documentos",
+        "userDefined": false
+      },
+      {
+        "text": " para el ",
+        "userDefined": false
+      },
+      {
+        "text": "chequeo preventivo",
+        "meta": "@Examenes_Preventivos",
+        "alias": "Examenes_Preventivos",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "db99f7ca-8545-410b-ad42-1bf9d49350b5",
+    "data": [
+      {
+        "text": "Ustedes ",
+        "userDefined": false
+      },
+      {
+        "text": "dan",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "ordenes",
+        "userDefined": false
+      },
+      {
+        "text": " para ",
+        "userDefined": false
+      },
+      {
+        "text": "chequeo preventivo",
+        "meta": "@Examenes_Preventivos",
+        "alias": "Examenes_Preventivos",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "35635e4d-a5ba-4142-84af-db81eec89316",
+    "data": [
+      {
+        "text": "Donde encuentro lo de los ",
+        "userDefined": false
+      },
+      {
+        "text": "examenes precentivos",
+        "meta": "@Examenes_Preventivos",
+        "alias": "Examenes_Preventivos",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "gratis",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "941a2f6c-0c04-48e2-9194-e1034d2d7c2f",
+    "data": [
+      {
+        "text": "Puedo hacerme ",
+        "userDefined": false
+      },
+      {
+        "text": "examenes preventivos",
+        "meta": "@Examenes_Preventivos",
+        "alias": "Examenes_Preventivos",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "gratis",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ce1c20ea-f7a2-4519-8330-0ca63eb3b5ee",
+    "data": [
+      {
+        "text": "Quiero hacerme ",
+        "userDefined": false
+      },
+      {
+        "text": "examenes preventivos",
+        "meta": "@Examenes_Preventivos",
+        "alias": "Examenes_Preventivos",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "788b7319-4386-4938-a735-d619f92221fd",
+    "data": [
+      {
+        "text": "Ustedes ",
+        "userDefined": false
+      },
+      {
+        "text": "dan",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "ordenes preventivas",
+        "meta": "@Examenes_Preventivos",
+        "alias": "Examenes_Preventivos",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "44ae4265-cab2-4a0f-99cc-1bcb5f3242b5",
+    "data": [
+      {
+        "text": "Quiero hacer ",
+        "userDefined": false
+      },
+      {
+        "text": "exámenes preventivos",
+        "meta": "@Examenes_Preventivos",
+        "alias": "Examenes_Preventivos",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

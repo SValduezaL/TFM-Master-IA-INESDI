@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b7f9b54e-5b58-4801-86b2-7f2b60679d2f",
+    "data": [
+      {
+        "text": "Cuales son los precios por licencia medica?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "33aeae42-ebbd-4a9e-9963-83b76b73a5f4",
+    "data": [
+      {
+        "text": "Venden licencias medicas?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "3ffbbeb5-f003-4099-bcfd-6811f722887f",
+    "data": [
+      {
+        "text": "Cuanto valen las licencias?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "019dff32-c63d-4836-b129-e4e144468356",
+    "data": [
+      {
+        "text": "Quiero comprar licencia médica",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

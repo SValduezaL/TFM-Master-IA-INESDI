@@ -1,0 +1,50 @@
+{
+  "id": "c4f81f26-f836-42ae-8c74-5d0d374abca4",
+  "name": "Como pido los documentos para el chequeo preventivo?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0fa0b1a1-6eea-4157-ba24-cc80025d6c7d",
+          "name": "Examenes_Preventivos",
+          "required": false,
+          "dataType": "@Examenes_Preventivos",
+          "value": "$Examenes_Preventivos",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Ofrecemos ordenes de exámenes preventivos adaptados a sus necesidades. Puede obtenerlos de forma completamente gratuita en: https://clinicahelse.cl/examenes-preventivos/"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

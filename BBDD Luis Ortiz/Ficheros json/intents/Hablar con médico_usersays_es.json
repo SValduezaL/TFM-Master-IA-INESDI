@@ -1,0 +1,78 @@
+[
+  {
+    "id": "8562251c-1422-4222-9ff5-4e93268d7b8c",
+    "data": [
+      {
+        "text": "No quiero hablar con ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " boot, necesito hablar con alguien real",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1971ec21-b4f4-45a4-b15c-5b65827cd21f",
+    "data": [
+      {
+        "text": "Necesito hablar con ",
+        "userDefined": false
+      },
+      {
+        "text": "un doctor",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d6b4b9fe-21f2-491c-ad9a-7b15c4583f03",
+    "data": [
+      {
+        "text": "Quiero hablar con ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " persona real",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ce2aed56-2bc5-4c26-9a3d-b66f04ea6ea2",
+    "data": [
+      {
+        "text": "Quiero hablar con ",
+        "userDefined": false
+      },
+      {
+        "text": "un médico",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

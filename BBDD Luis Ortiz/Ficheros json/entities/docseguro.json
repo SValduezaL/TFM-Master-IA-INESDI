@@ -1,0 +1,9 @@
+{
+  "id": "6f4bf2ea-7c96-4cdf-bf85-950853feeaf9",
+  "name": "docseguro",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,135 @@
+[
+  {
+    "id": "85ea193a-2473-49a6-b835-3f183fe77a27",
+    "data": [
+      {
+        "text": "ya tuve ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " consulta",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f46002d3-06af-46ad-9270-60cde6c2eb73",
+    "data": [
+      {
+        "text": "ya me atendieron",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "30ae034a-6b86-4aba-9f0b-2f913e31af4f",
+    "data": [
+      {
+        "text": "Si ya me atendió ",
+        "userDefined": false
+      },
+      {
+        "text": "el doctor",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b8c8d86b-960e-4066-b94f-87df34cf3f83",
+    "data": [
+      {
+        "text": "Así ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "18770ff4-946e-4d41-b48a-83674f4a54e1",
+    "data": [
+      {
+        "text": "sí",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2e0c3022-06b2-4c20-90fc-d7f165b8cdca",
+    "data": [
+      {
+        "text": "confirmar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b5715f99-2ffc-4ea9-878c-5302853863c0",
+    "data": [
+      {
+        "text": "correcto",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "9b66ae00-e575-432a-b3fb-9ef8b14c2bc7",
+    "data": [
+      {
+        "text": "claro que sí",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "39cf6d20-d54a-4a07-bd01-e36c33ed7cf1",
+    "data": [
+      {
+        "text": "eso mismo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

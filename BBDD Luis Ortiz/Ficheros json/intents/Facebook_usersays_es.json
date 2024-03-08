@@ -1,0 +1,49 @@
+[
+  {
+    "id": "9c6d3adc-5636-41b5-94a6-c1ee645507f4",
+    "data": [
+      {
+        "text": "tienen cuenta de Facebook?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "641b86ee-8450-443f-9b0d-4269a788b497",
+    "data": [
+      {
+        "text": "Cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " su pagina de Facebook?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3ac9bc2f-db6f-4214-a2d0-5dbae0df8f06",
+    "data": [
+      {
+        "text": "tienen Facebook?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "id": "a341cfbc-c929-4990-be57-32a60d48bcf9",
+  "name": "¿Atienden FFAA?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "b76a2cfb-0c7d-42b5-b949-b30d8394f05c",
+          "name": "horamedica",
+          "required": false,
+          "dataType": "@horamedica",
+          "value": "$horamedica",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "1b998772-ba2f-4774-9cd5-7c3105629e9f",
+          "name": "FFAA",
+          "required": false,
+          "dataType": "@FFAA",
+          "value": "$FFAA",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Atendemos personal de las fuerzas armadas. Tener en consideración que no es posible emitirles licencia médica ya que no tienen convenio con los sistemas de licencia electrónica."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

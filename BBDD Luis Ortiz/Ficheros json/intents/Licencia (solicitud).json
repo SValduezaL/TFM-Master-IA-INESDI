@@ -1,0 +1,45 @@
+{
+  "id": "e1f5c797-72db-4df5-9703-4d0f1a1fec10",
+  "name": "Licencia (solicitud)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "En Clínica Helse solo emitimos licencias médicas previa evaluación y correcta indicación médica. La solicitud y emisión injustificada de licencia médica es ilegal y está penada por la ley 20.585"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "En Clínica Helse solo emitimos licencias médicas previa evaluación y correcta indicación médica. La solicitud y emisión injustificada de licencia médica es ilegal y está penada por la ley 20.585"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

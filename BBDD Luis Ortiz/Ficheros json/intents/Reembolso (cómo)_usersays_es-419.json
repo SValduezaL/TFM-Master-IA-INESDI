@@ -1,0 +1,53 @@
+[
+  {
+    "id": "64baea05-de36-47a4-bca5-a74d9bbb5406",
+    "data": [
+      {
+        "text": "Que documento tengo que presentar para reembolsar?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "242b5555-8138-4b80-b442-3f2d6dd371f5",
+    "data": [
+      {
+        "text": "Como realizo el reembolso",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "88940e8f-860d-4700-914c-6eee91bd3bdd",
+    "data": [
+      {
+        "text": "Cómo reembolso ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

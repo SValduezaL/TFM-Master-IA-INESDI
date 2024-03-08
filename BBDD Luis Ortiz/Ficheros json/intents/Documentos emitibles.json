@@ -1,0 +1,64 @@
+{
+  "id": "04bfb475-4ffb-4e86-9948-5ca1c93e9c06",
+  "name": "Documentos emitibles",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "c9c4d113-5294-4908-b80e-0e2716737166",
+          "name": "documentos_medicos",
+          "required": false,
+          "dataType": "@documentos_medicos",
+          "value": "$documentos_medicos",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "6344b4fc-0a3a-4451-b3bb-afc210f70de9",
+          "name": "informe2",
+          "required": false,
+          "dataType": "@informe2",
+          "value": "$informe2",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Es posible emitir ese documento en una atención médica. Puede solicitar una hora por telemedicina en: https://clinicahelse.cl/agenda-telemedicina/"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,50 @@
+{
+  "id": "9448eba6-62bb-4307-b78f-e9d98c0e4095",
+  "name": "Mision",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "65d155cc-e7ea-41c3-bbe3-ae4089319803",
+          "name": "mision",
+          "required": false,
+          "dataType": "@mision",
+          "value": "$mision",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "La misión de Clínica Helse es contribuir a que nuestros pacientes puedan tener una vida más saludable, a través de un sistema accesible que permita la entrega de información y atención médica de calidad."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

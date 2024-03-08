@@ -1,0 +1,35 @@
+{
+  "id": "6f1fef18-2dc0-482e-b569-ca67007d6523",
+  "name": "¿Cual es su dirección?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Nuestra oficina comercial (virtual) se encuentra ubicada en: Avenida Apoquindo 7935 oficina 410B (Sin atención de publico). Todas nuestras atenciones las realizamos online."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

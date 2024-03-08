@@ -1,0 +1,170 @@
+[
+  {
+    "id": "2b8e395b-8468-44a7-ade3-e3213cbfcb23",
+    "data": [
+      {
+        "text": "Costo de ",
+        "userDefined": false
+      },
+      {
+        "text": "los servicios",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "607ef79c-1f00-4a90-8524-5b586eeb66cf",
+    "data": [
+      {
+        "text": "Cuanto cobran por ",
+        "userDefined": false
+      },
+      {
+        "text": "la",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": " medica?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e19f91b4-54d7-438b-948a-9adf46b91a05",
+    "data": [
+      {
+        "text": "Cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " el precio de la ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "4bbcdb82-2058-4297-967e-56187bf8dacf",
+    "data": [
+      {
+        "text": "Cuanto vale la ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a94aff3e-2729-47b7-afe4-6546b59b8c6a",
+    "data": [
+      {
+        "text": "Cuanto ",
+        "userDefined": false
+      },
+      {
+        "text": "cuesta la",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b5a8eb14-67c1-4f91-b1cb-0a4e37206ff3",
+    "data": [
+      {
+        "text": "Cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " el valor de la ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

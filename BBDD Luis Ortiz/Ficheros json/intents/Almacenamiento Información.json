@@ -1,0 +1,35 @@
+{
+  "id": "b59c265d-3349-4cf9-8919-4e57cadbd119",
+  "name": "Almacenamiento Información",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Clínica Helse  reconoce la importancia de la privacidad y protección de los datos personales de los usuarios que visitan nuestro sitio web. Si desea saber cómo se almacenan sus datos puede visitar: https://clinicahelse.cl/politica-privacidad/"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

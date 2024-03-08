@@ -1,0 +1,46 @@
+{
+  "id": "eede5894-3772-4849-9521-cd2ceeb89f01",
+  "parentId": "72203066-c8e3-4eb2-84ff-273b324f4da3",
+  "rootParentId": "72203066-c8e3-4eb2-84ff-273b324f4da3",
+  "name": "urgencia - no",
+  "auto": true,
+  "contexts": [
+    "urgencia-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "urgencia.urgencia-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Puede consultar si hay horas disponibles para el día de hoy en: https://clinicahelse.cl/agenda-telemedicina Si no figuran horas, puede escribirle al médico y solicitar un sobrecupo."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

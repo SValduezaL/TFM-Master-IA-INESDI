@@ -1,0 +1,93 @@
+[
+  {
+    "id": "274ddda1-633d-4411-a207-7dba36567d30",
+    "data": [
+      {
+        "text": "Facebook Welcome",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "49b0b8a9-6e09-4ee3-bb50-c6bdca81c178",
+    "data": [
+      {
+        "text": "MessengerEmpezar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "de72c0bc-6fe0-4052-b3ea-755ee4bbe956",
+    "data": [
+      {
+        "text": "MessengerGetStarted",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "4f2ee202-3de2-4d60-968f-ad682493c454",
+    "data": [
+      {
+        "text": "Empezar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0a925398-1c72-48ef-8fca-19c2ec34a806",
+    "data": [
+      {
+        "text": "Get_started",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "bf4891d4-3619-4852-bdf9-1711a507faf1",
+    "data": [
+      {
+        "text": "GetStarted",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6cff3f89-a8ec-4258-bfee-e5511818d8e8",
+    "data": [
+      {
+        "text": "/start",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

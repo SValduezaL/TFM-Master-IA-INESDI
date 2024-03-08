@@ -1,0 +1,45 @@
+{
+  "id": "3350ff4f-db7e-4e1d-847d-79023e8be405",
+  "name": "Reembolsamos",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Todas nuestras boletas son reembolsables por ISAPRE y seguro complementario. Estamos trabajando para habilitar la compra directa de bonos."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Todas nuestras boletas son reembolsables por ISAPRE y seguro complementario. Estamos trabajando para habilitar la compra directa de bonos."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

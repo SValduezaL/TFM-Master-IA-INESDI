@@ -1,0 +1,45 @@
+{
+  "id": "d45110dc-dd74-45d6-a581-2eb75f0b6cdc",
+  "name": "¿Cómo agendo una consulta?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Paso 1: Diríjase a https://clinicahelse.cl/agenda-telemedicina seleccione a su médico tratante, elija entre las horas disponibles y complete el formulario con sus datos requeridos para la emisión de los documentos médicos.\n\nPaso 2: Una vez completado el formulario le llegará un link de pagos flow, donde podrá cancelar su consulta con todo medio de pago.\n\nPaso 3:  Su médico le realzará una video consulta a su WhatsApp a la hora agendada."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Para agendar una hora debe ir a la sección de agenda telemedicina https://clinicahelse.cl/agenda-telemedicina y seleccionar a su médico tratante.\n\nPosteriormente se le redirigirá a un Google forms donde podrá seleccionar la hora de atención y se le solicitarán sus datos personales para la correcta emisión de los documentos médicos.\n\nAl completar el formulario le llegará un correo con sus datos y el link de pago. Puede realizar el pago hasta 15 minutos antes de su atención. !Y listo! Su médico lo llamará a su WhatsApp a la hora agendada."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

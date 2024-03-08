@@ -1,0 +1,65 @@
+{
+  "id": "72203066-c8e3-4eb2-84ff-273b324f4da3",
+  "name": "urgencia",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "urgencia-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "21d8cd9c-5511-4b79-ba30-db0afd5c78b5",
+          "name": "Urgencia",
+          "required": true,
+          "dataType": "@Urgencia",
+          "value": "$Urgencia",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "¿Tiene una urgencia médica en estos momentos?"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Si tiene una urgencia médica en estos momentos le recomendamos que acuda a un servicio de urgencias. Las atenciones por telemedicina no están pensadas para pacientes graves o en riesgo vital"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

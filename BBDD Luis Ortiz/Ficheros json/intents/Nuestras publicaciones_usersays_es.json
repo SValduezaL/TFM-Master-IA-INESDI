@@ -1,0 +1,90 @@
+[
+  {
+    "id": "bcab39db-ddd4-4a00-a0cf-3f6d39fa7dd0",
+    "data": [
+      {
+        "text": "Tienen ",
+        "userDefined": false
+      },
+      {
+        "text": "un blog?",
+        "meta": "@Nuestras_Publicaciones",
+        "alias": "Nuestras_Publicaciones",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "4c509159-ca93-47ff-ac68-7a214e752627",
+    "data": [
+      {
+        "text": "como encuentro sus ",
+        "userDefined": false
+      },
+      {
+        "text": "articulos",
+        "meta": "@Nuestras_Publicaciones",
+        "alias": "Nuestras_Publicaciones",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c149aa75-df67-4f43-b621-ca028210a8cc",
+    "data": [
+      {
+        "text": "Donde publican sus ",
+        "userDefined": false
+      },
+      {
+        "text": "publicaciones",
+        "meta": "@Nuestras_Publicaciones",
+        "alias": "Nuestras_Publicaciones",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "039ae4f0-58f1-4f8e-991a-1d81ea732f62",
+    "data": [
+      {
+        "text": "Donde puedo encontrar su ",
+        "userDefined": false
+      },
+      {
+        "text": "articulos",
+        "meta": "@Nuestras_Publicaciones",
+        "alias": "Nuestras_Publicaciones",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

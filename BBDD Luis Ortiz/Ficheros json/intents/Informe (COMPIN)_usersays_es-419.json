@@ -1,0 +1,119 @@
+[
+  {
+    "id": "94ca4651-8f7b-4458-a087-7ae293f5c838",
+    "data": [
+      {
+        "text": "Me rechazaron la licencia",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "aae97dbb-0727-46c3-875b-4c7b8489620a",
+    "data": [
+      {
+        "text": "Cómo pido ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " informe ",
+        "userDefined": false
+      },
+      {
+        "text": "médico",
+        "userDefined": false
+      },
+      {
+        "text": " de la atención",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "72337e54-eba5-4bf4-91b1-a1931453b6bf",
+    "data": [
+      {
+        "text": "Necesito ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " informe de la atención realizada",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "95634b2d-9deb-49f9-95ad-b225d0d88b80",
+    "data": [
+      {
+        "text": "Quiero ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " informe ",
+        "userDefined": false
+      },
+      {
+        "text": "médico",
+        "userDefined": false
+      },
+      {
+        "text": " para el ",
+        "userDefined": false
+      },
+      {
+        "text": "COMPIN",
+        "meta": "@INFORME",
+        "alias": "INFORME",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "7f89c4d1-c5e9-4961-a9ac-3735ff7a1cf8",
+    "data": [
+      {
+        "text": "Necesito un informe medico para presentar en mi ",
+        "userDefined": false
+      },
+      {
+        "text": "ISAPRE",
+        "meta": "@INFORME",
+        "alias": "INFORME",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

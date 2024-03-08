@@ -1,0 +1,138 @@
+[
+  {
+    "id": "7f6ee006-8046-4daa-86f3-100fdb1e407a",
+    "data": [
+      {
+        "text": "tuve ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " problema con la receta, no me vendieron el ",
+        "userDefined": false
+      },
+      {
+        "text": "medicamento",
+        "meta": "@medicamento",
+        "alias": "medicamento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "bd8802aa-7645-403a-a7ce-08bf4d51ea5d",
+    "data": [
+      {
+        "text": "No pude comprar ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "medicamento",
+        "meta": "@medicamento",
+        "alias": "medicamento",
+        "userDefined": true
+      },
+      {
+        "text": " que me dieron",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e2fdd2f5-fb29-4493-9d59-c8105a865286",
+    "data": [
+      {
+        "text": "Tuve ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " efecto adverso con ",
+        "userDefined": false
+      },
+      {
+        "text": "uno",
+        "userDefined": false
+      },
+      {
+        "text": " de los ",
+        "userDefined": false
+      },
+      {
+        "text": "medicamentos",
+        "meta": "@medicamento",
+        "alias": "medicamento",
+        "userDefined": true
+      },
+      {
+        "text": " que me prescribieron",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c06bcce3-2c17-4a66-8864-9a2db195170d",
+    "data": [
+      {
+        "text": "Tuve ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " problema con ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "medicamento",
+        "meta": "@medicamento",
+        "alias": "medicamento",
+        "userDefined": true
+      },
+      {
+        "text": " que me dieron",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

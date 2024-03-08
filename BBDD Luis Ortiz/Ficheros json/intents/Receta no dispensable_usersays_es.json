@@ -1,0 +1,109 @@
+[
+  {
+    "id": "9ebe043d-830c-497f-ac7f-0ed148a47f95",
+    "data": [
+      {
+        "text": "dan",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "recetas cheques",
+        "meta": "@nodispensable",
+        "alias": "nodispensable",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "08dadd54-dda1-4aec-81ab-20d63a6800d3",
+    "data": [
+      {
+        "text": "oiga y uste da recetas de ",
+        "userDefined": false
+      },
+      {
+        "text": "sentis",
+        "meta": "@nodispensable",
+        "alias": "nodispensable",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "925e70ce-6426-46df-897f-d0564316ae8c",
+    "data": [
+      {
+        "text": "Cuanto vale la receta de ",
+        "userDefined": false
+      },
+      {
+        "text": "elvenir",
+        "meta": "@nodispensable",
+        "alias": "nodispensable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ba5b3bd0-e87b-4857-8cff-d1f3c18ed220",
+    "data": [
+      {
+        "text": "Quiero una receta por ",
+        "userDefined": false
+      },
+      {
+        "text": "sentis",
+        "meta": "@nodispensable",
+        "alias": "nodispensable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0b2e495c-50a3-4240-b8a6-557e65ce5d4a",
+    "data": [
+      {
+        "text": "necesito una receta por ",
+        "userDefined": false
+      },
+      {
+        "text": "fentermina",
+        "meta": "@nodispensable",
+        "alias": "nodispensable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

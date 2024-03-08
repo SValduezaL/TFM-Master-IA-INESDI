@@ -1,0 +1,36 @@
+[
+  {
+    "id": "25de5094-4ab6-4c79-8a63-b78482d52d21",
+    "data": [
+      {
+        "text": "cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " su pagina de instagram?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ca63f808-1aa0-4724-82a8-207ede1cf7bc",
+    "data": [
+      {
+        "text": "Tienen instagram?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

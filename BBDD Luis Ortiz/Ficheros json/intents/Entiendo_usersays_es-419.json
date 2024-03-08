@@ -1,0 +1,80 @@
+[
+  {
+    "id": "afc01fef-17d3-44c0-9e29-9475c38c5f12",
+    "data": [
+      {
+        "text": "Excelente",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "4a46303e-3300-4f32-a128-58680939e2b5",
+    "data": [
+      {
+        "text": "vale",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "bf7f1460-d6ca-4462-9855-70fd45462ffb",
+    "data": [
+      {
+        "text": "ok",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "348a1747-7c38-4aee-89ec-8752a8c3f963",
+    "data": [
+      {
+        "text": "oka",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "3bcb12f8-9046-4800-bf91-a3c3cd526dbf",
+    "data": [
+      {
+        "text": "comprendo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "1038b076-e847-439a-bd3b-56f395f21b4d",
+    "data": [
+      {
+        "text": "entiendo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

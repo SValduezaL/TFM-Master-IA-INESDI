@@ -1,0 +1,45 @@
+{
+  "id": "e511fbc7-9241-46aa-9859-bd01b632cc9f",
+  "name": "Medios de pago",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Tenemos convenio con la plataforma de pagos Flow. Al momento de agendar su hora le llegará el link de pago. Aceptamos por medio de esta plataforma tarjetas de debito, crédito, transferencia electrónica, y pago en efectivo."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Tenemos convenio con la plataforma de pagos Flow. Al momento de agendar su hora le llegará el link de pago. Aceptamos por medio de esta plataforma tarjetas de debito, crédito, transferencia electrónica, y pago en efectivo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

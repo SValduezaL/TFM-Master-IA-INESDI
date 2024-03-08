@@ -1,0 +1,125 @@
+[
+  {
+    "id": "2253792a-7328-4b3d-b27d-83e96bd73c21",
+    "data": [
+      {
+        "text": "Con quien estoy hablando?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "7002e4d2-ad64-40bc-8b2a-494954839c67",
+    "data": [
+      {
+        "text": "Con quien hablo?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "f150ee7f-3e1b-4745-acac-484e899c5eb0",
+    "data": [
+      {
+        "text": "Quien eres?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "c55981c9-03a6-4ac2-90fd-ba1645610617",
+    "data": [
+      {
+        "text": "Hablo con ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " persona real?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "afbcc5bd-ed4f-4fcf-ad77-9dd3c30ed9b8",
+    "data": [
+      {
+        "text": "Estoy hablando con ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " boot?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "30bff675-ae3c-43d3-9f05-81584e2e10ea",
+    "data": [
+      {
+        "text": "Eres ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " IA?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "2467a1ef-76cc-4e91-b27b-12476f0dd563",
+    "data": [
+      {
+        "text": "Eres ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " boot?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

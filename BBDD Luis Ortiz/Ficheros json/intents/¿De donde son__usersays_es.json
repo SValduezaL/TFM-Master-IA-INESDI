@@ -1,0 +1,125 @@
+[
+  {
+    "id": "b692398b-e176-44ec-9197-648f3b7c3e07",
+    "data": [
+      {
+        "text": "De qué ",
+        "userDefined": false
+      },
+      {
+        "text": "lugar",
+        "meta": "@sys.address",
+        "alias": "address",
+        "userDefined": true
+      },
+      {
+        "text": " están atendiendo?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "901df2ce-bb2b-4596-99ff-7962ae970e88",
+    "data": [
+      {
+        "text": "Desde ",
+        "userDefined": false
+      },
+      {
+        "text": "donde",
+        "meta": "@sys.address",
+        "alias": "address",
+        "userDefined": true
+      },
+      {
+        "text": " atienden?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "eb6bce52-055a-40ff-a902-49dfb0ff7b3f",
+    "data": [
+      {
+        "text": "De que ",
+        "userDefined": false
+      },
+      {
+        "text": "lugar",
+        "meta": "@sys.address",
+        "alias": "address",
+        "userDefined": true
+      },
+      {
+        "text": " atienden?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6fbfa8e1-7b05-4a35-bbc3-9f7e7c3771ea",
+    "data": [
+      {
+        "text": "De qué ",
+        "userDefined": false
+      },
+      {
+        "text": "país",
+        "meta": "@sys.address",
+        "alias": "address",
+        "userDefined": true
+      },
+      {
+        "text": " son?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0d7dc9ac-68a6-4325-a18d-ae44ba05892f",
+    "data": [
+      {
+        "text": "De ",
+        "userDefined": false
+      },
+      {
+        "text": "donde",
+        "meta": "@sys.address",
+        "alias": "address",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "son",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

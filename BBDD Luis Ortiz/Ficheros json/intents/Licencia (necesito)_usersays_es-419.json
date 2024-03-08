@@ -1,0 +1,119 @@
+[
+  {
+    "id": "bda59200-259c-4771-a762-e91f5c903220",
+    "data": [
+      {
+        "text": "Cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es la",
+        "userDefined": false
+      },
+      {
+        "text": " duración de ",
+        "userDefined": false
+      },
+      {
+        "text": "la",
+        "userDefined": false
+      },
+      {
+        "text": " licencia?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "548eba3c-b3ec-49fe-bcc2-00b9f375b90d",
+    "data": [
+      {
+        "text": "Quiero que me ",
+        "userDefined": false
+      },
+      {
+        "text": "den",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " licencia",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "98370c16-56ac-4921-a62d-f98753c95be3",
+    "data": [
+      {
+        "text": "Me pueden dar ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " licencia médica",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "845e5d3a-3412-49b9-b76e-af1d178e7991",
+    "data": [
+      {
+        "text": "Dan",
+        "userDefined": false
+      },
+      {
+        "text": " licencias medicas?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "e9fac55d-fcd7-49fa-9501-cbad25d4cfb7",
+    "data": [
+      {
+        "text": "Necesito ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " licencia medica",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "4caf8ec0-79b6-4f0f-ab77-3e074f34c133",
+    "data": [
+      {
+        "text": "A donde envían los documentos emitidos de ",
+        "userDefined": false
+      },
+      {
+        "text": "la",
+        "userDefined": false
+      },
+      {
+        "text": " consulta médica?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "772281d1-6c6c-434f-bbaa-17618499e58c",
+    "data": [
+      {
+        "text": "Cómo recibo mis documentos de ",
+        "userDefined": false
+      },
+      {
+        "text": "la",
+        "userDefined": false
+      },
+      {
+        "text": " consulta médica?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "4042234a-370c-4c1f-bb97-90872fc52906",
+    "data": [
+      {
+        "text": "Donde recibo mis documentos de la consulta?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

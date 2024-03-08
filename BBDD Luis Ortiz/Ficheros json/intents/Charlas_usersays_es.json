@@ -1,0 +1,113 @@
+[
+  {
+    "id": "2dd0874d-bfd5-4f03-9772-00cf35cbb293",
+    "data": [
+      {
+        "text": "Cómo asisto a una ",
+        "userDefined": false
+      },
+      {
+        "text": "charla",
+        "meta": "@charlas",
+        "alias": "charlas",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "409c9cae-ea62-44f2-865c-c410b886c06b",
+    "data": [
+      {
+        "text": "quiero ir a ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "ponencia",
+        "meta": "@charlas",
+        "alias": "charlas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "af6f917c-8bef-4ece-9e74-9c128ec93410",
+    "data": [
+      {
+        "text": "Donde hacen sus ",
+        "userDefined": false
+      },
+      {
+        "text": "charlas",
+        "meta": "@charlas",
+        "alias": "charlas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e103b0b5-669f-428d-a946-7b12f926e09a",
+    "data": [
+      {
+        "text": "Quiero asistir a ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "conferencia",
+        "meta": "@charlas",
+        "alias": "charlas",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1910e584-4ecb-43c3-b0ff-718d67e42301",
+    "data": [
+      {
+        "text": "Cuando realizan las ",
+        "userDefined": false
+      },
+      {
+        "text": "charlas",
+        "meta": "@charlas",
+        "alias": "charlas",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

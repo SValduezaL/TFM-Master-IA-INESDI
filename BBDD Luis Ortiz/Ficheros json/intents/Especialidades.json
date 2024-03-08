@@ -1,0 +1,64 @@
+{
+  "id": "59461218-086c-46cd-b253-8b999c3e879b",
+  "name": "Especialidades",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "267d835d-e5d5-45e1-9b71-3ebef0043314",
+          "name": "Especialidades",
+          "required": false,
+          "dataType": "@Especialidades",
+          "value": "$Especialidades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2452f73e-a383-4816-a59e-781257c02b84",
+          "name": "horamedica",
+          "required": false,
+          "dataType": "@horamedica",
+          "value": "$horamedica",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "De momento no tenemos especialidades médicas."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

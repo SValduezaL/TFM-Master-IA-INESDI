@@ -1,0 +1,60 @@
+{
+  "id": "89658c8e-6cb7-4f71-bfbb-70bd05583468",
+  "name": "Charlas",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ac733e22-32dd-4954-9c7f-57ab87c12f0d",
+          "name": "charlas",
+          "required": false,
+          "dataType": "@charlas",
+          "value": "$charlas",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Toda la información relativa a nuestras charlas la estaremos publicando en https://clinicahelse.cl/category/ciclo-de-charlas/"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Toda la información relativa a nuestras charlas la estaremos publicando en https://clinicahelse.cl/category/ciclo-de-charlas/"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

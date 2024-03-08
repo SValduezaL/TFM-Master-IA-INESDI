@@ -1,0 +1,70 @@
+[
+  {
+    "id": "34f4eade-a9ab-471e-8062-2b7cc423106c",
+    "data": [
+      {
+        "text": "Sus doctores tienen ",
+        "userDefined": false
+      },
+      {
+        "text": "eunacom",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7f9c25e9-7b11-43f3-a56f-b61bfedb9680",
+    "data": [
+      {
+        "text": "Quien valida a ",
+        "userDefined": false
+      },
+      {
+        "text": "sus medicos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "34541733-a56d-491b-b4bd-1a305d3d4d30",
+    "data": [
+      {
+        "text": "sus doctores tienen algun certificado?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7b159fb7-d3cb-4d4c-8e3f-ad71106a0370",
+    "data": [
+      {
+        "text": "Sus médicos",
+        "userDefined": false
+      },
+      {
+        "text": " están certificados?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

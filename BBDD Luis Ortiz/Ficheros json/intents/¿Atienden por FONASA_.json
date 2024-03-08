@@ -1,0 +1,45 @@
+{
+  "id": "9aad2a3b-a31a-43ee-a924-d25998099b03",
+  "name": "¿Atienden por FONASA?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Lamentablemente debido a los requerimientos de FONASA para atención por telemedicina aún no contamos con este servicio. Pero estamos trabajando para habilitarlo próximamente."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Lamentablemente debido a los requerimientos de FONASA para atención por telemedicina aún no contamos con este servicio. Pero estamos trabajando para habilitarlo próximamente."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

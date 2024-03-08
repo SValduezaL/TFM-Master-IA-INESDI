@@ -1,0 +1,124 @@
+[
+  {
+    "id": "28db4ffd-eeed-4442-b063-95fdc85c79a1",
+    "data": [
+      {
+        "text": "Hacen ",
+        "userDefined": false
+      },
+      {
+        "text": "recetas magistrales",
+        "meta": "@documentos_medicos",
+        "alias": "documentos_medicos",
+        "userDefined": false
+      },
+      {
+        "text": " por telemedicina?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d940f738-dc89-4de0-b888-90fd86ab8291",
+    "data": [
+      {
+        "text": "Necesito ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "certificado medico",
+        "meta": "@documentos_medicos",
+        "alias": "documentos_medicos",
+        "userDefined": false
+      },
+      {
+        "text": " para la ",
+        "userDefined": false
+      },
+      {
+        "text": "u",
+        "meta": "@informe2",
+        "alias": "informe2",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e596f17c-f77f-46fa-8972-5f6c290b332c",
+    "data": [
+      {
+        "text": "Quiero que me ",
+        "userDefined": false
+      },
+      {
+        "text": "den",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "orden de examen",
+        "meta": "@documentos_medicos",
+        "alias": "documentos_medicos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "df3801e5-1b14-40dc-8500-9cbb91561fe4",
+    "data": [
+      {
+        "text": "Necesito ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "orden medica",
+        "meta": "@documentos_medicos",
+        "alias": "documentos_medicos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

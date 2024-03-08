@@ -1,0 +1,28 @@
+[
+  {
+    "id": "4d28ea4d-70f8-424b-a3ad-de4ac9ac5614",
+    "data": [
+      {
+        "text": "Muchas gracias",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "1ba1e57e-696b-4402-90e6-135b39ec5872",
+    "data": [
+      {
+        "text": "Gracias",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

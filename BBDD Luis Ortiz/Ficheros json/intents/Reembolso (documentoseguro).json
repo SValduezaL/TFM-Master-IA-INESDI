@@ -1,0 +1,69 @@
+{
+  "id": "21ed7a26-0ce1-4de6-8f2f-9539338a6853",
+  "name": "Reembolso (documentoseguro)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3054a4df-2d01-4e7a-9f0a-0bd8dcbcb5b4",
+          "name": "docseguro",
+          "required": true,
+          "dataType": "@docseguro",
+          "value": "$docseguro",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Para qué institución es el documento?"
+            },
+            {
+              "lang": "es-419",
+              "value": "¿Para qué institución es el documento?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Puede adjuntar el formulario de su seguro complementario a su médico tratante durante la atención."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Puede adjuntar el formulario de su seguro complementario a su médico tratante durante la atención."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

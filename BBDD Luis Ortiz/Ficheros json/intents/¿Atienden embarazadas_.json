@@ -1,0 +1,35 @@
+{
+  "id": "3f863ebc-10c5-4641-a59e-4522f7e4d861",
+  "name": "¿Atienden embarazadas?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Si bien es posible atender embarazadas por telemedicina para consultas de morbilidad y solicitud de exámenes, recomendamos que los controles de embarazo se realicen en una consulta presencial."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

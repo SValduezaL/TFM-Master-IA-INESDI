@@ -1,0 +1,9 @@
+{
+  "id": "b5da55e3-4724-474e-92d9-ba4c3154c587",
+  "name": "documentos_medicos",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

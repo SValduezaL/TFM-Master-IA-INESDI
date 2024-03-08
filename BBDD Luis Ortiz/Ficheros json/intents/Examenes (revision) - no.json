@@ -1,0 +1,54 @@
+{
+  "id": "67171f18-8445-44e2-8d8b-e7f364ea4f31",
+  "parentId": "de445d3f-0d8f-4aed-ae7a-dda76c28c181",
+  "rootParentId": "de445d3f-0d8f-4aed-ae7a-dda76c28c181",
+  "name": "Examenes (revision) - no",
+  "auto": true,
+  "contexts": [
+    "Examenesrevision-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Examenesrevision.Examenesrevision-no",
+      "affectedContexts": [
+        {
+          "name": "horamedica",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Puede solicitar una hora en https:clinicahelse.cl/agenda-telemedicina para que le realicen una consulta y le revisen los exámenes."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Puede agendar una hora para que le puedan revisar sus exámenes."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

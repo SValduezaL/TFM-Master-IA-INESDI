@@ -1,0 +1,45 @@
+{
+  "id": "0fa1948f-9252-423d-8e9b-fa063be70285",
+  "name": "Horario de atención",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "El horario de atención médica depende de la disponibilidad de cada profesional, intentamos tener horas disponles de lunes a sábado. Nuestro asistente virtual trabaja 24/7 con apoyo de nuestro equipo de soporte de lunes a viernes de 8:30 a 14Hrs"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Nos encontramos abiertos de lunes a viernes de 8:30 a 16:30Hrs. Al momento de agendar hora puede ver las horas disponibles de los médicos que se encuentran atendiendo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

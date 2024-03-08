@@ -1,0 +1,98 @@
+[
+  {
+    "id": "919d651b-e84d-452e-b3a6-cd1bf35b7aa4",
+    "data": [
+      {
+        "text": "Tengo los resultados del ",
+        "userDefined": false
+      },
+      {
+        "text": "laboratorio",
+        "meta": "@examen",
+        "alias": "examen",
+        "userDefined": true
+      },
+      {
+        "text": " que me pidieron",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "36380dc7-6142-47d7-98cc-3482357c3160",
+    "data": [
+      {
+        "text": "ya me saque los ",
+        "userDefined": false
+      },
+      {
+        "text": "exámenes",
+        "meta": "@examen",
+        "alias": "examen",
+        "userDefined": true
+      },
+      {
+        "text": " que me pidieron como los envió?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "8085df82-a52e-4a2f-8403-bcba4ce63d15",
+    "data": [
+      {
+        "text": "Tengo el resultado de unos ",
+        "userDefined": false
+      },
+      {
+        "text": "exámenes",
+        "meta": "@examen",
+        "alias": "examen",
+        "userDefined": true
+      },
+      {
+        "text": ", como se los hago llegar al ",
+        "userDefined": false
+      },
+      {
+        "text": "medico",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "aa4d9df3-1053-4e80-8205-aa0941bb8039",
+    "data": [
+      {
+        "text": "Necesito que me revisen unos ",
+        "userDefined": false
+      },
+      {
+        "text": "exámenes",
+        "meta": "@examen",
+        "alias": "examen",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

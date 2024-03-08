@@ -1,0 +1,69 @@
+[
+  {
+    "id": "97a86439-0b03-484c-82cd-03c981420720",
+    "data": [
+      {
+        "text": "No puedo asistir a ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "cccecdd5-4e98-4b1b-9490-88bd9e2d71f9",
+    "data": [
+      {
+        "text": "No voy a asistir a mis ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "00c4aabd-385c-4943-83bf-ae2e10f8f901",
+    "data": [
+      {
+        "text": "Quiero cancelar ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

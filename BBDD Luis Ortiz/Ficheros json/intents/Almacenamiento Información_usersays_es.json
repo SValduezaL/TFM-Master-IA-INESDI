@@ -1,0 +1,49 @@
+[
+  {
+    "id": "fee33c7f-4a5c-4f11-976f-87fa6a131d99",
+    "data": [
+      {
+        "text": "De qué manera se almacena la información",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3ac42183-d5d5-44c3-b5a3-921c69127037",
+    "data": [
+      {
+        "text": "Cómo realizan ",
+        "userDefined": false
+      },
+      {
+        "text": "el almacenamiento",
+        "userDefined": false
+      },
+      {
+        "text": " de información",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "691badd0-26b8-4d5b-ae81-10885b0f81eb",
+    "data": [
+      {
+        "text": "Cómo almacenan la información de los pacientes?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

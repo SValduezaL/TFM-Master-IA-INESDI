@@ -1,0 +1,94 @@
+[
+  {
+    "id": "333c27a4-303a-4fbf-8c16-3d31f9cfa80d",
+    "data": [
+      {
+        "text": "Cobran por revisar ",
+        "userDefined": false
+      },
+      {
+        "text": "examenes",
+        "meta": "@examen",
+        "alias": "examen",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "9fd5c3d5-718a-4649-a969-2a323bff6731",
+    "data": [
+      {
+        "text": "Como pido que me revisen los ",
+        "userDefined": false
+      },
+      {
+        "text": "exámenes",
+        "meta": "@examen",
+        "alias": "examen",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b08022d8-d262-4b90-b09e-653f504ece30",
+    "data": [
+      {
+        "text": "ya me tomé la ",
+        "userDefined": false
+      },
+      {
+        "text": "radiografía",
+        "meta": "@examen",
+        "alias": "examen",
+        "userDefined": true
+      },
+      {
+        "text": " que me pidieron necesito que me la revisen",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "652971fd-d8e6-4ce2-a87c-7b6ec3ce23e6",
+    "data": [
+      {
+        "text": "Tengo unos ",
+        "userDefined": false
+      },
+      {
+        "text": "exámenes",
+        "meta": "@examen",
+        "alias": "examen",
+        "userDefined": false
+      },
+      {
+        "text": " para que me revisen",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

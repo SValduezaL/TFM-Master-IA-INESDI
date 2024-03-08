@@ -1,0 +1,46 @@
+{
+  "id": "5f9a682b-923e-4f1c-96dc-eec336f93a8d",
+  "parentId": "4b530a39-a3db-46d3-a52a-925c565aaeef",
+  "rootParentId": "4b530a39-a3db-46d3-a52a-925c565aaeef",
+  "name": "Entiendo - yes",
+  "auto": true,
+  "contexts": [
+    "Entiendo-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Entiendo.Entiendo-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Cuenteme"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

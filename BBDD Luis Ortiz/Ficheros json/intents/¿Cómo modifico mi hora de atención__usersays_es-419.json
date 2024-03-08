@@ -1,0 +1,102 @@
+[
+  {
+    "id": "145f5839-3f13-4745-82d3-5ec163be1262",
+    "data": [
+      {
+        "text": "Cómo reagendo ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " consulta?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "4c75a48e-c065-4cfd-a0e4-7ef4b5e7616e",
+    "data": [
+      {
+        "text": "Cómo modifico la ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "userDefined": false
+      },
+      {
+        "text": " de atención?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "108e0d16-2ce5-43d9-b00e-4cb3541b45d5",
+    "data": [
+      {
+        "text": "Necesito modificar ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "userDefined": false
+      },
+      {
+        "text": " de atención medica",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "1997b79f-22d3-46e7-86a5-441ecb690374",
+    "data": [
+      {
+        "text": "Quiero cambiar ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "userDefined": false
+      },
+      {
+        "text": " de atención",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "value": "Traumatologo",
+    "synonyms": [
+      "Traumatologo",
+      "Traumatologia"
+    ]
+  },
+  {
+    "value": "Nutricionista",
+    "synonyms": [
+      "Nutricionista"
+    ]
+  },
+  {
+    "value": "Psicologo",
+    "synonyms": [
+      "Psicologo"
+    ]
+  },
+  {
+    "value": "Psiquiatra",
+    "synonyms": [
+      "Psiquiatra",
+      "psiquiatria"
+    ]
+  },
+  {
+    "value": "internista",
+    "synonyms": [
+      "internista"
+    ]
+  },
+  {
+    "value": "cardiologo",
+    "synonyms": [
+      "cardiologo"
+    ]
+  },
+  {
+    "value": "nefrologo",
+    "synonyms": [
+      "nefrologo"
+    ]
+  },
+  {
+    "value": "gastroenterologo",
+    "synonyms": [
+      "gastroenterologo",
+      "gastroenterologia",
+      "gastro"
+    ]
+  },
+  {
+    "value": "pediatra",
+    "synonyms": [
+      "pediatra"
+    ]
+  },
+  {
+    "value": "ginecologo",
+    "synonyms": [
+      "ginecologo",
+      "gine"
+    ]
+  },
+  {
+    "value": "otorrinolaringología",
+    "synonyms": [
+      "otorrinolaringología",
+      "otorrino"
+    ]
+  },
+  {
+    "value": "dermatologo",
+    "synonyms": [
+      "dermatologo",
+      "dermatología",
+      "dermato"
+    ]
+  },
+  {
+    "value": "urologo",
+    "synonyms": [
+      "urologo",
+      "urologia"
+    ]
+  },
+  {
+    "value": "kinesiologo",
+    "synonyms": [
+      "kinesiologo",
+      "kinesiologia",
+      "kine"
+    ]
+  },
+  {
+    "value": "odontologia",
+    "synonyms": [
+      "odontologia",
+      "odonto"
+    ]
+  },
+  {
+    "value": "cirugia",
+    "synonyms": [
+      "cirugia",
+      "cirujano"
+    ]
+  },
+  {
+    "value": "endocrino",
+    "synonyms": [
+      "endocrino",
+      "endocrinologia"
+    ]
+  },
+  {
+    "value": "fisiatra",
+    "synonyms": [
+      "fisiatra",
+      "fisiatría"
+    ]
+  }
+]

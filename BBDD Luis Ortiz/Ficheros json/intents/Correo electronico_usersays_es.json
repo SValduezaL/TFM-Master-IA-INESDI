@@ -1,0 +1,57 @@
+[
+  {
+    "id": "9b72e08c-913f-4b77-84b5-e629cf392fd5",
+    "data": [
+      {
+        "text": "me puede dar su correo por favor?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1dd5ac26-1a0e-4230-91d8-71540c3fcd4c",
+    "data": [
+      {
+        "text": "Cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " su email?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "cce0d3d3-131a-4bfd-a477-c19c8a8c42c5",
+    "data": [
+      {
+        "text": "Cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " su correo electronico",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "c6151b91-b360-4046-984d-db6b19dc8e7b",
+    "data": [
+      {
+        "text": "Deseo que atiendan ",
+        "userDefined": false
+      },
+      {
+        "text": "a",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "guagua",
+        "meta": "@ninos",
+        "alias": "ninos",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7cb3daf4-26ab-4d5e-843a-05a33f15e670",
+    "data": [
+      {
+        "text": "Necesito una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": false
+      },
+      {
+        "text": " para ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "bebe",
+        "meta": "@ninos",
+        "alias": "ninos",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "81b18578-49d3-4707-8191-80bb14a9d046",
+    "data": [
+      {
+        "text": "Quiero una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": false
+      },
+      {
+        "text": " de ",
+        "userDefined": false
+      },
+      {
+        "text": "atención",
+        "meta": "@horamedica",
+        "alias": "horamedica1",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "para",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "hijo",
+        "meta": "@ninos",
+        "alias": "ninos",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d7a33e23-2be0-4f34-8a64-1801d6fcb76f",
+    "data": [
+      {
+        "text": "Atienden ",
+        "userDefined": false
+      },
+      {
+        "text": "niños",
+        "meta": "@ninos",
+        "alias": "ninos",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

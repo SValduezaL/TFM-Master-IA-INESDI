@@ -1,0 +1,50 @@
+{
+  "id": "77dc55e6-f07e-48ff-b8dc-f32c0bae270a",
+  "name": "Licencia (como se envia)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "86d037c7-f51c-4ac6-a4ff-98be9ec7da9a",
+          "name": "trabajo",
+          "required": false,
+          "dataType": "@trabajo",
+          "value": "$trabajo",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Si su empresa tiene convenio con el sistema de licencia electrónica esta le llegará de forma automática a su empleador (full electrónica). De lo contrario, si no tiene convenio, puede ser emitida de todas maneras, pero tendrá que enviar usted el documento PDF a su empresa (licencia mixta)."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

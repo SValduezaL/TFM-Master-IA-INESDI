@@ -1,0 +1,35 @@
+{
+  "id": "0f60d33a-2f96-4954-97d4-5a238108d9bb",
+  "name": "Servicios",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "En Clínica Helse, nos complace ofrecerte una amplia variedad de servicios, todos con el objetivo de mejorar tu salud y bienestar: publicaciones y ordenes de  exámenes preventivos gratuitos para nuestros usuarios. También ofrecemos charlas y atenciones medicas por telemedicina. Si desea saber más puede acceder a: https://clinicahelse.cl/nuestros-servicios/"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

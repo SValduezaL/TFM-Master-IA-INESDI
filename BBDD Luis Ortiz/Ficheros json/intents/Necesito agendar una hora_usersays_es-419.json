@@ -1,0 +1,359 @@
+[
+  {
+    "id": "88ab23b9-ee8b-48ab-bc06-2dd864b2e355",
+    "data": [
+      {
+        "text": "necesito ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": false
+      },
+      {
+        "text": " medica",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "d1cbcf60-c5c1-4c35-bfa4-e552b0546f33",
+    "data": [
+      {
+        "text": "Deseo agendar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "c461c6e9-1263-4e89-b533-e5a32e582fd5",
+    "data": [
+      {
+        "text": "Quiero ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "atención",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "9e259644-fad0-4b76-b159-de796c78d304",
+    "data": [
+      {
+        "text": "Deseo una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "95253446-4d5b-485f-b3ef-7cdd22b5c69f",
+    "data": [
+      {
+        "text": "Me gustaría agendar una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "eb8f4f80-5855-48d7-ada3-d9d835037b51",
+    "data": [
+      {
+        "text": "Puedo pedir una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": " para mis abuelos?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "da31dcde-d126-4156-ae91-247050150405",
+    "data": [
+      {
+        "text": "Puedo pedir una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "para",
+        "userDefined": false
+      },
+      {
+        "text": " mis padres?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "bf761711-fe90-4d97-ba80-a4fe156f2e8b",
+    "data": [
+      {
+        "text": "Puedo pedir una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "para",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " hijo?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "a22933fc-650a-430c-9f4a-58d226191ad9",
+    "data": [
+      {
+        "text": "Necesito una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "33623c0f-51b8-45cf-9918-3c926e1d426c",
+    "data": [
+      {
+        "text": "Quiero tomar una ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "78c74e47-2868-466f-ba35-6af34e312bee",
+    "data": [
+      {
+        "text": "Deseo solicitar ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": " medica online",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "9891c90d-1cb3-441d-9c75-800a025dbfc8",
+    "data": [
+      {
+        "text": "Quiero agendar ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "consulta",
+        "meta": "@horamedica",
+        "alias": "horamedica",
+        "userDefined": true
+      },
+      {
+        "text": " por telemedicina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "8546fbcb-48f5-4ebe-852c-34163b95cbbc",
+    "data": [
+      {
+        "text": "Necesito agendar ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " consulta medica",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "a19a80ee-e8b2-4b7e-a2f5-165ff3b6996f",
+    "data": [
+      {
+        "text": "Quiero agendar ",
+        "userDefined": false
+      },
+      {
+        "text": "una hora",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "21eba76e-d896-477e-ba9b-8bb898870ab4",
+    "data": [
+      {
+        "text": "Necesito agendar ",
+        "userDefined": false
+      },
+      {
+        "text": "una hora",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "ba213289-39bc-4d5d-9077-99c64e5bd899",
+    "data": [
+      {
+        "text": "Tengo ",
+        "userDefined": false
+      },
+      {
+        "text": "un",
+        "userDefined": false
+      },
+      {
+        "text": " problema",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "b1be742d-7020-4ff2-9ed0-62a6c2abfa65",
+    "data": [
+      {
+        "text": "Necesito que me ayuden",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "a7b0b5ce-b04c-43a1-b3e1-d4baba0bc919",
+    "data": [
+      {
+        "text": "Necesito de su ayuda",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

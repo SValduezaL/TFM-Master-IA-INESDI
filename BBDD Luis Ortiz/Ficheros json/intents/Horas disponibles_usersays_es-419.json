@@ -1,0 +1,141 @@
+[
+  {
+    "id": "f718e7aa-5980-4004-aa59-3825248263df",
+    "data": [
+      {
+        "text": "Quisiera ver su disponibilidad de horas esta ",
+        "userDefined": false
+      },
+      {
+        "text": "semana",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "e6df14f7-992d-4fbb-9a85-640573eadeb1",
+    "data": [
+      {
+        "text": "Quisiera ver las horas disponibles durante la semana",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "09122983-af66-498a-85d4-a42393537de1",
+    "data": [
+      {
+        "text": "Para cuando tienen ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "userDefined": false
+      },
+      {
+        "text": " médica",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "ffc5f6b8-e79f-42aa-bf1b-fb9edae03e78",
+    "data": [
+      {
+        "text": "Necesito agendar ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "userDefined": false
+      },
+      {
+        "text": " consulta ",
+        "userDefined": false
+      },
+      {
+        "text": "para",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "hoy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "97ee9abe-6288-453b-a43f-047515f57d72",
+    "data": [
+      {
+        "text": "Me pueden atender ",
+        "userDefined": false
+      },
+      {
+        "text": "hoy",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "0e053992-46ea-4e1c-a59b-3bab4986228c",
+    "data": [
+      {
+        "text": "Tienen horas para ",
+        "userDefined": false
+      },
+      {
+        "text": "hoy",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  },
+  {
+    "id": "4ebe6b77-418f-470c-9a57-400f696341eb",
+    "data": [
+      {
+        "text": "Tienen horas disponibles?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es-419",
+    "updated": 0
+  }
+]

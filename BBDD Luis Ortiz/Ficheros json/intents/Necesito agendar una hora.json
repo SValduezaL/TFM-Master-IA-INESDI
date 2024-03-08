@@ -1,0 +1,74 @@
+{
+  "id": "f966d709-0672-4d2e-b9a9-0f6502c29514",
+  "name": "Necesito agendar una hora",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "horamedica",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "e4845f1a-e23c-4155-bb9d-114d52297f6f",
+          "name": "horamedica",
+          "required": false,
+          "dataType": "@horamedica",
+          "value": "$horamedica",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Necesita agendar una hora médica?"
+            },
+            {
+              "lang": "es-419",
+              "value": "¿Necesita agendar una hora médica?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Puede agendar una hora por telemedicina en el siguiente enlace: htps://clinicahelse.cl/agenda-telemedicina/"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Puede agendar una hora por telemedicina en el siguiente enlace: htps://clinicahelse.cl/agenda-telemedicina/"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

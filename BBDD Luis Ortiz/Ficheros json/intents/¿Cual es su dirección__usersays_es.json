@@ -1,0 +1,62 @@
+[
+  {
+    "id": "afb36f59-6f36-4778-935e-299e3bf58d42",
+    "data": [
+      {
+        "text": "Donde está su clínica?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "df8435ed-3330-481e-bb96-da3db11f0e37",
+    "data": [
+      {
+        "text": "Donde están sus oficinas?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1830035e-c8d1-4aff-96d1-bcf1a260f8d2",
+    "data": [
+      {
+        "text": "Donde está ubicados?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3f60e366-b473-4752-a1ee-c3ddc308a839",
+    "data": [
+      {
+        "text": "¿Cuál ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " su dirección?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

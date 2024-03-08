@@ -1,0 +1,45 @@
+{
+  "id": "964dcc5e-8eb9-4bad-9b4f-7dfcd18198a5",
+  "name": "¿Dónde atienden?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Actualmente solo estamos atendiendo por telemedicina. Las videollamadas para la consulta médica se realizan por WhatsApp. Estamos trabajando para iniciar atención presencial."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es-419",
+          "speech": [
+            "Actualmente solo estamos atendiendo por telemedicina. Las videollamadas para la consulta médica se realizan por WhatsApp. Estamos trabajando para iniciar atención presencial."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
