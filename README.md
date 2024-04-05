@@ -19,8 +19,6 @@ Componentes del Grupo 03:
     Luis Marcelo Ortiz Carinao
     
     Sergio Valdueza Lozano
-    
-    Eirk Leonardo Spitia Sierra
 
 Tutor:
     Carlos Mérida
