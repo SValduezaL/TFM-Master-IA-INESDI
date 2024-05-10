@@ -1,0 +1,3081 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf1f5a6d92a6b6b1b554720167953615 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf1f5a6d92a6b6b1b554720167953615" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf1f5a6d92a6b6b1b554720167953615 = L.map(
+                "map_cf1f5a6d92a6b6b1b554720167953615",
+                {
+                    center: [-20.333955050982347, -40.37211567077238],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_88dac5306e24a122e281503639729125 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cf1f5a6d92a6b6b1b554720167953615);
+        
+    
+            var marker_cluster_1ce09589d0ba0ad766c95fdab8277b41 = L.markerClusterGroup(
+                {}
+            );
+            map_cf1f5a6d92a6b6b1b554720167953615.addLayer(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var marker_5546f4ba046a88b75c7754dce1965b6f = L.marker(
+                [-20.2581, -40.2864],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_e5b446b0c6f5f5da68b6f5549b7473f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_5546f4ba046a88b75c7754dce1965b6f.setIcon(icon_e5b446b0c6f5f5da68b6f5549b7473f4);
+        
+    
+        var popup_14a5ff4c89ee4bbc073e1a400b7d15ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68cbfe4f76425e6f347881fd928c7fce = $(`<div id="html_68cbfe4f76425e6f347881fd928c7fce" style="width: 100.0%; height: 100.0%;">Neighbourhood: AEROPORTO<br>                     Cluster: 9<br>                     Número de Citas: 8</div>`)[0];
+                popup_14a5ff4c89ee4bbc073e1a400b7d15ca.setContent(html_68cbfe4f76425e6f347881fd928c7fce);
+            
+        
+
+        marker_5546f4ba046a88b75c7754dce1965b6f.bindPopup(popup_14a5ff4c89ee4bbc073e1a400b7d15ca)
+        ;
+
+        
+    
+    
+            var marker_5d1a0ba8398d1e88830938cc1825ed4f = L.marker(
+                [-20.287964, -40.3056718],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_50a1b15e2c13822e8c8bf180e66b268d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5d1a0ba8398d1e88830938cc1825ed4f.setIcon(icon_50a1b15e2c13822e8c8bf180e66b268d);
+        
+    
+        var popup_e436a339658c1a179e53fa171918305f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c41debeb47b6ef24b31daeacabc01794 = $(`<div id="html_c41debeb47b6ef24b31daeacabc01794" style="width: 100.0%; height: 100.0%;">Neighbourhood: ANDORINHAS<br>                     Cluster: 8<br>                     Número de Citas: 2262</div>`)[0];
+                popup_e436a339658c1a179e53fa171918305f.setContent(html_c41debeb47b6ef24b31daeacabc01794);
+            
+        
+
+        marker_5d1a0ba8398d1e88830938cc1825ed4f.bindPopup(popup_e436a339658c1a179e53fa171918305f)
+        ;
+
+        
+    
+    
+            var marker_b7a661ba6b53e5cf2b14a43f1b179f9d = L.marker(
+                [-20.2631207, -40.2980132],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_0ddb0d79bc5472fcc480cc1c8eccf082 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_b7a661ba6b53e5cf2b14a43f1b179f9d.setIcon(icon_0ddb0d79bc5472fcc480cc1c8eccf082);
+        
+    
+        var popup_e8e8bf9bd887180cfa2ba6662ec2f5db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_722bf319bfe0780d2acaa908026bcd52 = $(`<div id="html_722bf319bfe0780d2acaa908026bcd52" style="width: 100.0%; height: 100.0%;">Neighbourhood: ANTÔNIO HONÓRIO<br>                     Cluster: 9<br>                     Número de Citas: 271</div>`)[0];
+                popup_e8e8bf9bd887180cfa2ba6662ec2f5db.setContent(html_722bf319bfe0780d2acaa908026bcd52);
+            
+        
+
+        marker_b7a661ba6b53e5cf2b14a43f1b179f9d.bindPopup(popup_e8e8bf9bd887180cfa2ba6662ec2f5db)
+        ;
+
+        
+    
+    
+            var marker_7183758ae59000337942cd5baa1cd406 = L.marker(
+                [-20.3146828, -40.3563849],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_fe4c44d7e40c288b371066515d85a841 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7183758ae59000337942cd5baa1cd406.setIcon(icon_fe4c44d7e40c288b371066515d85a841);
+        
+    
+        var popup_2e6894d1ab5b4631e780c5faf0909d71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87ea932824c75401e0ad262295064e2c = $(`<div id="html_87ea932824c75401e0ad262295064e2c" style="width: 100.0%; height: 100.0%;">Neighbourhood: ARIOVALDO FAVALESSA<br>                     Cluster: 0<br>                     Número de Citas: 277</div>`)[0];
+                popup_2e6894d1ab5b4631e780c5faf0909d71.setContent(html_87ea932824c75401e0ad262295064e2c);
+            
+        
+
+        marker_7183758ae59000337942cd5baa1cd406.bindPopup(popup_2e6894d1ab5b4631e780c5faf0909d71)
+        ;
+
+        
+    
+    
+            var marker_0086fc3c0039d7a0cd2ebea877d9d076 = L.marker(
+                [-20.2949779, -40.2980132],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_682d59cb2bf5ec445b860fe96b6b6d75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0086fc3c0039d7a0cd2ebea877d9d076.setIcon(icon_682d59cb2bf5ec445b860fe96b6b6d75);
+        
+    
+        var popup_087c08390f9065f3dcb5539b612b6d92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_341bef268c6f1ac9b04713e4ef96b672 = $(`<div id="html_341bef268c6f1ac9b04713e4ef96b672" style="width: 100.0%; height: 100.0%;">Neighbourhood: BARRO VERMELHO<br>                     Cluster: 8<br>                     Número de Citas: 423</div>`)[0];
+                popup_087c08390f9065f3dcb5539b612b6d92.setContent(html_341bef268c6f1ac9b04713e4ef96b672);
+            
+        
+
+        marker_0086fc3c0039d7a0cd2ebea877d9d076.bindPopup(popup_087c08390f9065f3dcb5539b612b6d92)
+        ;
+
+        
+    
+    
+            var marker_b09f56f59200821baf01f5dfb3d80c24 = L.marker(
+                [-20.3037218, -40.348414],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_4a68f9d6a90fa8c822b60ae7f5300ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b09f56f59200821baf01f5dfb3d80c24.setIcon(icon_4a68f9d6a90fa8c822b60ae7f5300ec6);
+        
+    
+        var popup_9e044ab09f6655c3f98f96740974c20e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b16dd8e1ccd2030fc23b426144fd03b9 = $(`<div id="html_b16dd8e1ccd2030fc23b426144fd03b9" style="width: 100.0%; height: 100.0%;">Neighbourhood: BELA VISTA<br>                     Cluster: 3<br>                     Número de Citas: 1907</div>`)[0];
+                popup_9e044ab09f6655c3f98f96740974c20e.setContent(html_b16dd8e1ccd2030fc23b426144fd03b9);
+            
+        
+
+        marker_b09f56f59200821baf01f5dfb3d80c24.bindPopup(popup_9e044ab09f6655c3f98f96740974c20e)
+        ;
+
+        
+    
+    
+            var marker_937c305ee419f37cc1a25ac2b32e1274 = L.marker(
+                [-20.3199048, -40.3075863],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_ad57509f074b02118c35afa8a9eae760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_937c305ee419f37cc1a25ac2b32e1274.setIcon(icon_ad57509f074b02118c35afa8a9eae760);
+        
+    
+        var popup_8e7053c83924d7c518c30d8e98a79589 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e31177b46e42f04b6e1b10c9df15ad5 = $(`<div id="html_5e31177b46e42f04b6e1b10c9df15ad5" style="width: 100.0%; height: 100.0%;">Neighbourhood: BENTO FERREIRA<br>                     Cluster: 4<br>                     Número de Citas: 858</div>`)[0];
+                popup_8e7053c83924d7c518c30d8e98a79589.setContent(html_5e31177b46e42f04b6e1b10c9df15ad5);
+            
+        
+
+        marker_937c305ee419f37cc1a25ac2b32e1274.bindPopup(popup_8e7053c83924d7c518c30d8e98a79589)
+        ;
+
+        
+    
+    
+            var marker_c42f993a2efb35d65eff6cfa56a88235 = L.marker(
+                [-20.2713455, -40.2992897],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_c39adfedb1f2c4190e746d71b2bd943c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_c42f993a2efb35d65eff6cfa56a88235.setIcon(icon_c39adfedb1f2c4190e746d71b2bd943c);
+        
+    
+        var popup_a34c001763e20f657bd48d3d4c450bab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f704f9aefec481e25e0a7898f7ebec = $(`<div id="html_30f704f9aefec481e25e0a7898f7ebec" style="width: 100.0%; height: 100.0%;">Neighbourhood: BOA VISTA<br>                     Cluster: 9<br>                     Número de Citas: 312</div>`)[0];
+                popup_a34c001763e20f657bd48d3d4c450bab.setContent(html_30f704f9aefec481e25e0a7898f7ebec);
+            
+        
+
+        marker_c42f993a2efb35d65eff6cfa56a88235.bindPopup(popup_a34c001763e20f657bd48d3d4c450bab)
+        ;
+
+        
+    
+    
+            var marker_06ac7d71721479c4f4d5e7707d8480c5 = L.marker(
+                [-20.3005529, -40.3133294],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_64d0b24110b38b4bd74f5aa876dee661 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_06ac7d71721479c4f4d5e7707d8480c5.setIcon(icon_64d0b24110b38b4bd74f5aa876dee661);
+        
+    
+        var popup_52c97ef7fd0e1cb65092a315a37a837e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0513c8dd326f57b65ac1753134892a1 = $(`<div id="html_c0513c8dd326f57b65ac1753134892a1" style="width: 100.0%; height: 100.0%;">Neighbourhood: BONFIM<br>                     Cluster: 7<br>                     Número de Citas: 2773</div>`)[0];
+                popup_52c97ef7fd0e1cb65092a315a37a837e.setContent(html_c0513c8dd326f57b65ac1753134892a1);
+            
+        
+
+        marker_06ac7d71721479c4f4d5e7707d8480c5.bindPopup(popup_52c97ef7fd0e1cb65092a315a37a837e)
+        ;
+
+        
+    
+    
+            var marker_c44c38006888dd9b5b7ebde2f1a7a8e2 = L.marker(
+                [-20.3153468, -40.3528778],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_c81f15b83a93b5efb8620c7ac9c5db4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c44c38006888dd9b5b7ebde2f1a7a8e2.setIcon(icon_c81f15b83a93b5efb8620c7ac9c5db4e);
+        
+    
+        var popup_24069f4a805c452c9c9c857d97c1ff39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ef852050f129f36c435b8805c1f4bcf = $(`<div id="html_3ef852050f129f36c435b8805c1f4bcf" style="width: 100.0%; height: 100.0%;">Neighbourhood: CARATOÍRA<br>                     Cluster: 0<br>                     Número de Citas: 2535</div>`)[0];
+                popup_24069f4a805c452c9c9c857d97c1ff39.setContent(html_3ef852050f129f36c435b8805c1f4bcf);
+            
+        
+
+        marker_c44c38006888dd9b5b7ebde2f1a7a8e2.bindPopup(popup_24069f4a805c452c9c9c857d97c1ff39)
+        ;
+
+        
+    
+    
+            var marker_c188a554e6306d5aaa58b986da97124a = L.marker(
+                [-20.3219468, -40.3356584],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_457ba8f4c56e703a15591dec53ce306d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c188a554e6306d5aaa58b986da97124a.setIcon(icon_457ba8f4c56e703a15591dec53ce306d);
+        
+    
+        var popup_03adb99184d16e7323d2ab976749d7bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa7f6075320ba0dfaeebe465ac9c1fe4 = $(`<div id="html_aa7f6075320ba0dfaeebe465ac9c1fe4" style="width: 100.0%; height: 100.0%;">Neighbourhood: CENTRO<br>                     Cluster: 0<br>                     Número de Citas: 3334</div>`)[0];
+                popup_03adb99184d16e7323d2ab976749d7bf.setContent(html_aa7f6075320ba0dfaeebe465ac9c1fe4);
+            
+        
+
+        marker_c188a554e6306d5aaa58b986da97124a.bindPopup(popup_03adb99184d16e7323d2ab976749d7bf)
+        ;
+
+        
+    
+    
+            var marker_50e11d032ffc442371652ad33098a268 = L.marker(
+                [-20.2872137, -40.3350205],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_3ac450528dc6303a1cabcc53d1d605cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_50e11d032ffc442371652ad33098a268.setIcon(icon_3ac450528dc6303a1cabcc53d1d605cc);
+        
+    
+        var popup_da77a2697f1b25c46b15ee9e1fda7385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fa7d80862968b6e8021224b16ee4982 = $(`<div id="html_8fa7d80862968b6e8021224b16ee4982" style="width: 100.0%; height: 100.0%;">Neighbourhood: COMDUSA<br>                     Cluster: 3<br>                     Número de Citas: 310</div>`)[0];
+                popup_da77a2697f1b25c46b15ee9e1fda7385.setContent(html_8fa7d80862968b6e8021224b16ee4982);
+            
+        
+
+        marker_50e11d032ffc442371652ad33098a268.bindPopup(popup_da77a2697f1b25c46b15ee9e1fda7385)
+        ;
+
+        
+    
+    
+            var marker_e6ecea0cf13ad1bfc9fda236d13c1c28 = L.marker(
+                [-20.2781344, -40.323538],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_b1835533a6dd0c940406b648e8bea413 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e6ecea0cf13ad1bfc9fda236d13c1c28.setIcon(icon_b1835533a6dd0c940406b648e8bea413);
+        
+    
+        var popup_87d062a61261a35863c88acdbf2aba90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d79649b84fbcef6f049d542cdd2e5a81 = $(`<div id="html_d79649b84fbcef6f049d542cdd2e5a81" style="width: 100.0%; height: 100.0%;">Neighbourhood: CONQUISTA<br>                     Cluster: 2<br>                     Número de Citas: 849</div>`)[0];
+                popup_87d062a61261a35863c88acdbf2aba90.setContent(html_d79649b84fbcef6f049d542cdd2e5a81);
+            
+        
+
+        marker_e6ecea0cf13ad1bfc9fda236d13c1c28.bindPopup(popup_87d062a61261a35863c88acdbf2aba90)
+        ;
+
+        
+    
+    
+            var marker_9e16d7ca1d7b817a21df36401f800d04 = L.marker(
+                [-20.3062424, -40.3126913],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_8d5c2de76296cc33bbcf9c2b19764a68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_9e16d7ca1d7b817a21df36401f800d04.setIcon(icon_8d5c2de76296cc33bbcf9c2b19764a68);
+        
+    
+        var popup_43609dfe3801862c7e107616ab4e793a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c5fb2770a869ea21d6acc0c4f73d8b7 = $(`<div id="html_0c5fb2770a869ea21d6acc0c4f73d8b7" style="width: 100.0%; height: 100.0%;">Neighbourhood: CONSOLAÇÃO<br>                     Cluster: 6<br>                     Número de Citas: 1376</div>`)[0];
+                popup_43609dfe3801862c7e107616ab4e793a.setContent(html_0c5fb2770a869ea21d6acc0c4f73d8b7);
+            
+        
+
+        marker_9e16d7ca1d7b817a21df36401f800d04.bindPopup(popup_43609dfe3801862c7e107616ab4e793a)
+        ;
+
+        
+    
+    
+            var marker_917f050b27c9924eb39fd0aca6e1aeea = L.marker(
+                [-20.310337, -40.322262],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_d1b1b90dda0946a3b33016e0ad3e2151 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_917f050b27c9924eb39fd0aca6e1aeea.setIcon(icon_d1b1b90dda0946a3b33016e0ad3e2151);
+        
+    
+        var popup_313e70b7f3bafb4d85384a162aee603a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fbf3a8a0e46b9ef70fa98e5ff10f1e5 = $(`<div id="html_7fbf3a8a0e46b9ef70fa98e5ff10f1e5" style="width: 100.0%; height: 100.0%;">Neighbourhood: CRUZAMENTO<br>                     Cluster: 6<br>                     Número de Citas: 1398</div>`)[0];
+                popup_313e70b7f3bafb4d85384a162aee603a.setContent(html_7fbf3a8a0e46b9ef70fa98e5ff10f1e5);
+            
+        
+
+        marker_917f050b27c9924eb39fd0aca6e1aeea.bindPopup(popup_313e70b7f3bafb4d85384a162aee603a)
+        ;
+
+        
+    
+    
+            var marker_97e4cfa9202714c2802b7c204c3770b8 = L.marker(
+                [-20.297582, -40.310777],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_da85586ad588bafba8e16f5e353b433e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_97e4cfa9202714c2802b7c204c3770b8.setIcon(icon_da85586ad588bafba8e16f5e353b433e);
+        
+    
+        var popup_f67699698bee3d25e219ee0b307ec5d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_450a4d2e2f0a3a9f7e1ad968861bb378 = $(`<div id="html_450a4d2e2f0a3a9f7e1ad968861bb378" style="width: 100.0%; height: 100.0%;">Neighbourhood: DA PENHA<br>                     Cluster: 11<br>                     Número de Citas: 2217</div>`)[0];
+                popup_f67699698bee3d25e219ee0b307ec5d4.setContent(html_450a4d2e2f0a3a9f7e1ad968861bb378);
+            
+        
+
+        marker_97e4cfa9202714c2802b7c204c3770b8.bindPopup(popup_f67699698bee3d25e219ee0b307ec5d4)
+        ;
+
+        
+    
+    
+            var marker_91a245dad0871eff13c4465942348cae = L.marker(
+                [-20.307199, -40.3158817],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_42905d6bf424698a4aa27a68f701cfa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_91a245dad0871eff13c4465942348cae.setIcon(icon_42905d6bf424698a4aa27a68f701cfa0);
+        
+    
+        var popup_6b421956a16289cb2dbe8a96e2eb505d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06bf449122d6b7186f108707c245419f = $(`<div id="html_06bf449122d6b7186f108707c245419f" style="width: 100.0%; height: 100.0%;">Neighbourhood: DE LOURDES<br>                     Cluster: 6<br>                     Número de Citas: 305</div>`)[0];
+                popup_6b421956a16289cb2dbe8a96e2eb505d.setContent(html_06bf449122d6b7186f108707c245419f);
+            
+        
+
+        marker_91a245dad0871eff13c4465942348cae.bindPopup(popup_6b421956a16289cb2dbe8a96e2eb505d)
+        ;
+
+        
+    
+    
+            var marker_68efc6dfa49ce80635ef05249ce1bf44 = L.marker(
+                [-20.3155332, -40.3477763],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_aec9abd5140c0c21d32e1241e5e37970 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68efc6dfa49ce80635ef05249ce1bf44.setIcon(icon_aec9abd5140c0c21d32e1241e5e37970);
+        
+    
+        var popup_d3c0bb506164317153efeaccae5f116e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50244642a6124298aa58cd81810e516f = $(`<div id="html_50244642a6124298aa58cd81810e516f" style="width: 100.0%; height: 100.0%;">Neighbourhood: DO CABRAL<br>                     Cluster: 0<br>                     Número de Citas: 560</div>`)[0];
+                popup_d3c0bb506164317153efeaccae5f116e.setContent(html_50244642a6124298aa58cd81810e516f);
+            
+        
+
+        marker_68efc6dfa49ce80635ef05249ce1bf44.bindPopup(popup_d3c0bb506164317153efeaccae5f116e)
+        ;
+
+        
+    
+    
+            var marker_148963326dbcf52d0163d5de58117799 = L.marker(
+                [-20.3149307, -40.3433121],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_b3355987355e651efa994a38593f9042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_148963326dbcf52d0163d5de58117799.setIcon(icon_b3355987355e651efa994a38593f9042);
+        
+    
+        var popup_7075e1a018e7b71eebedc34136c7fd18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_365600dab8fb499df7152cc1c7be305e = $(`<div id="html_365600dab8fb499df7152cc1c7be305e" style="width: 100.0%; height: 100.0%;">Neighbourhood: DO MOSCOSO<br>                     Cluster: 0<br>                     Número de Citas: 413</div>`)[0];
+                popup_7075e1a018e7b71eebedc34136c7fd18.setContent(html_365600dab8fb499df7152cc1c7be305e);
+            
+        
+
+        marker_148963326dbcf52d0163d5de58117799.bindPopup(popup_7075e1a018e7b71eebedc34136c7fd18)
+        ;
+
+        
+    
+    
+            var marker_0a702eee04fe7f842e67178307be09b5 = L.marker(
+                [-20.3170592, -40.3500083],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_3d02de7dcd0db4b5108d032847200f72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a702eee04fe7f842e67178307be09b5.setIcon(icon_3d02de7dcd0db4b5108d032847200f72);
+        
+    
+        var popup_75c260b5b667fba3d65574e4413c20d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7576c6c825e7da72db6727daf7507a8d = $(`<div id="html_7576c6c825e7da72db6727daf7507a8d" style="width: 100.0%; height: 100.0%;">Neighbourhood: DO QUADRO<br>                     Cluster: 0<br>                     Número de Citas: 848</div>`)[0];
+                popup_75c260b5b667fba3d65574e4413c20d6.setContent(html_7576c6c825e7da72db6727daf7507a8d);
+            
+        
+
+        marker_0a702eee04fe7f842e67178307be09b5.bindPopup(popup_75c260b5b667fba3d65574e4413c20d6)
+        ;
+
+        
+    
+    
+            var marker_e671d9644d07443633a43d88da5106ab = L.marker(
+                [-20.3194015, -40.2960984],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_734a4072fe61ed5d8160050c8df95a05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_e671d9644d07443633a43d88da5106ab.setIcon(icon_734a4072fe61ed5d8160050c8df95a05);
+        
+    
+        var popup_70455ecb1edbcf7a747e2133f8ba629a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_634b78b82d0f025547a45645e32e1b3c = $(`<div id="html_634b78b82d0f025547a45645e32e1b3c" style="width: 100.0%; height: 100.0%;">Neighbourhood: ENSEADA DO SUÁ<br>                     Cluster: 4<br>                     Número de Citas: 235</div>`)[0];
+                popup_70455ecb1edbcf7a747e2133f8ba629a.setContent(html_634b78b82d0f025547a45645e32e1b3c);
+            
+        
+
+        marker_e671d9644d07443633a43d88da5106ab.bindPopup(popup_70455ecb1edbcf7a747e2133f8ba629a)
+        ;
+
+        
+    
+    
+            var marker_d00adf8c43e8a6bf9500610a623b50bd = L.marker(
+                [-20.293488, -40.3477763],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_3f2c1d20a520c2f87030825d4a19333a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d00adf8c43e8a6bf9500610a623b50bd.setIcon(icon_3f2c1d20a520c2f87030825d4a19333a);
+        
+    
+        var popup_289a566667f0cf1861a1f7f02c1c273b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d3176604b0c2e0400be8f6d1fc505ca = $(`<div id="html_5d3176604b0c2e0400be8f6d1fc505ca" style="width: 100.0%; height: 100.0%;">Neighbourhood: ESTRELINHA<br>                     Cluster: 3<br>                     Número de Citas: 538</div>`)[0];
+                popup_289a566667f0cf1861a1f7f02c1c273b.setContent(html_5d3176604b0c2e0400be8f6d1fc505ca);
+            
+        
+
+        marker_d00adf8c43e8a6bf9500610a623b50bd.bindPopup(popup_289a566667f0cf1861a1f7f02c1c273b)
+        ;
+
+        
+    
+    
+            var marker_dc81531df428fa5bff4ffd255c61ca47 = L.marker(
+                [-20.3134557, -40.3375719],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_b5869014bf1c3cb38c91cca39dfb6dc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc81531df428fa5bff4ffd255c61ca47.setIcon(icon_b5869014bf1c3cb38c91cca39dfb6dc8);
+        
+    
+        var popup_a29ab064a390956d88788f632645312c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25ea7018bc6a9517b482f9005b4fc7e2 = $(`<div id="html_25ea7018bc6a9517b482f9005b4fc7e2" style="width: 100.0%; height: 100.0%;">Neighbourhood: FONTE GRANDE<br>                     Cluster: 0<br>                     Número de Citas: 682</div>`)[0];
+                popup_a29ab064a390956d88788f632645312c.setContent(html_25ea7018bc6a9517b482f9005b4fc7e2);
+            
+        
+
+        marker_dc81531df428fa5bff4ffd255c61ca47.bindPopup(popup_a29ab064a390956d88788f632645312c)
+        ;
+
+        
+    
+    
+            var marker_6d2d91c7ff1469e5731e5af9c936d9af = L.marker(
+                [-20.320574, -40.3229],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_867c4ce21909ba7fadc7e3809660e027 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_6d2d91c7ff1469e5731e5af9c936d9af.setIcon(icon_867c4ce21909ba7fadc7e3809660e027);
+        
+    
+        var popup_287d8e3a92853313cd0737b2a05ebbad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8edcc40fd7a34bba0cda4d831297f26 = $(`<div id="html_e8edcc40fd7a34bba0cda4d831297f26" style="width: 100.0%; height: 100.0%;">Neighbourhood: FORTE SÃO JOÃO<br>                     Cluster: 6<br>                     Número de Citas: 1889</div>`)[0];
+                popup_287d8e3a92853313cd0737b2a05ebbad.setContent(html_e8edcc40fd7a34bba0cda4d831297f26);
+            
+        
+
+        marker_6d2d91c7ff1469e5731e5af9c936d9af.bindPopup(popup_287d8e3a92853313cd0737b2a05ebbad)
+        ;
+
+        
+    
+    
+            var marker_86d3e9cf939b935c74554390e68b05c9 = L.marker(
+                [-20.3069131, -40.3280037],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_e5a4a844c05253250de480a86514f193 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_86d3e9cf939b935c74554390e68b05c9.setIcon(icon_e5a4a844c05253250de480a86514f193);
+        
+    
+        var popup_92a749e8b1a626cefade32773530c9a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f24f117a5779cdff7075f58ab57ec201 = $(`<div id="html_f24f117a5779cdff7075f58ab57ec201" style="width: 100.0%; height: 100.0%;">Neighbourhood: FRADINHOS<br>                     Cluster: 6<br>                     Número de Citas: 258</div>`)[0];
+                popup_92a749e8b1a626cefade32773530c9a9.setContent(html_f24f117a5779cdff7075f58ab57ec201);
+            
+        
+
+        marker_86d3e9cf939b935c74554390e68b05c9.bindPopup(popup_92a749e8b1a626cefade32773530c9a9)
+        ;
+
+        
+    
+    
+            var marker_36ecc95bbb072bfb6359b34de444a734 = L.marker(
+                [-20.2724733, -40.30631],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_d66f38cb2699a33be0f1b949b1f67284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_36ecc95bbb072bfb6359b34de444a734.setIcon(icon_d66f38cb2699a33be0f1b949b1f67284);
+        
+    
+        var popup_eaec72201fa90f22ae7de364a4ed19d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7390d5f462c257ea7fe984851ed957e = $(`<div id="html_f7390d5f462c257ea7fe984851ed957e" style="width: 100.0%; height: 100.0%;">Neighbourhood: GOIABEIRAS<br>                     Cluster: 9<br>                     Número de Citas: 700</div>`)[0];
+                popup_eaec72201fa90f22ae7de364a4ed19d8.setContent(html_f7390d5f462c257ea7fe984851ed957e);
+            
+        
+
+        marker_36ecc95bbb072bfb6359b34de444a734.bindPopup(popup_eaec72201fa90f22ae7de364a4ed19d8)
+        ;
+
+        
+    
+    
+            var marker_da39e79427eefef019977c3d849efc44 = L.marker(
+                [-20.2886902, -40.340761],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_fc39a53cecee2850dbcc7ac58f3caf7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_da39e79427eefef019977c3d849efc44.setIcon(icon_fc39a53cecee2850dbcc7ac58f3caf7e);
+        
+    
+        var popup_38c1458254a4786005e031813c5837b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2ebfe6afd8c2f03e29d5a3cb1c8332f = $(`<div id="html_a2ebfe6afd8c2f03e29d5a3cb1c8332f" style="width: 100.0%; height: 100.0%;">Neighbourhood: GRANDE VITÓRIA<br>                     Cluster: 3<br>                     Número de Citas: 1071</div>`)[0];
+                popup_38c1458254a4786005e031813c5837b0.setContent(html_a2ebfe6afd8c2f03e29d5a3cb1c8332f);
+            
+        
+
+        marker_da39e79427eefef019977c3d849efc44.bindPopup(popup_38c1458254a4786005e031813c5837b0)
+        ;
+
+        
+    
+    
+            var marker_391e9a085e31ea63d51b77c9c5e1ce8d = L.marker(
+                [-20.3059062, -40.3050336],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_734c959df8ab91709f49a963ebde0112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_391e9a085e31ea63d51b77c9c5e1ce8d.setIcon(icon_734c959df8ab91709f49a963ebde0112);
+        
+    
+        var popup_b4189a73c6cccacbc5918484cdfaba45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a817a6d0b3f504189b52ed92b298ea5e = $(`<div id="html_a817a6d0b3f504189b52ed92b298ea5e" style="width: 100.0%; height: 100.0%;">Neighbourhood: GURIGICA<br>                     Cluster: 11<br>                     Número de Citas: 2018</div>`)[0];
+                popup_b4189a73c6cccacbc5918484cdfaba45.setContent(html_a817a6d0b3f504189b52ed92b298ea5e);
+            
+        
+
+        marker_391e9a085e31ea63d51b77c9c5e1ce8d.bindPopup(popup_b4189a73c6cccacbc5918484cdfaba45)
+        ;
+
+        
+    
+    
+            var marker_dc1d17a70424ded4979719e60cec8a17 = L.marker(
+                [-20.3096158, -40.3104579],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_66aaf943e9ffca788acbce60eaec0b0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_dc1d17a70424ded4979719e60cec8a17.setIcon(icon_66aaf943e9ffca788acbce60eaec0b0a);
+        
+    
+        var popup_69711024e318529f7fcc3a79f8a435cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_570b4a517cd6449453faa7c23644d8aa = $(`<div id="html_570b4a517cd6449453faa7c23644d8aa" style="width: 100.0%; height: 100.0%;">Neighbourhood: HORTO<br>                     Cluster: 6<br>                     Número de Citas: 175</div>`)[0];
+                popup_69711024e318529f7fcc3a79f8a435cc.setContent(html_570b4a517cd6449453faa7c23644d8aa);
+            
+        
+
+        marker_dc1d17a70424ded4979719e60cec8a17.bindPopup(popup_69711024e318529f7fcc3a79f8a435cc)
+        ;
+
+        
+    
+    
+            var marker_8fe95315d02c11ed41685a4bf501a9b2 = L.marker(
+                [-20.2774151, -40.3350205],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_8a6b10291fbfce94b3b124903f86dc68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8fe95315d02c11ed41685a4bf501a9b2.setIcon(icon_8a6b10291fbfce94b3b124903f86dc68);
+        
+    
+        var popup_ab814b8b8fa7538d29bd5536957f1e65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7836a8bc0e2454962d76c8f2eb1bc8a = $(`<div id="html_e7836a8bc0e2454962d76c8f2eb1bc8a" style="width: 100.0%; height: 100.0%;">Neighbourhood: ILHA DAS CAIEIRAS<br>                     Cluster: 3<br>                     Número de Citas: 1071</div>`)[0];
+                popup_ab814b8b8fa7538d29bd5536957f1e65.setContent(html_e7836a8bc0e2454962d76c8f2eb1bc8a);
+            
+        
+
+        marker_8fe95315d02c11ed41685a4bf501a9b2.bindPopup(popup_ab814b8b8fa7538d29bd5536957f1e65)
+        ;
+
+        
+    
+    
+            var marker_e320adc242c08f02a95598eb5650b168 = L.marker(
+                [-20.3170841, -40.3177959],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_fa64bdc204f5f546102103080188ead9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e320adc242c08f02a95598eb5650b168.setIcon(icon_fa64bdc204f5f546102103080188ead9);
+        
+    
+        var popup_ac75ca94fa8d09114d125c958024aaf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_826fbc30fb61002becff02df4cadd49f = $(`<div id="html_826fbc30fb61002becff02df4cadd49f" style="width: 100.0%; height: 100.0%;">Neighbourhood: ILHA DE SANTA MARIA<br>                     Cluster: 6<br>                     Número de Citas: 1885</div>`)[0];
+                popup_ac75ca94fa8d09114d125c958024aaf8.setContent(html_826fbc30fb61002becff02df4cadd49f);
+            
+        
+
+        marker_e320adc242c08f02a95598eb5650b168.bindPopup(popup_ac75ca94fa8d09114d125c958024aaf8)
+        ;
+
+        
+    
+    
+            var marker_0f5e31cbbfb5dcdd002356db729075cc = L.marker(
+                [-20.3082488554808, -40.2797758603474],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_f9d9553a8a504f1c5a59f937bb4b45f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_0f5e31cbbfb5dcdd002356db729075cc.setIcon(icon_f9d9553a8a504f1c5a59f937bb4b45f8);
+        
+    
+        var popup_c680aaf82e6fc1d0c48f0f05e9c54b9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76cd0c4c578f4205af49dc94604543a8 = $(`<div id="html_76cd0c4c578f4205af49dc94604543a8" style="width: 100.0%; height: 100.0%;">Neighbourhood: ILHA DO BOI<br>                     Cluster: 4<br>                     Número de Citas: 35</div>`)[0];
+                popup_c680aaf82e6fc1d0c48f0f05e9c54b9b.setContent(html_76cd0c4c578f4205af49dc94604543a8);
+            
+        
+
+        marker_0f5e31cbbfb5dcdd002356db729075cc.bindPopup(popup_c680aaf82e6fc1d0c48f0f05e9c54b9b)
+        ;
+
+        
+    
+    
+            var marker_e7573e679a68df27e162f478518aa6bd = L.marker(
+                [-20.3027641, -40.2844963],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_ab9fb0df96865dd7eefcc017562a38a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_e7573e679a68df27e162f478518aa6bd.setIcon(icon_ab9fb0df96865dd7eefcc017562a38a3);
+        
+    
+        var popup_7904864786ef628f58cd93fb1822c594 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2be6524690b5f3f53fc31891c1173251 = $(`<div id="html_2be6524690b5f3f53fc31891c1173251" style="width: 100.0%; height: 100.0%;">Neighbourhood: ILHA DO FRADE<br>                     Cluster: 4<br>                     Número de Citas: 10</div>`)[0];
+                popup_7904864786ef628f58cd93fb1822c594.setContent(html_2be6524690b5f3f53fc31891c1173251);
+            
+        
+
+        marker_e7573e679a68df27e162f478518aa6bd.bindPopup(popup_7904864786ef628f58cd93fb1822c594)
+        ;
+
+        
+    
+    
+            var marker_01e2706a4447f6b0eaf143dca4b3721a = L.marker(
+                [-20.3226121, -40.3509648],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_fd969da508fd059f23b371130f7c4fca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01e2706a4447f6b0eaf143dca4b3721a.setIcon(icon_fd969da508fd059f23b371130f7c4fca);
+        
+    
+        var popup_a9947263e243a54652b5363f575c716d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a52ba47112c499a309011d07bf930a0d = $(`<div id="html_a52ba47112c499a309011d07bf930a0d" style="width: 100.0%; height: 100.0%;">Neighbourhood: ILHA DO PRÍNCIPE<br>                     Cluster: 0<br>                     Número de Citas: 2266</div>`)[0];
+                popup_a9947263e243a54652b5363f575c716d.setContent(html_a52ba47112c499a309011d07bf930a0d);
+            
+        
+
+        marker_01e2706a4447f6b0eaf143dca4b3721a.bindPopup(popup_a9947263e243a54652b5363f575c716d)
+        ;
+
+        
+    
+    
+            var marker_1e73396ad67eb621a1de0136fa7a081e = L.marker(
+                [-23.3506916740894, -44.723649572215],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_463bedd2349e1caba339c16b72c0bc2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1e73396ad67eb621a1de0136fa7a081e.setIcon(icon_463bedd2349e1caba339c16b72c0bc2c);
+        
+    
+        var popup_08c6b4e6afcf68291dd3f6b9b936a6e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48d0745b19473539ea9ec917ddaf538b = $(`<div id="html_48d0745b19473539ea9ec917ddaf538b" style="width: 100.0%; height: 100.0%;">Neighbourhood: ILHAS OCEÂNICAS DE TRINDADE<br>                     Cluster: 1<br>                     Número de Citas: 2</div>`)[0];
+                popup_08c6b4e6afcf68291dd3f6b9b936a6e7.setContent(html_48d0745b19473539ea9ec917ddaf538b);
+            
+        
+
+        marker_1e73396ad67eb621a1de0136fa7a081e.bindPopup(popup_08c6b4e6afcf68291dd3f6b9b936a6e7)
+        ;
+
+        
+    
+    
+            var marker_c526f1399008c2be66e8d96c2dc7ccfa = L.marker(
+                [-20.299528, -40.3458631],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_b01f0ae7672d3b2d3249c23b4795b4cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c526f1399008c2be66e8d96c2dc7ccfa.setIcon(icon_b01f0ae7672d3b2d3249c23b4795b4cf);
+        
+    
+        var popup_7cd2f968a61b72cdf6892e31be71c872 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fefaa5848858416bcb51ea061fc4b670 = $(`<div id="html_fefaa5848858416bcb51ea061fc4b670" style="width: 100.0%; height: 100.0%;">Neighbourhood: INHANGUETÁ<br>                     Cluster: 3<br>                     Número de Citas: 1057</div>`)[0];
+                popup_7cd2f968a61b72cdf6892e31be71c872.setContent(html_fefaa5848858416bcb51ea061fc4b670);
+            
+        
+
+        marker_c526f1399008c2be66e8d96c2dc7ccfa.bindPopup(popup_7cd2f968a61b72cdf6892e31be71c872)
+        ;
+
+        
+    
+    
+            var marker_3703c2634ec29063b10b15408d1c4968 = L.marker(
+                [-20.2953996, -40.3075863],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_7793287a64eba505ebb48f780c9ad45d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3703c2634ec29063b10b15408d1c4968.setIcon(icon_7793287a64eba505ebb48f780c9ad45d);
+        
+    
+        var popup_aae73400fe19ec50c5b6b4d9efc1b9c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db3bf80d90ca9d8c9716cd0f6b04e0a7 = $(`<div id="html_db3bf80d90ca9d8c9716cd0f6b04e0a7" style="width: 100.0%; height: 100.0%;">Neighbourhood: ITARARÉ<br>                     Cluster: 11<br>                     Número de Citas: 3514</div>`)[0];
+                popup_aae73400fe19ec50c5b6b4d9efc1b9c7.setContent(html_db3bf80d90ca9d8c9716cd0f6b04e0a7);
+            
+        
+
+        marker_3703c2634ec29063b10b15408d1c4968.bindPopup(popup_aae73400fe19ec50c5b6b4d9efc1b9c7)
+        ;
+
+        
+    
+    
+            var marker_7dcc1bd97fe0f1239d270d345a07823a = L.marker(
+                [-20.2584011, -40.2929069],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_75a717a503b9a6a7305bc862ad19fcd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_7dcc1bd97fe0f1239d270d345a07823a.setIcon(icon_75a717a503b9a6a7305bc862ad19fcd1);
+        
+    
+        var popup_04e7095e0ffd7b104e1d2c5772909e84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04cf342b6c680d66d7da9a5ffb7a73d3 = $(`<div id="html_04cf342b6c680d66d7da9a5ffb7a73d3" style="width: 100.0%; height: 100.0%;">Neighbourhood: JABOUR<br>                     Cluster: 9<br>                     Número de Citas: 2509</div>`)[0];
+                popup_04e7095e0ffd7b104e1d2c5772909e84.setContent(html_04cf342b6c680d66d7da9a5ffb7a73d3);
+            
+        
+
+        marker_7dcc1bd97fe0f1239d270d345a07823a.bindPopup(popup_04e7095e0ffd7b104e1d2c5772909e84)
+        ;
+
+        
+    
+    
+            var marker_4522613d19f91e5e42f1c21ba7bc721f = L.marker(
+                [-20.2592187, -40.2654531],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_31fb3fe9d89da11f217544d420a86237 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_4522613d19f91e5e42f1c21ba7bc721f.setIcon(icon_31fb3fe9d89da11f217544d420a86237);
+        
+    
+        var popup_b958ff965150515f364ef56115904b45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf2c270a36311558b0d5ddb55fee25e0 = $(`<div id="html_cf2c270a36311558b0d5ddb55fee25e0" style="width: 100.0%; height: 100.0%;">Neighbourhood: JARDIM CAMBURI<br>                     Cluster: 10<br>                     Número de Citas: 7717</div>`)[0];
+                popup_b958ff965150515f364ef56115904b45.setContent(html_cf2c270a36311558b0d5ddb55fee25e0);
+            
+        
+
+        marker_4522613d19f91e5e42f1c21ba7bc721f.bindPopup(popup_b958ff965150515f364ef56115904b45)
+        ;
+
+        
+    
+    
+            var marker_446080ef61aab9effcc56cea40d3f5de = L.marker(
+                [-20.2850907, -40.2960984],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_efa56fc4ecf6a508f5069e876c108ae9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_446080ef61aab9effcc56cea40d3f5de.setIcon(icon_efa56fc4ecf6a508f5069e876c108ae9);
+        
+    
+        var popup_2fa12015bf1293ca2b551c6f640c7c5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c754b111ac6c1258235785a023d5b526 = $(`<div id="html_c754b111ac6c1258235785a023d5b526" style="width: 100.0%; height: 100.0%;">Neighbourhood: JARDIM DA PENHA<br>                     Cluster: 8<br>                     Número de Citas: 3877</div>`)[0];
+                popup_2fa12015bf1293ca2b551c6f640c7c5a.setContent(html_c754b111ac6c1258235785a023d5b526);
+            
+        
+
+        marker_446080ef61aab9effcc56cea40d3f5de.bindPopup(popup_2fa12015bf1293ca2b551c6f640c7c5a)
+        ;
+
+        
+    
+    
+            var marker_069391d4cf7320512d6e55a7872cb185 = L.marker(
+                [-20.3188643, -40.3024808],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_48a68ebd31b48a2e149964462abd37cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_069391d4cf7320512d6e55a7872cb185.setIcon(icon_48a68ebd31b48a2e149964462abd37cd);
+        
+    
+        var popup_98ee0a6152b7adbdeb483d6ec82ab9fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13527f8c35b45214d903af5428d31dd1 = $(`<div id="html_13527f8c35b45214d903af5428d31dd1" style="width: 100.0%; height: 100.0%;">Neighbourhood: JESUS DE NAZARETH<br>                     Cluster: 4<br>                     Número de Citas: 2853</div>`)[0];
+                popup_98ee0a6152b7adbdeb483d6ec82ab9fd.setContent(html_13527f8c35b45214d903af5428d31dd1);
+            
+        
+
+        marker_069391d4cf7320512d6e55a7872cb185.bindPopup(popup_98ee0a6152b7adbdeb483d6ec82ab9fd)
+        ;
+
+        
+    
+    
+            var marker_08c424901857c1b965bef3ce5edbf668 = L.marker(
+                [-20.2843585, -40.3165198],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_624a76318472c2571a513f64fa53ddbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_08c424901857c1b965bef3ce5edbf668.setIcon(icon_624a76318472c2571a513f64fa53ddbc);
+        
+    
+        var popup_4a2a4a9126956a6123306606579fd419 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23601dfdf99ce153ac55d22bcabbc13d = $(`<div id="html_23601dfdf99ce153ac55d22bcabbc13d" style="width: 100.0%; height: 100.0%;">Neighbourhood: JOANA D´ARC<br>                     Cluster: 7<br>                     Número de Citas: 1427</div>`)[0];
+                popup_4a2a4a9126956a6123306606579fd419.setContent(html_23601dfdf99ce153ac55d22bcabbc13d);
+            
+        
+
+        marker_08c424901857c1b965bef3ce5edbf668.bindPopup(popup_4a2a4a9126956a6123306606579fd419)
+        ;
+
+        
+    
+    
+            var marker_5f48e0e16444782dff37488b6706bcf8 = L.marker(
+                [-20.3085919, -40.31971],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_b3ae7029036d4125ec9d2945478c1102 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5f48e0e16444782dff37488b6706bcf8.setIcon(icon_b3ae7029036d4125ec9d2945478c1102);
+        
+    
+        var popup_af9e18da9291d146bad9ec23f8ec4c3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4651c5fc777e7f0c25771ce5eb2a50fb = $(`<div id="html_4651c5fc777e7f0c25771ce5eb2a50fb" style="width: 100.0%; height: 100.0%;">Neighbourhood: JUCUTUQUARA<br>                     Cluster: 6<br>                     Número de Citas: 694</div>`)[0];
+                popup_af9e18da9291d146bad9ec23f8ec4c3f.setContent(html_4651c5fc777e7f0c25771ce5eb2a50fb);
+            
+        
+
+        marker_5f48e0e16444782dff37488b6706bcf8.bindPopup(popup_af9e18da9291d146bad9ec23f8ec4c3f)
+        ;
+
+        
+    
+    
+            var marker_ca485290937a9cecba0775d595f4c41f = L.marker(
+                [-20.258305, -40.2999279],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_1067d6c728bd4377882a4041a6f9a4a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ca485290937a9cecba0775d595f4c41f.setIcon(icon_1067d6c728bd4377882a4041a6f9a4a0);
+        
+    
+        var popup_b15ddade79b443eb8e3a87b77c412c3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_651df9674a0b6dc2147738d506924aaa = $(`<div id="html_651df9674a0b6dc2147738d506924aaa" style="width: 100.0%; height: 100.0%;">Neighbourhood: MARIA ORTIZ<br>                     Cluster: 9<br>                     Número de Citas: 5805</div>`)[0];
+                popup_b15ddade79b443eb8e3a87b77c412c3f.setContent(html_651df9674a0b6dc2147738d506924aaa);
+            
+        
+
+        marker_ca485290937a9cecba0775d595f4c41f.bindPopup(popup_b15ddade79b443eb8e3a87b77c412c3f)
+        ;
+
+        
+    
+    
+            var marker_69350e22791c7c1d1a91da96974b6aec = L.marker(
+                [-20.296341, -40.31971],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_b67700a90371ed6c3b23018da4af08f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_69350e22791c7c1d1a91da96974b6aec.setIcon(icon_b67700a90371ed6c3b23018da4af08f2);
+        
+    
+        var popup_44e95cdacb51aa7951aee2ee4707ab94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51a974c8e193ff8d66668af6c4bdbe2f = $(`<div id="html_51a974c8e193ff8d66668af6c4bdbe2f" style="width: 100.0%; height: 100.0%;">Neighbourhood: MARUÍPE<br>                     Cluster: 7<br>                     Número de Citas: 1902</div>`)[0];
+                popup_44e95cdacb51aa7951aee2ee4707ab94.setContent(html_51a974c8e193ff8d66668af6c4bdbe2f);
+            
+        
+
+        marker_69350e22791c7c1d1a91da96974b6aec.bindPopup(popup_44e95cdacb51aa7951aee2ee4707ab94)
+        ;
+
+        
+    
+    
+            var marker_3268594dc4819f38853735f0047eca14 = L.marker(
+                [-20.2751185, -40.2922686],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_089e0aa58e2e7149742a7407d4792be8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_3268594dc4819f38853735f0047eca14.setIcon(icon_089e0aa58e2e7149742a7407d4792be8);
+        
+    
+        var popup_ff8bb4bb4ef0affc703e900cc5e3dad3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44696044a2a29d7ac3bf88a100f38d33 = $(`<div id="html_44696044a2a29d7ac3bf88a100f38d33" style="width: 100.0%; height: 100.0%;">Neighbourhood: MATA DA PRAIA<br>                     Cluster: 9<br>                     Número de Citas: 644</div>`)[0];
+                popup_ff8bb4bb4ef0affc703e900cc5e3dad3.setContent(html_44696044a2a29d7ac3bf88a100f38d33);
+            
+        
+
+        marker_3268594dc4819f38853735f0047eca14.bindPopup(popup_ff8bb4bb4ef0affc703e900cc5e3dad3)
+        ;
+
+        
+    
+    
+            var marker_87122770f0668439181e97adacc0977a = L.marker(
+                [-20.3152551, -40.3133294],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_56391786be0abefda7460c461124ac85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_87122770f0668439181e97adacc0977a.setIcon(icon_56391786be0abefda7460c461124ac85);
+        
+    
+        var popup_e9f9b98d1f0c278202affb04f74d022a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54aae976ff05ce53cc70a936fced5154 = $(`<div id="html_54aae976ff05ce53cc70a936fced5154" style="width: 100.0%; height: 100.0%;">Neighbourhood: MONTE BELO<br>                     Cluster: 6<br>                     Número de Citas: 824</div>`)[0];
+                popup_e9f9b98d1f0c278202affb04f74d022a.setContent(html_54aae976ff05ce53cc70a936fced5154);
+            
+        
+
+        marker_87122770f0668439181e97adacc0977a.bindPopup(popup_e9f9b98d1f0c278202affb04f74d022a)
+        ;
+
+        
+    
+    
+            var marker_40a74d7aa4ab5cc2d60b27f86fdeddfd = L.marker(
+                [-20.2720492, -40.2967367],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_2dd61d28269dd3cc278bc803d9112166 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_40a74d7aa4ab5cc2d60b27f86fdeddfd.setIcon(icon_2dd61d28269dd3cc278bc803d9112166);
+        
+    
+        var popup_6b33079ec4cdc482ad82bca0890a546d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44e59a8d842a19d7c1ed1b1e13f4cc3f = $(`<div id="html_44e59a8d842a19d7c1ed1b1e13f4cc3f" style="width: 100.0%; height: 100.0%;">Neighbourhood: MORADA DE CAMBURI<br>                     Cluster: 9<br>                     Número de Citas: 96</div>`)[0];
+                popup_6b33079ec4cdc482ad82bca0890a546d.setContent(html_44e59a8d842a19d7c1ed1b1e13f4cc3f);
+            
+        
+
+        marker_40a74d7aa4ab5cc2d60b27f86fdeddfd.bindPopup(popup_6b33079ec4cdc482ad82bca0890a546d)
+        ;
+
+        
+    
+    
+            var marker_c4027ca02e3cd366ede1414118c89758 = L.marker(
+                [-20.3195399, -40.3554284],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_56b512659f587d7abe6e5aaf2d30cb05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c4027ca02e3cd366ede1414118c89758.setIcon(icon_56b512659f587d7abe6e5aaf2d30cb05);
+        
+    
+        var popup_208124686f8eb8d8c23be6186ad3fa89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34406406e9abb428441d890041c655eb = $(`<div id="html_34406406e9abb428441d890041c655eb" style="width: 100.0%; height: 100.0%;">Neighbourhood: MÁRIO CYPRESTE<br>                     Cluster: 0<br>                     Número de Citas: 371</div>`)[0];
+                popup_208124686f8eb8d8c23be6186ad3fa89.setContent(html_34406406e9abb428441d890041c655eb);
+            
+        
+
+        marker_c4027ca02e3cd366ede1414118c89758.bindPopup(popup_208124686f8eb8d8c23be6186ad3fa89)
+        ;
+
+        
+    
+    
+            var marker_7ee30bbb0fd16d7dcaad67c4070cca60 = L.marker(
+                [-20.3104801, -40.3162007],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_03d713f85ea356187cf10d35b72914c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_7ee30bbb0fd16d7dcaad67c4070cca60.setIcon(icon_03d713f85ea356187cf10d35b72914c4);
+        
+    
+        var popup_09d81e053d6a928125e8f81accac552f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b786fdbcea815374cf9a6b208c8aa2ad = $(`<div id="html_b786fdbcea815374cf9a6b208c8aa2ad" style="width: 100.0%; height: 100.0%;">Neighbourhood: NAZARETH<br>                     Cluster: 6<br>                     Número de Citas: 135</div>`)[0];
+                popup_09d81e053d6a928125e8f81accac552f.setContent(html_b786fdbcea815374cf9a6b208c8aa2ad);
+            
+        
+
+        marker_7ee30bbb0fd16d7dcaad67c4070cca60.bindPopup(popup_09d81e053d6a928125e8f81accac552f)
+        ;
+
+        
+    
+    
+            var marker_8c343a68de6a48a60e3c5ab6beb6e316 = L.marker(
+                [-20.272615, -40.3280037],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_32b5e7e6431aaec5704928c63855391e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8c343a68de6a48a60e3c5ab6beb6e316.setIcon(icon_32b5e7e6431aaec5704928c63855391e);
+        
+    
+        var popup_a177ea6dff3db7f830a3bc2faa1bcda0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61d0493cf6c0badfd2214086e26aea93 = $(`<div id="html_61d0493cf6c0badfd2214086e26aea93" style="width: 100.0%; height: 100.0%;">Neighbourhood: NOVA PALESTINA<br>                     Cluster: 2<br>                     Número de Citas: 2264</div>`)[0];
+                popup_a177ea6dff3db7f830a3bc2faa1bcda0.setContent(html_61d0493cf6c0badfd2214086e26aea93);
+            
+        
+
+        marker_8c343a68de6a48a60e3c5ab6beb6e316.bindPopup(popup_a177ea6dff3db7f830a3bc2faa1bcda0)
+        ;
+
+        
+    
+    
+            var marker_78fb6f4c2a6b503650b42c00c7f11619 = L.marker(
+                [-20.259172, -40.2396846],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_dc38771c9d4572c8558c975c4bb0d064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_78fb6f4c2a6b503650b42c00c7f11619.setIcon(icon_dc38771c9d4572c8558c975c4bb0d064);
+        
+    
+        var popup_cacf4f6a1839f32d544e0d25c3e74fd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bdd140046ba93292b45b4c34727b5b7 = $(`<div id="html_3bdd140046ba93292b45b4c34727b5b7" style="width: 100.0%; height: 100.0%;">Neighbourhood: PARQUE INDUSTRIAL<br>                     Cluster: 5<br>                     Número de Citas: 1</div>`)[0];
+                popup_cacf4f6a1839f32d544e0d25c3e74fd7.setContent(html_3bdd140046ba93292b45b4c34727b5b7);
+            
+        
+
+        marker_78fb6f4c2a6b503650b42c00c7f11619.bindPopup(popup_cacf4f6a1839f32d544e0d25c3e74fd7)
+        ;
+
+        
+    
+    
+            var marker_604637c0e783010085d16ccb9b42a624 = L.marker(
+                [-20.3206188, -40.3426743],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_57f0941ba1a61b5d6813000a82a3b8d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_604637c0e783010085d16ccb9b42a624.setIcon(icon_57f0941ba1a61b5d6813000a82a3b8d1);
+        
+    
+        var popup_f5c0db55df8b0eabd8d2c6bcfe9a8b9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_864d789edadddd870a0cb514d6baa950 = $(`<div id="html_864d789edadddd870a0cb514d6baa950" style="width: 100.0%; height: 100.0%;">Neighbourhood: PARQUE MOSCOSO<br>                     Cluster: 0<br>                     Número de Citas: 802</div>`)[0];
+                popup_f5c0db55df8b0eabd8d2c6bcfe9a8b9b.setContent(html_864d789edadddd870a0cb514d6baa950);
+            
+        
+
+        marker_604637c0e783010085d16ccb9b42a624.bindPopup(popup_f5c0db55df8b0eabd8d2c6bcfe9a8b9b)
+        ;
+
+        
+    
+    
+            var marker_9ef89ec76f481f69f937da257adb0edb = L.marker(
+                [-20.3141932, -40.3404421],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_8083bcf172f9dd6d288c92b586bad813 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ef89ec76f481f69f937da257adb0edb.setIcon(icon_8083bcf172f9dd6d288c92b586bad813);
+        
+    
+        var popup_8aad6e3b69c8029b93f569dd5837ea71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e2233050952a111d6d9a284c535a0ad = $(`<div id="html_6e2233050952a111d6d9a284c535a0ad" style="width: 100.0%; height: 100.0%;">Neighbourhood: PIEDADE<br>                     Cluster: 0<br>                     Número de Citas: 452</div>`)[0];
+                popup_8aad6e3b69c8029b93f569dd5837ea71.setContent(html_6e2233050952a111d6d9a284c535a0ad);
+            
+        
+
+        marker_9ef89ec76f481f69f937da257adb0edb.bindPopup(popup_8aad6e3b69c8029b93f569dd5837ea71)
+        ;
+
+        
+    
+    
+            var marker_8530a9f5bf8dfd4134df281c21cee0e3 = L.marker(
+                [-20.2900766, -40.2980132],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_bbf1dc83aec41a4069bae20d2adb318c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8530a9f5bf8dfd4134df281c21cee0e3.setIcon(icon_bbf1dc83aec41a4069bae20d2adb318c);
+        
+    
+        var popup_ec16388846ca0f486e497d5566512091 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0c37678182a196fde48b21312e5d42a = $(`<div id="html_f0c37678182a196fde48b21312e5d42a" style="width: 100.0%; height: 100.0%;">Neighbourhood: PONTAL DE CAMBURI<br>                     Cluster: 8<br>                     Número de Citas: 69</div>`)[0];
+                popup_ec16388846ca0f486e497d5566512091.setContent(html_f0c37678182a196fde48b21312e5d42a);
+            
+        
+
+        marker_8530a9f5bf8dfd4134df281c21cee0e3.bindPopup(popup_ec16388846ca0f486e497d5566512091)
+        ;
+
+        
+    
+    
+            var marker_696bd9f5a4531e473061d4d82c878cd7 = L.marker(
+                [-20.2996261, -40.2922686],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_9a096a83a529e1bcf99b6faa76befb5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_696bd9f5a4531e473061d4d82c878cd7.setIcon(icon_9a096a83a529e1bcf99b6faa76befb5c);
+        
+    
+        var popup_85a827a9ec06f071adb89880e936ec01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd6a57139b7b844e5d0e13c5cab7fa2f = $(`<div id="html_dd6a57139b7b844e5d0e13c5cab7fa2f" style="width: 100.0%; height: 100.0%;">Neighbourhood: PRAIA DO CANTO<br>                     Cluster: 4<br>                     Número de Citas: 1035</div>`)[0];
+                popup_85a827a9ec06f071adb89880e936ec01.setContent(html_dd6a57139b7b844e5d0e13c5cab7fa2f);
+            
+        
+
+        marker_696bd9f5a4531e473061d4d82c878cd7.bindPopup(popup_85a827a9ec06f071adb89880e936ec01)
+        ;
+
+        
+    
+    
+            var marker_11384ba3007d5f520aa09b8c45cdedcd = L.marker(
+                [-20.3130059, -40.2992897],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_1a9e6e76c5301d07d5684ef311bb9ee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_11384ba3007d5f520aa09b8c45cdedcd.setIcon(icon_1a9e6e76c5301d07d5684ef311bb9ee9);
+        
+    
+        var popup_390f67aac8273afcaea497d72b927497 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_caeba8322f594411185a0743e4b1a553 = $(`<div id="html_caeba8322f594411185a0743e4b1a553" style="width: 100.0%; height: 100.0%;">Neighbourhood: PRAIA DO SUÁ<br>                     Cluster: 4<br>                     Número de Citas: 1288</div>`)[0];
+                popup_390f67aac8273afcaea497d72b927497.setContent(html_caeba8322f594411185a0743e4b1a553);
+            
+        
+
+        marker_11384ba3007d5f520aa09b8c45cdedcd.bindPopup(popup_390f67aac8273afcaea497d72b927497)
+        ;
+
+        
+    
+    
+            var marker_b30311922e34db6ee0375e026ae194ea = L.marker(
+                [-20.2791758, -40.3286416],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_e314aec5638c635d77461c850a1d00a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b30311922e34db6ee0375e026ae194ea.setIcon(icon_e314aec5638c635d77461c850a1d00a4);
+        
+    
+        var popup_7387121e756542a7b3d56fe60d9db1a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f15ca551fcf44471c8052c1a50d4980 = $(`<div id="html_4f15ca551fcf44471c8052c1a50d4980" style="width: 100.0%; height: 100.0%;">Neighbourhood: REDENÇÃO<br>                     Cluster: 2<br>                     Número de Citas: 1553</div>`)[0];
+                popup_7387121e756542a7b3d56fe60d9db1a8.setContent(html_4f15ca551fcf44471c8052c1a50d4980);
+            
+        
+
+        marker_b30311922e34db6ee0375e026ae194ea.bindPopup(popup_7387121e756542a7b3d56fe60d9db1a8)
+        ;
+
+        
+    
+    
+            var marker_7b5431e05d10ab8a9a22b4ffdc9a6f4e = L.marker(
+                [-20.270654, -40.2929069],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_0188f0498107372dab68dcf732055010 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_7b5431e05d10ab8a9a22b4ffdc9a6f4e.setIcon(icon_0188f0498107372dab68dcf732055010);
+        
+    
+        var popup_c831d131a2c5f39e75ee8adb810e3952 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6214487b8f9e3d6a80ed790fc517141 = $(`<div id="html_f6214487b8f9e3d6a80ed790fc517141" style="width: 100.0%; height: 100.0%;">Neighbourhood: REPÚBLICA<br>                     Cluster: 9<br>                     Número de Citas: 835</div>`)[0];
+                popup_c831d131a2c5f39e75ee8adb810e3952.setContent(html_f6214487b8f9e3d6a80ed790fc517141);
+            
+        
+
+        marker_7b5431e05d10ab8a9a22b4ffdc9a6f4e.bindPopup(popup_c831d131a2c5f39e75ee8adb810e3952)
+        ;
+
+        
+    
+    
+            var marker_bb1e7671e01dfa4d73f83b9348f9c120 = L.marker(
+                [-20.2729812, -40.3177959],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_025a149740f8e0e8e8594dc59901b104 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_bb1e7671e01dfa4d73f83b9348f9c120.setIcon(icon_025a149740f8e0e8e8594dc59901b104);
+        
+    
+        var popup_7aebdbcbf0f57b016ba0eeda39302059 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5a979f557d52836f390cb932f074370 = $(`<div id="html_b5a979f557d52836f390cb932f074370" style="width: 100.0%; height: 100.0%;">Neighbourhood: RESISTÊNCIA<br>                     Cluster: 2<br>                     Número de Citas: 4431</div>`)[0];
+                popup_7aebdbcbf0f57b016ba0eeda39302059.setContent(html_b5a979f557d52836f390cb932f074370);
+            
+        
+
+        marker_bb1e7671e01dfa4d73f83b9348f9c120.bindPopup(popup_7aebdbcbf0f57b016ba0eeda39302059)
+        ;
+
+        
+    
+    
+            var marker_4c1d912cff61a4bfbf650b4def096a53 = L.marker(
+                [-20.3125183, -40.3254519],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_2c7f526c5136533b1d468376c7ed710f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4c1d912cff61a4bfbf650b4def096a53.setIcon(icon_2c7f526c5136533b1d468376c7ed710f);
+        
+    
+        var popup_dc7a4799c479f1bf2193670818ded080 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c19dcd73bbd1ff2856c0cefa34334189 = $(`<div id="html_c19dcd73bbd1ff2856c0cefa34334189" style="width: 100.0%; height: 100.0%;">Neighbourhood: ROMÃO<br>                     Cluster: 6<br>                     Número de Citas: 2215</div>`)[0];
+                popup_dc7a4799c479f1bf2193670818ded080.setContent(html_c19dcd73bbd1ff2856c0cefa34334189);
+            
+        
+
+        marker_4c1d912cff61a4bfbf650b4def096a53.bindPopup(popup_dc7a4799c479f1bf2193670818ded080)
+        ;
+
+        
+    
+    
+            var marker_7254b403045431942ae311dc6b13926b = L.marker(
+                [-20.3041278, -40.320348],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_6dda6180a970b87090d8a39421276d46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_7254b403045431942ae311dc6b13926b.setIcon(icon_6dda6180a970b87090d8a39421276d46);
+        
+    
+        var popup_43a9d5470672b5d5b3bac1cb77bda982 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dafb7b1c34c1eb352c4dd5c2f4fde7b3 = $(`<div id="html_dafb7b1c34c1eb352c4dd5c2f4fde7b3" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTA CECÍLIA<br>                     Cluster: 6<br>                     Número de Citas: 448</div>`)[0];
+                popup_43a9d5470672b5d5b3bac1cb77bda982.setContent(html_dafb7b1c34c1eb352c4dd5c2f4fde7b3);
+            
+        
+
+        marker_7254b403045431942ae311dc6b13926b.bindPopup(popup_43a9d5470672b5d5b3bac1cb77bda982)
+        ;
+
+        
+    
+    
+            var marker_d69b0fc2f5630fe912d1e130cb672caa = L.marker(
+                [-20.3186884, -40.3452254],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_cdf207d50403e47977cef2d34ac1efcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d69b0fc2f5630fe912d1e130cb672caa.setIcon(icon_cdf207d50403e47977cef2d34ac1efcf);
+        
+    
+        var popup_d9356331a4eda2dac4e38694eb654153 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24fb329ca3df23369df766dd2042170d = $(`<div id="html_24fb329ca3df23369df766dd2042170d" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTA CLARA<br>                     Cluster: 0<br>                     Número de Citas: 506</div>`)[0];
+                popup_d9356331a4eda2dac4e38694eb654153.setContent(html_24fb329ca3df23369df766dd2042170d);
+            
+        
+
+        marker_d69b0fc2f5630fe912d1e130cb672caa.bindPopup(popup_d9356331a4eda2dac4e38694eb654153)
+        ;
+
+        
+    
+    
+            var marker_043b080925d2ff7ef160fcc7a61124b3 = L.marker(
+                [-20.3095138, -40.2941835],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_7f9770bba84e9852738f3a8050d014c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_043b080925d2ff7ef160fcc7a61124b3.setIcon(icon_7f9770bba84e9852738f3a8050d014c3);
+        
+    
+        var popup_9ebe0abdb4668203e7e7ec89f3704344 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be0abd19cab33982c2f6aada5720385e = $(`<div id="html_be0abd19cab33982c2f6aada5720385e" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTA HELENA<br>                     Cluster: 4<br>                     Número de Citas: 178</div>`)[0];
+                popup_9ebe0abdb4668203e7e7ec89f3704344.setContent(html_be0abd19cab33982c2f6aada5720385e);
+            
+        
+
+        marker_043b080925d2ff7ef160fcc7a61124b3.bindPopup(popup_9ebe0abdb4668203e7e7ec89f3704344)
+        ;
+
+        
+    
+    
+            var marker_aa173d3a54628e8ca3be503b86063486 = L.marker(
+                [-20.2914708, -40.3018426],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_6ca00d4d540d9b1ccc6f76f866037aa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_aa173d3a54628e8ca3be503b86063486.setIcon(icon_6ca00d4d540d9b1ccc6f76f866037aa2);
+        
+    
+        var popup_609d43562195eb2e13be59b05040b16b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_338d4f18f424b2d68f858ca9b7bb7630 = $(`<div id="html_338d4f18f424b2d68f858ca9b7bb7630" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTA LUÍZA<br>                     Cluster: 8<br>                     Número de Citas: 428</div>`)[0];
+                popup_609d43562195eb2e13be59b05040b16b.setContent(html_338d4f18f424b2d68f858ca9b7bb7630);
+            
+        
+
+        marker_aa173d3a54628e8ca3be503b86063486.bindPopup(popup_609d43562195eb2e13be59b05040b16b)
+        ;
+
+        
+    
+    
+            var marker_f3b942cd0f6d7d9deda452f3019646fd = L.marker(
+                [-20.3024142, -40.2999279],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_14012fc27bf37ca58a36759ec38676ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f3b942cd0f6d7d9deda452f3019646fd.setIcon(icon_14012fc27bf37ca58a36759ec38676ec);
+        
+    
+        var popup_c24b3624b570bde24cf52e12545bb734 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e041e7acb2472ed25ff5fab80b64a46 = $(`<div id="html_1e041e7acb2472ed25ff5fab80b64a46" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTA LÚCIA<br>                     Cluster: 11<br>                     Número de Citas: 438</div>`)[0];
+                popup_c24b3624b570bde24cf52e12545bb734.setContent(html_1e041e7acb2472ed25ff5fab80b64a46);
+            
+        
+
+        marker_f3b942cd0f6d7d9deda452f3019646fd.bindPopup(popup_c24b3624b570bde24cf52e12545bb734)
+        ;
+
+        
+    
+    
+            var marker_e21ce11484d646c13b1d17bc70625813 = L.marker(
+                [-20.2873442, -40.3101388],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_da4591511eb6a0af95eae9a1c08ed7e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e21ce11484d646c13b1d17bc70625813.setIcon(icon_da4591511eb6a0af95eae9a1c08ed7e1);
+        
+    
+        var popup_ab8f233c7a13d2d4736124fd348f174a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1567e4bca0abb3dbd85a586872ff1deb = $(`<div id="html_1567e4bca0abb3dbd85a586872ff1deb" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTA MARTHA<br>                     Cluster: 8<br>                     Número de Citas: 3131</div>`)[0];
+                popup_ab8f233c7a13d2d4736124fd348f174a.setContent(html_1567e4bca0abb3dbd85a586872ff1deb);
+            
+        
+
+        marker_e21ce11484d646c13b1d17bc70625813.bindPopup(popup_ab8f233c7a13d2d4736124fd348f174a)
+        ;
+
+        
+    
+    
+            var marker_9202a42234410fcaff50f70a597319c4 = L.marker(
+                [-20.3110702, -40.348414],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_378e680532d4a47ec821918f5655f20e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9202a42234410fcaff50f70a597319c4.setIcon(icon_378e680532d4a47ec821918f5655f20e);
+        
+    
+        var popup_e575f4cdbfb8e19847fe6272d200b6da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_357fa552dfb37f3cd71d0ed3089439ff = $(`<div id="html_357fa552dfb37f3cd71d0ed3089439ff" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTA TEREZA<br>                     Cluster: 0<br>                     Número de Citas: 1332</div>`)[0];
+                popup_e575f4cdbfb8e19847fe6272d200b6da.setContent(html_357fa552dfb37f3cd71d0ed3089439ff);
+            
+        
+
+        marker_9202a42234410fcaff50f70a597319c4.bindPopup(popup_e575f4cdbfb8e19847fe6272d200b6da)
+        ;
+
+        
+    
+    
+            var marker_13b6634b430414fc5c5a9bc15d7cfe21 = L.marker(
+                [-20.2793443, -40.332469],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_2ac1ce4fcea3d812ed188c3b829c8562 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_13b6634b430414fc5c5a9bc15d7cfe21.setIcon(icon_2ac1ce4fcea3d812ed188c3b829c8562);
+        
+    
+        var popup_c88004d64f3f3ff2dd40ddb82cd12a4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17ca34dc8334245259be810815516b93 = $(`<div id="html_17ca34dc8334245259be810815516b93" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTO ANDRÉ<br>                     Cluster: 3<br>                     Número de Citas: 2571</div>`)[0];
+                popup_c88004d64f3f3ff2dd40ddb82cd12a4f.setContent(html_17ca34dc8334245259be810815516b93);
+            
+        
+
+        marker_13b6634b430414fc5c5a9bc15d7cfe21.bindPopup(popup_c88004d64f3f3ff2dd40ddb82cd12a4f)
+        ;
+
+        
+    
+    
+            var marker_158c346e0fbad322cf7c63c78604895b = L.marker(
+                [-20.3096593, -40.3535155],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_c7ce00afd46aae48518d49841985c473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_158c346e0fbad322cf7c63c78604895b.setIcon(icon_c7ce00afd46aae48518d49841985c473);
+        
+    
+        var popup_ca90c34704c0dd42a77a947843f847af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61b5be9bbca6aa11bebe6ebf2a07d65d = $(`<div id="html_61b5be9bbca6aa11bebe6ebf2a07d65d" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTO ANTÔNIO<br>                     Cluster: 0<br>                     Número de Citas: 2743</div>`)[0];
+                popup_ca90c34704c0dd42a77a947843f847af.setContent(html_61b5be9bbca6aa11bebe6ebf2a07d65d);
+            
+        
+
+        marker_158c346e0fbad322cf7c63c78604895b.bindPopup(popup_ca90c34704c0dd42a77a947843f847af)
+        ;
+
+        
+    
+    
+            var marker_7d7b72364baab8aa462b6200f3cf303b = L.marker(
+                [-20.3019461, -40.3171578],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_7e51f500c1086c1037c3daa5ae716d0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_7d7b72364baab8aa462b6200f3cf303b.setIcon(icon_7e51f500c1086c1037c3daa5ae716d0e);
+        
+    
+        var popup_7f78216ed110dce25b92eb8ddf275025 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7f736a26111fef47092bc06576fad68 = $(`<div id="html_f7f736a26111fef47092bc06576fad68" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTOS DUMONT<br>                     Cluster: 7<br>                     Número de Citas: 1276</div>`)[0];
+                popup_7f78216ed110dce25b92eb8ddf275025.setContent(html_f7f736a26111fef47092bc06576fad68);
+            
+        
+
+        marker_7d7b72364baab8aa462b6200f3cf303b.bindPopup(popup_7f78216ed110dce25b92eb8ddf275025)
+        ;
+
+        
+    
+    
+            var marker_dd22755adcc81c95a745dfe504f6dcfc = L.marker(
+                [-20.2838914, -40.3337448],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_1f0b40b225f15be189cf744fff261268 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dd22755adcc81c95a745dfe504f6dcfc.setIcon(icon_1f0b40b225f15be189cf744fff261268);
+        
+    
+        var popup_6b0e1eb309ff330311e3309c9d077f3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb6795e1290c5b8b2bd4675ed55b75f8 = $(`<div id="html_eb6795e1290c5b8b2bd4675ed55b75f8" style="width: 100.0%; height: 100.0%;">Neighbourhood: SANTOS REIS<br>                     Cluster: 3<br>                     Número de Citas: 547</div>`)[0];
+                popup_6b0e1eb309ff330311e3309c9d077f3e.setContent(html_eb6795e1290c5b8b2bd4675ed55b75f8);
+            
+        
+
+        marker_dd22755adcc81c95a745dfe504f6dcfc.bindPopup(popup_6b0e1eb309ff330311e3309c9d077f3e)
+        ;
+
+        
+    
+    
+            var marker_c9020c8c46641917cb57ecfef124d2e0 = L.marker(
+                [-20.263254, -40.2964175],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_1d4554171fc86ded5c21882642f436d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_c9020c8c46641917cb57ecfef124d2e0.setIcon(icon_1d4554171fc86ded5c21882642f436d4);
+        
+    
+        var popup_1245f35a43a6a5e7f548ed4db6379305 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5819da901630d6230d9caaaf80c45814 = $(`<div id="html_5819da901630d6230d9caaaf80c45814" style="width: 100.0%; height: 100.0%;">Neighbourhood: SEGURANÇA DO LAR<br>                     Cluster: 9<br>                     Número de Citas: 145</div>`)[0];
+                popup_1245f35a43a6a5e7f548ed4db6379305.setContent(html_5819da901630d6230d9caaaf80c45814);
+            
+        
+
+        marker_c9020c8c46641917cb57ecfef124d2e0.bindPopup(popup_1245f35a43a6a5e7f548ed4db6379305)
+        ;
+
+        
+    
+    
+            var marker_c3b69131e4531c1c0b15233489f87eef = L.marker(
+                [-20.2613736, -40.2954601],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_43518dffcbdcf1b73b2b1c20ed108ee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_c3b69131e4531c1c0b15233489f87eef.setIcon(icon_43518dffcbdcf1b73b2b1c20ed108ee4);
+        
+    
+        var popup_d8944d7f6566fc5b594a05b9e89d80ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b347fcfe13292b30a0d1860aed738f28 = $(`<div id="html_b347fcfe13292b30a0d1860aed738f28" style="width: 100.0%; height: 100.0%;">Neighbourhood: SOLON BORGES<br>                     Cluster: 9<br>                     Número de Citas: 469</div>`)[0];
+                popup_d8944d7f6566fc5b594a05b9e89d80ad.setContent(html_b347fcfe13292b30a0d1860aed738f28);
+            
+        
+
+        marker_c3b69131e4531c1c0b15233489f87eef.bindPopup(popup_d8944d7f6566fc5b594a05b9e89d80ad)
+        ;
+
+        
+    
+    
+            var marker_e71d5ecddd1850436c49f53b2524c354 = L.marker(
+                [-20.3010893, -40.3069481],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_b8bae7df9c1380850dc029e90d40dd95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e71d5ecddd1850436c49f53b2524c354.setIcon(icon_b8bae7df9c1380850dc029e90d40dd95);
+        
+    
+        var popup_7eb2089e3860f3ebd3a0d795e7c46e7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4db63578caf0809787539c60ed9f809a = $(`<div id="html_4db63578caf0809787539c60ed9f809a" style="width: 100.0%; height: 100.0%;">Neighbourhood: SÃO BENEDITO<br>                     Cluster: 11<br>                     Número de Citas: 1439</div>`)[0];
+                popup_7eb2089e3860f3ebd3a0d795e7c46e7c.setContent(html_4db63578caf0809787539c60ed9f809a);
+            
+        
+
+        marker_e71d5ecddd1850436c49f53b2524c354.bindPopup(popup_7eb2089e3860f3ebd3a0d795e7c46e7c)
+        ;
+
+        
+    
+    
+            var marker_15a6f32b82d24b63afa134319532b9da = L.marker(
+                [-20.2928498, -40.3146056],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_b2424a1d13103cff329ceeae0a414af0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_15a6f32b82d24b63afa134319532b9da.setIcon(icon_b2424a1d13103cff329ceeae0a414af0);
+        
+    
+        var popup_0c8a16ceb1a46eab76c267ab1410c212 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_048acb8a5353a8e0090082225036a7b3 = $(`<div id="html_048acb8a5353a8e0090082225036a7b3" style="width: 100.0%; height: 100.0%;">Neighbourhood: SÃO CRISTÓVÃO<br>                     Cluster: 7<br>                     Número de Citas: 1836</div>`)[0];
+                popup_0c8a16ceb1a46eab76c267ab1410c212.setContent(html_048acb8a5353a8e0090082225036a7b3);
+            
+        
+
+        marker_15a6f32b82d24b63afa134319532b9da.bindPopup(popup_0c8a16ceb1a46eab76c267ab1410c212)
+        ;
+
+        
+    
+    
+            var marker_810beface07a8c4678b88af6254d1429 = L.marker(
+                [-20.2841595, -40.3305554],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_9ba1d5b52eadf2b77c41b52ea0416c25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_810beface07a8c4678b88af6254d1429.setIcon(icon_9ba1d5b52eadf2b77c41b52ea0416c25);
+        
+    
+        var popup_7a95cdbd6731e84d3dea7d139886e3e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6bd405b10775f75945dd7df1e5071bd = $(`<div id="html_a6bd405b10775f75945dd7df1e5071bd" style="width: 100.0%; height: 100.0%;">Neighbourhood: SÃO JOSÉ<br>                     Cluster: 3<br>                     Número de Citas: 1977</div>`)[0];
+                popup_7a95cdbd6731e84d3dea7d139886e3e2.setContent(html_a6bd405b10775f75945dd7df1e5071bd);
+            
+        
+
+        marker_810beface07a8c4678b88af6254d1429.bindPopup(popup_7a95cdbd6731e84d3dea7d139886e3e2)
+        ;
+
+        
+    
+    
+            var marker_6eb5b87dc37a06be86987d0fbb9484a6 = L.marker(
+                [-20.2819621, -40.3362962],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_66874d27e54544ac29c674b87a338b41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6eb5b87dc37a06be86987d0fbb9484a6.setIcon(icon_66874d27e54544ac29c674b87a338b41);
+        
+    
+        var popup_6245bc33649691c4ee4126bb4a9202aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fa0e1a19179db1a20461d513352e9f1 = $(`<div id="html_6fa0e1a19179db1a20461d513352e9f1" style="width: 100.0%; height: 100.0%;">Neighbourhood: SÃO PEDRO<br>                     Cluster: 3<br>                     Número de Citas: 2448</div>`)[0];
+                popup_6245bc33649691c4ee4126bb4a9202aa.setContent(html_6fa0e1a19179db1a20461d513352e9f1);
+            
+        
+
+        marker_6eb5b87dc37a06be86987d0fbb9484a6.bindPopup(popup_6245bc33649691c4ee4126bb4a9202aa)
+        ;
+
+        
+    
+    
+            var marker_d89995ba783b80959c99648985645d5b = L.marker(
+                [-20.2944114, -40.322262],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_8e8f6f3cf9669e0f4d0325ee33667524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_d89995ba783b80959c99648985645d5b.setIcon(icon_8e8f6f3cf9669e0f4d0325ee33667524);
+        
+    
+        var popup_acfb5d941bf01737c3c58be2653850a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3963a4b196119b2fce80f4b068990e41 = $(`<div id="html_3963a4b196119b2fce80f4b068990e41" style="width: 100.0%; height: 100.0%;">Neighbourhood: TABUAZEIRO<br>                     Cluster: 7<br>                     Número de Citas: 3132</div>`)[0];
+                popup_acfb5d941bf01737c3c58be2653850a7.setContent(html_3963a4b196119b2fce80f4b068990e41);
+            
+        
+
+        marker_d89995ba783b80959c99648985645d5b.bindPopup(popup_acfb5d941bf01737c3c58be2653850a7)
+        ;
+
+        
+    
+    
+            var marker_5a959a9a89a6e8b3db1d77c928fc0561 = L.marker(
+                [-20.2956027, -40.3401232],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_d781a625ef778182346a6be5c8385d41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5a959a9a89a6e8b3db1d77c928fc0561.setIcon(icon_d781a625ef778182346a6be5c8385d41);
+        
+    
+        var popup_aa6dd2d93d098cdd50d903406580e1ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_170a708ad67b6df7aad543f252db0c5f = $(`<div id="html_170a708ad67b6df7aad543f252db0c5f" style="width: 100.0%; height: 100.0%;">Neighbourhood: UNIVERSITÁRIO<br>                     Cluster: 3<br>                     Número de Citas: 152</div>`)[0];
+                popup_aa6dd2d93d098cdd50d903406580e1ed.setContent(html_170a708ad67b6df7aad543f252db0c5f);
+            
+        
+
+        marker_5a959a9a89a6e8b3db1d77c928fc0561.bindPopup(popup_aa6dd2d93d098cdd50d903406580e1ed)
+        ;
+
+        
+    
+    
+            var marker_5040a28d9207ffab18653dc0a74c16f0 = L.marker(
+                [-20.3197784, -40.3468197],
+                {}
+            ).addTo(marker_cluster_1ce09589d0ba0ad766c95fdab8277b41);
+        
+    
+            var icon_3f6a7426d08b82d82407e6be799de0eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5040a28d9207ffab18653dc0a74c16f0.setIcon(icon_3f6a7426d08b82d82407e6be799de0eb);
+        
+    
+        var popup_870360da026ebb459ef53bb68a98b917 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adf5a160022e8c9424935e527198e6e1 = $(`<div id="html_adf5a160022e8c9424935e527198e6e1" style="width: 100.0%; height: 100.0%;">Neighbourhood: VILA RUBIM<br>                     Cluster: 0<br>                     Número de Citas: 851</div>`)[0];
+                popup_870360da026ebb459ef53bb68a98b917.setContent(html_adf5a160022e8c9424935e527198e6e1);
+            
+        
+
+        marker_5040a28d9207ffab18653dc0a74c16f0.bindPopup(popup_870360da026ebb459ef53bb68a98b917)
+        ;
+
+        
+    
+    
+            var marker_cluster_b69823a8b722598e0f1b57285828b5bf = L.markerClusterGroup(
+                {}
+            );
+            map_cf1f5a6d92a6b6b1b554720167953615.addLayer(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var marker_2fd56de5b85f4f3ed26d29f8b211515d = L.marker(
+                [-20.2906076, -40.3069251],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_b112ec3f0625fc54d0d409928e6ff672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2fd56de5b85f4f3ed26d29f8b211515d.setIcon(icon_b112ec3f0625fc54d0d409928e6ff672);
+        
+    
+        var popup_8543b295c7e17c16fbb9e857b83af7f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09cc3832e8c0027ada2b50009170890a = $(`<div id="html_09cc3832e8c0027ada2b50009170890a" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Andorinhas - Dr. Luis Claudio Passos<br></div>`)[0];
+                popup_8543b295c7e17c16fbb9e857b83af7f2.setContent(html_09cc3832e8c0027ada2b50009170890a);
+            
+        
+
+        marker_2fd56de5b85f4f3ed26d29f8b211515d.bindPopup(popup_8543b295c7e17c16fbb9e857b83af7f2)
+        ;
+
+        
+    
+    
+            var marker_efbe986185569d9fe0111ee94bf0fb69 = L.marker(
+                [-20.2989404, -40.3150488],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_84dc41d8e233c37ddfc4c13ae6c89cc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_efbe986185569d9fe0111ee94bf0fb69.setIcon(icon_84dc41d8e233c37ddfc4c13ae6c89cc8);
+        
+    
+        var popup_cf39e2a2f631c399b6bc99c356145b9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c3dda730489add88ff995fb900fa1ce = $(`<div id="html_5c3dda730489add88ff995fb900fa1ce" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Bonfim (Thomaz Tommassi)<br></div>`)[0];
+                popup_cf39e2a2f631c399b6bc99c356145b9e.setContent(html_5c3dda730489add88ff995fb900fa1ce);
+            
+        
+
+        marker_efbe986185569d9fe0111ee94bf0fb69.bindPopup(popup_cf39e2a2f631c399b6bc99c356145b9e)
+        ;
+
+        
+    
+    
+            var marker_7f6ed954c68949475045c648bf42faf3 = L.marker(
+                [-20.3155575138099, -40.3527286683021],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_297fa70033cc473e5d37b0c16fe2f130 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f6ed954c68949475045c648bf42faf3.setIcon(icon_297fa70033cc473e5d37b0c16fe2f130);
+        
+    
+        var popup_577a7260548e6a603fe78c191b53af78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ea7c7d52a3ccf3c159f65c2b3029c18 = $(`<div id="html_0ea7c7d52a3ccf3c159f65c2b3029c18" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Alagoano - Ariovaldo Favalessa<br></div>`)[0];
+                popup_577a7260548e6a603fe78c191b53af78.setContent(html_0ea7c7d52a3ccf3c159f65c2b3029c18);
+            
+        
+
+        marker_7f6ed954c68949475045c648bf42faf3.bindPopup(popup_577a7260548e6a603fe78c191b53af78)
+        ;
+
+        
+    
+    
+            var marker_2a0da545494138b7279ab2f605dc9674 = L.marker(
+                [-20.3199375802873, -40.3404845039183],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_07024ecc41b6aa7cdd2c5d37524310c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2a0da545494138b7279ab2f605dc9674.setIcon(icon_07024ecc41b6aa7cdd2c5d37524310c5);
+        
+    
+        var popup_44c0b695908e84bcd7bceb8f01966475 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_694010ec78c746dd7c0683a03ca8f4b4 = $(`<div id="html_694010ec78c746dd7c0683a03ca8f4b4" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Centro (Geny Grijó)<br></div>`)[0];
+                popup_44c0b695908e84bcd7bceb8f01966475.setContent(html_694010ec78c746dd7c0683a03ca8f4b4);
+            
+        
+
+        marker_2a0da545494138b7279ab2f605dc9674.bindPopup(popup_44c0b695908e84bcd7bceb8f01966475)
+        ;
+
+        
+    
+    
+            var marker_62fbc8bff2cf55af8affb8e2dc58b788 = L.marker(
+                [-20.2760064729491, -40.3248961597421],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_ec7f9450d7ab7bb4bb8e070fe3553e0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62fbc8bff2cf55af8affb8e2dc58b788.setIcon(icon_ec7f9450d7ab7bb4bb8e070fe3553e0a);
+        
+    
+        var popup_a433ca50004f7412354cba832c989cc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42b57b53eaab41159ae6f99b2befa132 = $(`<div id="html_42b57b53eaab41159ae6f99b2befa132" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde São Pedro V – Conquista/Nova Palestina – Maria Leda Santos<br></div>`)[0];
+                popup_a433ca50004f7412354cba832c989cc8.setContent(html_42b57b53eaab41159ae6f99b2befa132);
+            
+        
+
+        marker_62fbc8bff2cf55af8affb8e2dc58b788.bindPopup(popup_a433ca50004f7412354cba832c989cc8)
+        ;
+
+        
+    
+    
+            var marker_f5b17f5580d321b848f3d98dd8d3bc3c = L.marker(
+                [-20.2978608, -40.3116614],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_05c6d4255fdef2a35649da04de534610 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5b17f5580d321b848f3d98dd8d3bc3c.setIcon(icon_05c6d4255fdef2a35649da04de534610);
+        
+    
+        var popup_c655664311d943263510aaf08095f4c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d4a6fc080a0816ba7c19d6386bd9a27 = $(`<div id="html_8d4a6fc080a0816ba7c19d6386bd9a27" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - da Penha - Dr. Gilson Santos<br></div>`)[0];
+                popup_c655664311d943263510aaf08095f4c1.setContent(html_8d4a6fc080a0816ba7c19d6386bd9a27);
+            
+        
+
+        marker_f5b17f5580d321b848f3d98dd8d3bc3c.bindPopup(popup_c655664311d943263510aaf08095f4c1)
+        ;
+
+        
+    
+    
+            var marker_937b1f63feff4b7174e80d10274c8313 = L.marker(
+                [-20.3162517, -40.3492317],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_96809555964ce00eb9791f3449af7dde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_937b1f63feff4b7174e80d10274c8313.setIcon(icon_96809555964ce00eb9791f3449af7dde);
+        
+    
+        var popup_06b026988d6c9b33d16e8e4256b07ec5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23b289182e66c3666fc123e2e7230c22 = $(`<div id="html_23b289182e66c3666fc123e2e7230c22" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - do Quadro - Avelina Maria Lacerda Gonçalves<br></div>`)[0];
+                popup_06b026988d6c9b33d16e8e4256b07ec5.setContent(html_23b289182e66c3666fc123e2e7230c22);
+            
+        
+
+        marker_937b1f63feff4b7174e80d10274c8313.bindPopup(popup_06b026988d6c9b33d16e8e4256b07ec5)
+        ;
+
+        
+    
+    
+            var marker_adf8c86ebb17ca45c5a997fd57654dc4 = L.marker(
+                [-20.3149894360496, -40.2985158683021],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_12b06fda48d9232c45b3a91c9e53c3cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_adf8c86ebb17ca45c5a997fd57654dc4.setIcon(icon_12b06fda48d9232c45b3a91c9e53c3cb);
+        
+    
+        var popup_5f5562510e6be3dd679ac6899d7a0877 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ab3f76198b7e2ad1ac8d5c27f7bac51 = $(`<div id="html_1ab3f76198b7e2ad1ac8d5c27f7bac51" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Praia do Suá (Lucilo Borges Sant’anna)<br></div>`)[0];
+                popup_5f5562510e6be3dd679ac6899d7a0877.setContent(html_1ab3f76198b7e2ad1ac8d5c27f7bac51);
+            
+        
+
+        marker_adf8c86ebb17ca45c5a997fd57654dc4.bindPopup(popup_5f5562510e6be3dd679ac6899d7a0877)
+        ;
+
+        
+    
+    
+            var marker_2c57c46470f41971361d74800b1156b4 = L.marker(
+                [-20.3164239148007, -40.3368421174119],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_406794e43ecf99beec34310781da6d24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c57c46470f41971361d74800b1156b4.setIcon(icon_406794e43ecf99beec34310781da6d24);
+        
+    
+        var popup_e21070393852d5441e86a9a1049ba5d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2548557729d49814afb2e92bc53302c = $(`<div id="html_a2548557729d49814afb2e92bc53302c" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Fonte Grande (Dr. Affonso Schwab)<br></div>`)[0];
+                popup_e21070393852d5441e86a9a1049ba5d4.setContent(html_a2548557729d49814afb2e92bc53302c);
+            
+        
+
+        marker_2c57c46470f41971361d74800b1156b4.bindPopup(popup_e21070393852d5441e86a9a1049ba5d4)
+        ;
+
+        
+    
+    
+            var marker_da6b8a7f4847f1100e9229e23c2bd621 = L.marker(
+                [-20.3182105171133, -40.3225373284397],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_01925ef2b07b9abb8b983f87840c9eed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da6b8a7f4847f1100e9229e23c2bd621.setIcon(icon_01925ef2b07b9abb8b983f87840c9eed);
+        
+    
+        var popup_c7020c1c24e2525ec3dc88c19e62862d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_075d4ad8b4d3c25f752d02a5b0828d06 = $(`<div id="html_075d4ad8b4d3c25f752d02a5b0828d06" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Forte São João (Dr. Bolivar de Abreu)<br></div>`)[0];
+                popup_c7020c1c24e2525ec3dc88c19e62862d.setContent(html_075d4ad8b4d3c25f752d02a5b0828d06);
+            
+        
+
+        marker_da6b8a7f4847f1100e9229e23c2bd621.bindPopup(popup_c7020c1c24e2525ec3dc88c19e62862d)
+        ;
+
+        
+    
+    
+            var marker_a96de2a0fc07e6c45a8b5956d5b69029 = L.marker(
+                [-20.2901524220356, -40.3439187145604],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_bbd6d1cd71bdce757542d1153bc054fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a96de2a0fc07e6c45a8b5956d5b69029.setIcon(icon_bbd6d1cd71bdce757542d1153bc054fc);
+        
+    
+        var popup_1cfc799f699ff7454310a2f249e05916 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_010b4265dd632de079bd3e6bd1e86000 = $(`<div id="html_010b4265dd632de079bd3e6bd1e86000" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Grande Vitória<br></div>`)[0];
+                popup_1cfc799f699ff7454310a2f249e05916.setContent(html_010b4265dd632de079bd3e6bd1e86000);
+            
+        
+
+        marker_a96de2a0fc07e6c45a8b5956d5b69029.bindPopup(popup_1cfc799f699ff7454310a2f249e05916)
+        ;
+
+        
+    
+    
+            var marker_7c6659bd2aafaa22d47ed260334ec30c = L.marker(
+                [-20.3032535, -40.3043916],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_1b1114119c4ecbfc9bc89f779e5c471e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c6659bd2aafaa22d47ed260334ec30c.setIcon(icon_1b1114119c4ecbfc9bc89f779e5c471e);
+        
+    
+        var popup_a86de6e3bd85fcf01ef75dd23dbf93d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dad62a896428df6aee739921cf7fddbc = $(`<div id="html_dad62a896428df6aee739921cf7fddbc" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Consolação - Maria Rangel dos Passos<br></div>`)[0];
+                popup_a86de6e3bd85fcf01ef75dd23dbf93d0.setContent(html_dad62a896428df6aee739921cf7fddbc);
+            
+        
+
+        marker_7c6659bd2aafaa22d47ed260334ec30c.bindPopup(popup_a86de6e3bd85fcf01ef75dd23dbf93d0)
+        ;
+
+        
+    
+    
+            var marker_85f8503848d1da59a6b39f044c47d0b4 = L.marker(
+                [-20.3128059, -40.3186001],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_fdafcd8364aca2ffdcd597924a8ba65b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_85f8503848d1da59a6b39f044c47d0b4.setIcon(icon_fdafcd8364aca2ffdcd597924a8ba65b);
+        
+    
+        var popup_cdabcd3cd0af00dfbdc79099c9d8f4cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cca7ad32275e73e5bbe82a20ec7e03a7 = $(`<div id="html_cca7ad32275e73e5bbe82a20ec7e03a7" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Ilha de Santa Maria<br></div>`)[0];
+                popup_cdabcd3cd0af00dfbdc79099c9d8f4cd.setContent(html_cca7ad32275e73e5bbe82a20ec7e03a7);
+            
+        
+
+        marker_85f8503848d1da59a6b39f044c47d0b4.bindPopup(popup_cdabcd3cd0af00dfbdc79099c9d8f4cd)
+        ;
+
+        
+    
+    
+            var marker_22094fc6ff65f992ecdf424146aa0b77 = L.marker(
+                [-20.3219919, -40.3495176],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_4bf297965ca99ebe94aceb0610658ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_22094fc6ff65f992ecdf424146aa0b77.setIcon(icon_4bf297965ca99ebe94aceb0610658ad4);
+        
+    
+        var popup_1cee24abce91c7fa4e68d7583326fad6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf00f04fd9d1d3ecd9032b31aae99815 = $(`<div id="html_bf00f04fd9d1d3ecd9032b31aae99815" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Ilha do Principe (Dr. Manoel Rocha Coutinho)<br></div>`)[0];
+                popup_1cee24abce91c7fa4e68d7583326fad6.setContent(html_bf00f04fd9d1d3ecd9032b31aae99815);
+            
+        
+
+        marker_22094fc6ff65f992ecdf424146aa0b77.bindPopup(popup_1cee24abce91c7fa4e68d7583326fad6)
+        ;
+
+        
+    
+    
+            var marker_97e50d929fea518271c81683fde7a408 = L.marker(
+                [-23.3509727733858, -44.7227949950313],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_48838d183f46ad3236cec4b6a5f77c67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_97e50d929fea518271c81683fde7a408.setIcon(icon_48838d183f46ad3236cec4b6a5f77c67);
+        
+    
+        var popup_95d03dab0179268c4bd41196287dfa16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0116c2a0e6fe72efe35549659a5b0e1 = $(`<div id="html_f0116c2a0e6fe72efe35549659a5b0e1" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde <br></div>`)[0];
+                popup_95d03dab0179268c4bd41196287dfa16.setContent(html_f0116c2a0e6fe72efe35549659a5b0e1);
+            
+        
+
+        marker_97e50d929fea518271c81683fde7a408.bindPopup(popup_95d03dab0179268c4bd41196287dfa16)
+        ;
+
+        
+    
+    
+            var marker_800952257801d53091abbd62ddca26e1 = L.marker(
+                [-20.2950514, -40.3085618],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_daea7da545d7c5f1dad7a776cf649402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_800952257801d53091abbd62ddca26e1.setIcon(icon_daea7da545d7c5f1dad7a776cf649402);
+        
+    
+        var popup_b75de0f0fbb4cf341396974b3465a5f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15856849fea04ff5e3406fb6c4641454 = $(`<div id="html_15856849fea04ff5e3406fb6c4641454" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Itararé - Dilson dos Santos Loureiro<br></div>`)[0];
+                popup_b75de0f0fbb4cf341396974b3465a5f2.setContent(html_15856849fea04ff5e3406fb6c4641454);
+            
+        
+
+        marker_800952257801d53091abbd62ddca26e1.bindPopup(popup_b75de0f0fbb4cf341396974b3465a5f2)
+        ;
+
+        
+    
+    
+            var marker_7685b640899237416f5cac1f569b408e = L.marker(
+                [-20.2595265494441, -40.295224919262],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_019cfe8c7167da6d723e159e23766238 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7685b640899237416f5cac1f569b408e.setIcon(icon_019cfe8c7167da6d723e159e23766238);
+        
+    
+        var popup_f8b9deb6667d5de4c90d3f11978a3434 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04c8596d39d7ce071af4a2dd339cb922 = $(`<div id="html_04c8596d39d7ce071af4a2dd339cb922" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Jabour (Dr. Carlito Von Shilgen)<br></div>`)[0];
+                popup_f8b9deb6667d5de4c90d3f11978a3434.setContent(html_04c8596d39d7ce071af4a2dd339cb922);
+            
+        
+
+        marker_7685b640899237416f5cac1f569b408e.bindPopup(popup_f8b9deb6667d5de4c90d3f11978a3434)
+        ;
+
+        
+    
+    
+            var marker_2c5caf4ff9368aca7765d88acc3ea645 = L.marker(
+                [-20.2553813, -40.2694857],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_037a1d401c02bc48233030fc38dfb462 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c5caf4ff9368aca7765d88acc3ea645.setIcon(icon_037a1d401c02bc48233030fc38dfb462);
+        
+    
+        var popup_b2d3e0cc72a7606dc50fb9a214d580bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77c07564eef0e4e910c6bf3486bede97 = $(`<div id="html_77c07564eef0e4e910c6bf3486bede97" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Jardim Camburi (Raul Oliveira Nunes)<br></div>`)[0];
+                popup_b2d3e0cc72a7606dc50fb9a214d580bf.setContent(html_77c07564eef0e4e910c6bf3486bede97);
+            
+        
+
+        marker_2c5caf4ff9368aca7765d88acc3ea645.bindPopup(popup_b2d3e0cc72a7606dc50fb9a214d580bf)
+        ;
+
+        
+    
+    
+            var marker_07e73e539aeafbee87a666e84d725e86 = L.marker(
+                [-20.2851517, -40.2976871],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_9d4ed7e7d137319188f030905b48d8fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_07e73e539aeafbee87a666e84d725e86.setIcon(icon_9d4ed7e7d137319188f030905b48d8fb);
+        
+    
+        var popup_062163e69648c40abfdfa8336c62ffba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d13c61be12d24b73c13b5dceb4bf3c36 = $(`<div id="html_d13c61be12d24b73c13b5dceb4bf3c36" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Jardim da Penha (Otaviano Rodrigues de Carvalho)<br></div>`)[0];
+                popup_062163e69648c40abfdfa8336c62ffba.setContent(html_d13c61be12d24b73c13b5dceb4bf3c36);
+            
+        
+
+        marker_07e73e539aeafbee87a666e84d725e86.bindPopup(popup_062163e69648c40abfdfa8336c62ffba)
+        ;
+
+        
+    
+    
+            var marker_075e2aea1873012b7a4ea117f13caa45 = L.marker(
+                [-20.3196076682444, -40.3041384490758],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_c14880d9abeee92f019ef59c5fcf7b7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_075e2aea1873012b7a4ea117f13caa45.setIcon(icon_c14880d9abeee92f019ef59c5fcf7b7a);
+        
+    
+        var popup_f38e5879a8f214660753c5c42f7e2d88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a84545f55c26a6f14431058ae3ed1eb9 = $(`<div id="html_a84545f55c26a6f14431058ae3ed1eb9" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Jesus de Nazaré (Dr. Luiz Castellar da Silva)<br></div>`)[0];
+                popup_f38e5879a8f214660753c5c42f7e2d88.setContent(html_a84545f55c26a6f14431058ae3ed1eb9);
+            
+        
+
+        marker_075e2aea1873012b7a4ea117f13caa45.bindPopup(popup_f38e5879a8f214660753c5c42f7e2d88)
+        ;
+
+        
+    
+    
+            var marker_bfa6646e6317c4a7e933bf67537542f5 = L.marker(
+                [-20.2570073930494, -40.2982731509241],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_4f283754960548aac7442c1fa3bd41ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bfa6646e6317c4a7e933bf67537542f5.setIcon(icon_4f283754960548aac7442c1fa3bd41ce);
+        
+    
+        var popup_c0dba9abd3f132052bf4fe792406fe4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22a8eee0a1946ae514735d61d67702ea = $(`<div id="html_22a8eee0a1946ae514735d61d67702ea" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Maria Ortiz<br></div>`)[0];
+                popup_c0dba9abd3f132052bf4fe792406fe4a.setContent(html_22a8eee0a1946ae514735d61d67702ea);
+            
+        
+
+        marker_bfa6646e6317c4a7e933bf67537542f5.bindPopup(popup_c0dba9abd3f132052bf4fe792406fe4a)
+        ;
+
+        
+    
+    
+            var marker_062904c1b940facaeac48afd00e7e339 = L.marker(
+                [-20.2962052, -40.3164285],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_16daa0be09d61bab7c781afa7a770190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_062904c1b940facaeac48afd00e7e339.setIcon(icon_16daa0be09d61bab7c781afa7a770190);
+        
+    
+        var popup_2e15cbf31aa6c04c4d3d9700b5bb9b80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94add4eaaa24b154c7558ce37ae73477 = $(`<div id="html_94add4eaaa24b154c7558ce37ae73477" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Maruípe<br></div>`)[0];
+                popup_2e15cbf31aa6c04c4d3d9700b5bb9b80.setContent(html_94add4eaaa24b154c7558ce37ae73477);
+            
+        
+
+        marker_062904c1b940facaeac48afd00e7e339.bindPopup(popup_2e15cbf31aa6c04c4d3d9700b5bb9b80)
+        ;
+
+        
+    
+    
+            var marker_51bdce8c602ee714974cefd934faded7 = L.marker(
+                [-20.272444, -40.2921121],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_9b03529ab2df45920c054e5e2a41577f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51bdce8c602ee714974cefd934faded7.setIcon(icon_9b03529ab2df45920c054e5e2a41577f);
+        
+    
+        var popup_2cea3b1b71165094a53ec1fc63710fe6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c58f81ee5961481b1500e3af92d9bda = $(`<div id="html_8c58f81ee5961481b1500e3af92d9bda" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - República (Dr. Jolindo Martins)<br></div>`)[0];
+                popup_2cea3b1b71165094a53ec1fc63710fe6.setContent(html_8c58f81ee5961481b1500e3af92d9bda);
+            
+        
+
+        marker_51bdce8c602ee714974cefd934faded7.bindPopup(popup_2cea3b1b71165094a53ec1fc63710fe6)
+        ;
+
+        
+    
+    
+            var marker_4bb75096a980203d018ebe0e636f9693 = L.marker(
+                [-20.2711389, -40.3174612],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_8ae82ed106c0b3101c4aad33c078cb0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4bb75096a980203d018ebe0e636f9693.setIcon(icon_8ae82ed106c0b3101c4aad33c078cb0e);
+        
+    
+        var popup_4578398d07f117cd3cc8a6eaa366be82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa6e9cfbc7556c0252918e8b0fedeb2e = $(`<div id="html_aa6e9cfbc7556c0252918e8b0fedeb2e" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Resistência<br></div>`)[0];
+                popup_4578398d07f117cd3cc8a6eaa366be82.setContent(html_aa6e9cfbc7556c0252918e8b0fedeb2e);
+            
+        
+
+        marker_4bb75096a980203d018ebe0e636f9693.bindPopup(popup_4578398d07f117cd3cc8a6eaa366be82)
+        ;
+
+        
+    
+    
+            var marker_2044d3ea78632dfde30a12397c5d1752 = L.marker(
+                [-20.2926560742412, -40.300031103919],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_d91e3facd8043588bed18727aea42486 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2044d3ea78632dfde30a12397c5d1752.setIcon(icon_d91e3facd8043588bed18727aea42486);
+        
+    
+        var popup_26243af0806635573f4c8732947c2e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a35e3e31168984fcc13a3d9c9ff6c94 = $(`<div id="html_4a35e3e31168984fcc13a3d9c9ff6c94" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Santa Luíza (Dr. José Moyses)<br></div>`)[0];
+                popup_26243af0806635573f4c8732947c2e88.setContent(html_4a35e3e31168984fcc13a3d9c9ff6c94);
+            
+        
+
+        marker_2044d3ea78632dfde30a12397c5d1752.bindPopup(popup_26243af0806635573f4c8732947c2e88)
+        ;
+
+        
+    
+    
+            var marker_0cfa0405e43f41c5f8d98df9798a05e6 = L.marker(
+                [-20.2863847410714, -40.3103679057676],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_5d46506905c91a46ff5ba53de00bca3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0cfa0405e43f41c5f8d98df9798a05e6.setIcon(icon_5d46506905c91a46ff5ba53de00bca3d);
+        
+    
+        var popup_7801e0bcfb9268f56665076b56d3f993 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08ece9bb9e157a3360a6303d1f40caa1 = $(`<div id="html_08ece9bb9e157a3360a6303d1f40caa1" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Santa Martha - Benedito Gomes da Silva<br></div>`)[0];
+                popup_7801e0bcfb9268f56665076b56d3f993.setContent(html_08ece9bb9e157a3360a6303d1f40caa1);
+            
+        
+
+        marker_0cfa0405e43f41c5f8d98df9798a05e6.bindPopup(popup_7801e0bcfb9268f56665076b56d3f993)
+        ;
+
+        
+    
+    
+            var marker_3ebb38732def671ebe3f6b6e1b7e4f8d = L.marker(
+                [-20.3081852, -40.3514923],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_24a15793e1a669dd11aa75ee6c5c77b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ebb38732def671ebe3f6b6e1b7e4f8d.setIcon(icon_24a15793e1a669dd11aa75ee6c5c77b2);
+        
+    
+        var popup_94ded3f06f733ce2f0b6ea97987e8701 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19a8a9717272b8cca1b2e00622efca36 = $(`<div id="html_19a8a9717272b8cca1b2e00622efca36" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Santo Antônio (Júlio Cézar Prates Mattos)<br></div>`)[0];
+                popup_94ded3f06f733ce2f0b6ea97987e8701.setContent(html_19a8a9717272b8cca1b2e00622efca36);
+            
+        
+
+        marker_3ebb38732def671ebe3f6b6e1b7e4f8d.bindPopup(popup_94ded3f06f733ce2f0b6ea97987e8701)
+        ;
+
+        
+    
+    
+            var marker_b80bfafed24b9f91ea523c71a1a29cac = L.marker(
+                [-20.2779172, -40.3322524],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_32670e7103e960dad55460e3b5e5a066 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b80bfafed24b9f91ea523c71a1a29cac.setIcon(icon_32670e7103e960dad55460e3b5e5a066);
+        
+    
+        var popup_51fb9033372956c60087aa3908fb041e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e36e6ea0bd6dad18b2ef9d6cdf484a1 = $(`<div id="html_2e36e6ea0bd6dad18b2ef9d6cdf484a1" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Santo André<br></div>`)[0];
+                popup_51fb9033372956c60087aa3908fb041e.setContent(html_2e36e6ea0bd6dad18b2ef9d6cdf484a1);
+            
+        
+
+        marker_b80bfafed24b9f91ea523c71a1a29cac.bindPopup(popup_51fb9033372956c60087aa3908fb041e)
+        ;
+
+        
+    
+    
+            var marker_fdae4264bf265eb5648917512e96abf7 = L.marker(
+                [-20.2800931, -40.3371143],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_a3be8be0643b40e79d6ac87927752c18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fdae4264bf265eb5648917512e96abf7.setIcon(icon_a3be8be0643b40e79d6ac87927752c18);
+        
+    
+        var popup_90cdf5b3fc93183d21e9744924b9e968 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57e1bea58c18e9f1bcd943c4779e8bb5 = $(`<div id="html_57e1bea58c18e9f1bcd943c4779e8bb5" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - Ilha das Caieiras - Vereador Nenel Miranda<br></div>`)[0];
+                popup_90cdf5b3fc93183d21e9744924b9e968.setContent(html_57e1bea58c18e9f1bcd943c4779e8bb5);
+            
+        
+
+        marker_fdae4264bf265eb5648917512e96abf7.bindPopup(popup_90cdf5b3fc93183d21e9744924b9e968)
+        ;
+
+        
+    
+    
+            var marker_9b4e6bef43e28949b67f4fa9815f614d = L.marker(
+                [-20.2924304, -40.3214638],
+                {}
+            ).addTo(marker_cluster_b69823a8b722598e0f1b57285828b5bf);
+        
+    
+            var icon_4228e6f36bc0d9f92bbf37c2da60491e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b4e6bef43e28949b67f4fa9815f614d.setIcon(icon_4228e6f36bc0d9f92bbf37c2da60491e);
+        
+    
+        var popup_cf7693ea63cc6881d971b3f8cd27ec47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ea09c8930791b20474fab88fac67f99 = $(`<div id="html_3ea09c8930791b20474fab88fac67f99" style="width: 100.0%; height: 100.0%;">Health Centre: Unidade de Saúde - São Cristovão<br></div>`)[0];
+                popup_cf7693ea63cc6881d971b3f8cd27ec47.setContent(html_3ea09c8930791b20474fab88fac67f99);
+            
+        
+
+        marker_9b4e6bef43e28949b67f4fa9815f614d.bindPopup(popup_cf7693ea63cc6881d971b3f8cd27ec47)
+        ;
+
+        
+    
+</script>
+</html>
