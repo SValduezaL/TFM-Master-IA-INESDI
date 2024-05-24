@@ -1,1 +1,1 @@
-{'C': 0.1, 'max_iter': 100, 'solver': 'liblinear'}
+{'C': 1, 'max_iter': 100, 'solver': 'newton-cg'}
