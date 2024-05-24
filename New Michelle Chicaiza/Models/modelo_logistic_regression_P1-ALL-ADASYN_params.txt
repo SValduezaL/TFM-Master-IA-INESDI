@@ -1,1 +1,1 @@
-{'C': 10, 'max_iter': 1000, 'solver': 'sag'}
+{'C': 10, 'max_iter': 100, 'solver': 'lbfgs'}
