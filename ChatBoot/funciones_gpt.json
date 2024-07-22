@@ -1,0 +1,110 @@
+{
+    "name": "medical_appointments",
+    "functions": [
+      {
+        "name": "consultar_informacion_dia_especialidad",
+        "description": "Devuelve información sobre los médicos y las horas de citas disponibles según el día y especialidad seleccionada",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "dia": {
+              "type": "string",
+              "description": "Día para el que se buscan las citas disponibles",
+              "example": "2024-06-10"
+            },
+            "especialidad": {
+              "type": "string",
+              "description": "Especialidad médica para la cual se buscan las citas",
+              "example": "Cardiología"
+            }
+          },
+          "required": ["dia", "especialidad"]
+        }
+      },
+      {
+        "name": "consultar_informacion_dni",
+        "description": "Busca el DNI en la base de datos y devuelve la información asociada. Si no hay información asociada, el GPT debe decir que no está registrado en la base de datos",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "DNI": {
+              "type": "string",
+              "description": "DNI a buscar, debe cumplir con el formato: ^[0-9]{7,8}[-]{1}[0-9kK]{1}$",
+              "example": "12345678-9"
+            }
+          },
+          "required": ["DNI"]
+        }
+      },
+      {
+        "name": "consultar_proxima_hora",
+        "description": "Devuelve la próxima hora disponible para cualquier especialidad",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "especialidad": {
+              "type": "string",
+              "description": "Especialidad médica opcional para la cual se busca la próxima cita disponible",
+              "example": "Cardiología"
+            }
+          }
+        }
+      },
+      {
+        "name": "consultar_proxima_hora_especialidad",
+        "description": "Devuelve la próxima hora disponible para una especialidad específica",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "especialidad": {
+              "type": "string",
+              "description": "Especialidad médica para la cual se busca la próxima cita disponible",
+              "example": "Cardiología"
+            }
+          },
+          "required": ["especialidad"]
+        }
+      },
+      {
+        "name": "agendar_cita",
+        "description": "Agendar una cita médica con fecha, hora y especialidad. Si no se proporciona el nombre del médico, se utilizará la función consultar_informacion_dia_especialidad para obtenerlo",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "fecha": {
+              "type": "string",
+              "description": "Fecha de la cita",
+              "example": "2024-06-15"
+            },
+            "hora": {
+              "type": "string",
+              "description": "Hora de la cita",
+              "example": "14:00"
+            },
+            "especialidad": {
+              "type": "string",
+              "description": "Especialidad médica para la cita",
+              "example": "Dermatología"
+            },
+            "medico": {
+              "type": "string",
+              "description": "Nombre del médico (opcional)",
+              "example": "Dr. Ana García"
+            },
+            "name": {
+              "type": "string",
+              "description": "Nombre del paciente que agendará la cita",
+              "example": "Juan Pérez"
+            },
+            "dni": {
+              "type": "string",
+              "description": "DNI del paciente, debe cumplir con el formato: ^[0-9]{7,8}[-]{1}[0-9kK]{1}$",
+              "example": "12345678-9"
+            }
+          },
+          "required": ["fecha", "hora", "especialidad", "name", "dni"]
+        }
+      }
+    ]
+  }
+  
