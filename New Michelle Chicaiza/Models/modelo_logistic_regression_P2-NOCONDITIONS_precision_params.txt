@@ -1,0 +1,1 @@
+{'C': 0.01, 'max_iter': 200, 'solver': 'saga'}
