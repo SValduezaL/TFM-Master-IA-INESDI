@@ -8,6 +8,7 @@ from datetime import datetime, time, timedelta
 from typing import Dict, List, Union
 
 import json
+import os
 
 # Importar la biblioteca OpenAI
 from openai import OpenAI, AssistantEventHandler
@@ -45,10 +46,12 @@ def show_json(obj):
 
 # Configuración de credenciales de Google Sheets para acceder a las hojas de cálculo
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = Credentials.from_service_account_file(
-    '../mediagenda-solutions-5e8208b2d6a6.json',
-    scopes=scope
-)
+# Obtener el directorio del script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# Construir la ruta al archivo JSON basado en el directorio del script
+json_path = os.path.join(script_dir, 'mediagenda-solutions-5e8208b2d6a6.json')
+# Credenciales
+creds = Credentials.from_service_account_file(json_path, scopes = scope)
 client_gspread = gspread.authorize(creds)
 
 # ID de la hoja de cálculo de Google Sheets
