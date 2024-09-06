@@ -9,6 +9,7 @@ from typing import Dict, List, Union
 
 import json
 import os
+import logging
 
 # Importar la biblioteca OpenAI
 from openai import OpenAI, AssistantEventHandler
@@ -1452,15 +1453,19 @@ def main():
     '''
     Programa principal "main"
     '''
-    updater = Updater(token=TELEGRAM_TOKEN, use_context=True)
-    dispatcher = updater.dispatcher
+    try:
+        updater = Updater(token=TELEGRAM_TOKEN, use_context=True)
+        dispatcher = updater.dispatcher
 
-    dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
-    dispatcher.add_handler(MessageHandler(Filters.location, handle_location))
-    dispatcher.add_handler(MessageHandler(Filters.photo, handle_photo))
+        dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
+        dispatcher.add_handler(MessageHandler(Filters.location, handle_location))
+        dispatcher.add_handler(MessageHandler(Filters.photo, handle_photo))
 
-    updater.start_polling()
-    updater.idle()
+        updater.start_polling()
+        updater.idle()
+    except Exception as e:
+        logging.error("Error ocurrido: %s", str(e))
+        raise
 
 if __name__ == '__main__':
     main()
