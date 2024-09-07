@@ -1,0 +1,46 @@
+** EC2: UBUNTU **
+
+
+* Generación de Clave SSH:
+
+ssh-keygen -t ed25519 -C "svalduezal@gmail.com"
+   [-t ed25519: Para generar la clave SSH con el algoritmo Ed25519]
+	Este es un tipo de clave pública basado en curvas elípticas que se considera muy seguro y eficiente. Ed25519 es generalmente preferido sobre otros tipos de claves como RSA debido a su menor tamaño y mayor velocidad, manteniendo un alto nivel de seguridad.
+   [-C "svalduezal@gmail.com": Para añadir el comentario e identificar más fácilmente la Clave]
+
+The key fingerprint is:
+SHA256:kMp7TNDjPENPawv7okkVDC9WjPRK3K1OZj4G1GlJaBI svalduezal@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|  Eoo+o          |
+|  ..+@.=         |
+|   oB ^ o        |
+|   = X B .       |
+|    = & S        |
+|     % * .       |
+|    o O .        |
+|   . +.o         |
+|    o. ..        |
++----[SHA256]-----+
+
+Llave pública:
+   [Se obtiene con cat ~/.ssh/id_ed25519.pub]
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbxxHrPLgrsXGoVrHbFSciTYBCuim2PeQmVvyWzaLSf svalduezal@gmail.com
+
+
+* Se añade al Agente SSH para que pueda ser usada por Git:
+
+eval "$(ssh-agent -s)"
+   [El comando eval ejecuta el código generado por ssh-agent -s en el contexto de tu shell actual. Esto configura las variables de entorno correctamente para que el shell pueda comunicarse con el agente SSH
+   [ssh-agent -s: Inicia el agente SSH en segundo plano y prepara las variables de entorno necesarias para su funcionamiento.]
+   [Respuesta: Agent pid 129481: Indica que el agente SSH se ha iniciado y está en ejecución]
+
+ssh-add ~/.ssh/id_ed25519
+   [ssh-add: Es el comando utilizado para añadir claves privadas al agente SSH.]
+   [~/.ssh/id_ed25519: Es la ruta a tu clave privada. Si guardaste tu clave en una ubicación diferente o con un nombre diferente, asegúrate de reemplazar este camino con la ruta correcta.]
+
+
+* Comprobar conexión a Github:
+ssh -T git@github.com
+   [Respuesta: Hi SValduezaL! You've successfully authenticated, but GitHub does not provide shell access.]
+
