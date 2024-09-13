@@ -30,8 +30,8 @@ from requests.exceptions import RequestException
 
 # Inicializar el cliente de OpenAI con la clave API proporcionada
 client = OpenAI(api_key='sk-proj-Uced5j5iSx13bk7IUtbLT3BlbkFJmJpHhTPQDRZaLtuivsUc')
-assistant_id = 'asst_BGagd32hcZB3h8WlNvX2J1ku' # MediAgenda Solutions (MA)
-assistant = client.beta.assistants.retrieve(assistant_id=assistant_id)
+ASSISTANT_ID = 'asst_BGagd32hcZB3h8WlNvX2J1ku' # MediAgenda Solutions (MA)
+assistant = client.beta.assistants.retrieve(assistant_id=ASSISTANT_ID)
 
 # Inicializar el cliente de Telegram con el token del bot
 TELEGRAM_TOKEN = '7193381473:AAHNVUdTBPXKCB0rMXGeOwsY53r90nG6eyg' # Basilio_MediAgenda_bot
@@ -60,7 +60,7 @@ client_gspread = gspread.authorize(creds)
 SPREADSHEET_ID = '1IuMVqClEJ-qhJxnXb02TunbI1rxMvmj4IO863Nf5ygg' # agenda_medica_HC (SVL)
 
 # Abrir la hoja de cálculo por su ID y seleccionar las hojas necesarias
-spreadsheet = client_gspread.open_by_key(spreadsheet_id)
+spreadsheet = client_gspread.open_by_key(SPREADSHEET_ID)
 agenda_worksheet = spreadsheet.sheet1  # Hoja para agendar citas
 medico_worksheet = spreadsheet.get_worksheet(1)  # Hoja con médicos y especialidades
 
