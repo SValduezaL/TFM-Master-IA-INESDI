@@ -31,12 +31,12 @@ from requests.exceptions import RequestException
 
 # Inicializar el cliente de OpenAI con la clave API proporcionada
 client = OpenAI(api_key='sk-proj-Uced5j5iSx13bk7IUtbLT3BlbkFJmJpHhTPQDRZaLtuivsUc')
-ASSISTANT_ID = 'asst_BGagd32hcZB3h8WlNvX2J1ku' # MediAgenda Solutions (MA)
+ASSISTANT_ID = 'asst_BGagd32hcZB3h8WlNvX2J1ku' # MediAgenda Solutions
 assistant = client.beta.assistants.retrieve(assistant_id=ASSISTANT_ID)
 
 # Inicializar el cliente de Telegram con el token del bot
-# TELEGRAM_TOKEN = '7193381473:AAHNVUdTBPXKCB0rMXGeOwsY53r90nG6eyg' # https://t.me/Basilio_MediAgenda_bot
-TELEGRAM_TOKEN = '7365309172:AAHkGNnXzUPHyv8-Mo5VgiorIWTvIm_NXSo' # https://t.me/MediAgendaBot
+# TELEGRAM_TOKEN = '7365309172:AAHkGNnXzUPHyv8-Mo5VgiorIWTvIm_NXSo' # https://t.me/MediAgendaBot
+TELEGRAM_TOKEN = '7193381473:AAHNVUdTBPXKCB0rMXGeOwsY53r90nG6eyg' # https://t.me/Basilio_MediAgenda_bot
 
 # Función para mostrar JSON en consola, usada para depuración
 def show_json(obj):
