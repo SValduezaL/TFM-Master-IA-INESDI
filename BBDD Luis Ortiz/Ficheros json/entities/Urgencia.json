@@ -1,9 +1,0 @@
-{
-  "id": "77115d8d-e655-47c8-adf5-77f113669ec0",
-  "name": "Urgencia",
-  "isOverridable": true,
-  "isEnum": false,
-  "isRegexp": false,
-  "automatedExpansion": true,
-  "allowFuzzyExtraction": false
-}

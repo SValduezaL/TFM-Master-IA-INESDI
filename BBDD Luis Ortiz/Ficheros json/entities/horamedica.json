@@ -1,9 +1,0 @@
-{
-  "id": "6accf037-9a9a-4d86-a894-318cc0443572",
-  "name": "horamedica",
-  "isOverridable": true,
-  "isEnum": false,
-  "isRegexp": false,
-  "automatedExpansion": true,
-  "allowFuzzyExtraction": false
-}
