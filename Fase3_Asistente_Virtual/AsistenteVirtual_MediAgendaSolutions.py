@@ -1,31 +1,32 @@
-# Importar la biblioteca OpenAI
+'''
+Asistente Virtual Basilio para MediAgendaSolutions
+'''
+
+# Importar las bibliotecas necesarias para interactuar con OpenAI y manejar eventos
 from openai import OpenAI, AssistantEventHandler
 
-# Importar override de typing_extensions
-from typing_extensions import override
+# Importar bibliotecas para manejar el tiempo y las fechas
+import time as t
+from datetime import datetime, time, timedelta
+from typing import Dict, List, Union
 
+# Importar bibliotecas para manejar JSON y el sistema de archivos
 import json
 import os
 import logging
 
-# Importar gspread para Google Sheets
+# Importar override para facilitar la anotación de métodos en clases
+from typing_extensions import override
+
+# Importar gspread para interactuar con Google Sheets
 import gspread
 from google.oauth2.service_account import Credentials
 
-# Importar módulos de Telegram
-from telegram import Update, Bot, ChatAction, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, CallbackQueryHandler
+# Importar bibliotecas de Telegram para manejar actualizaciones y mensajes
+from telegram import Update, Bot, ChatAction
+from telegram.ext import Updater, MessageHandler, Filters, CallbackContext
 
-# Importar datetime para manejar fechas y horas
-import time as t
-from datetime import datetime, time, timedelta
-
-from typing import Dict, List, Union
-
-# Importar requests para realizar solicitudes HTTP
-import requests
-
-# Importar requests para realizar solicitudes HTTP
+# Importar excepciones para manejar errores en las solicitudes
 from requests.exceptions import RequestException
 
 # Inicializar el cliente de OpenAI con la clave API proporcionada
@@ -34,7 +35,8 @@ ASSISTANT_ID = 'asst_BGagd32hcZB3h8WlNvX2J1ku' # MediAgenda Solutions (MA)
 assistant = client.beta.assistants.retrieve(assistant_id=ASSISTANT_ID)
 
 # Inicializar el cliente de Telegram con el token del bot
-TELEGRAM_TOKEN = '7193381473:AAHNVUdTBPXKCB0rMXGeOwsY53r90nG6eyg' # Basilio_MediAgenda_bot
+# TELEGRAM_TOKEN = '7193381473:AAHNVUdTBPXKCB0rMXGeOwsY53r90nG6eyg' # https://t.me/Basilio_MediAgenda_bot
+TELEGRAM_TOKEN = '7365309172:AAHkGNnXzUPHyv8-Mo5VgiorIWTvIm_NXSo' # https://t.me/MediAgendaBot
 
 # Función para mostrar JSON en consola, usada para depuración
 def show_json(obj):
@@ -45,7 +47,8 @@ def show_json(obj):
 
 # Configuración de credenciales de Google Sheets para acceder a las hojas de cálculo
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-#creds = Credentials.from_service_account_file('C:\\Users\\nerea\\Downloads\\mediagenda-solutions-5e8208b2d6a6.json', scopes=scope)
+
+# creds = Credentials.from_service_account_file('C:\\Users\\nerea\\Downloads\\mediagenda-solutions-5e8208b2d6a6.json', scopes=scope)
 
 # Obtener el directorio del script
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -57,7 +60,7 @@ creds = Credentials.from_service_account_file(json_path, scopes = scope)
 client_gspread = gspread.authorize(creds)
 
 # ID de la hoja de cálculo de Google Sheets
-SPREADSHEET_ID = '1IuMVqClEJ-qhJxnXb02TunbI1rxMvmj4IO863Nf5ygg' # agenda_medica_HC (SVL)
+SPREADSHEET_ID = '1QXAV39MG5pE9JD7YW4H3bJowMXoI72bjvcD4MBN7Jww'
 
 # Abrir la hoja de cálculo por su ID y seleccionar las hojas necesarias
 spreadsheet = client_gspread.open_by_key(SPREADSHEET_ID)
@@ -223,7 +226,7 @@ def verificar_disponibilidad(
     citas_reservadas = [
         (row[1], row[5], row[6]) # Tuplas con el nombre del médico, fecha y hora de la cita
         for row in agenda_worksheet.get_all_values() # Obtener todas las filas de la agenda
-        if row[1] in medicos and row[5] == fecha and row[7].lower() != 'Cancelada' # Filtrar por fecha y médico
+        if row[1] in medicos and row[5] == fecha and row[7].lower() != 'cancelada' # Filtrar por fecha y médico
     ]
 
      # Si no se especifica una hora, devolver todas las horas disponibles para la fecha
@@ -389,13 +392,12 @@ def iniciar_agendar_cita(params: dict) -> str:
 
     Args:
         params (dict): Un diccionario con las siguientes claves:
-            "tipo_agendamiento" (str): Tipo de identificación ("especialidad" o "medico").
-            "identificador" (str): Dependiendo del tipo de consulta, especifica la
-                especialidad médica o el nombre del médico.
-            "name" (str): Nombre del paciente.
-            "dni" (str): Identificación del paciente.
-            "fecha" (str): Fecha de la cita en formato YYYY-MM-DD.
-            "hora" (str): Hora de la cita en formato HH:MM.
+            "tipo_agendamiento" (str): Indica si la cita se agendará por "especialidad" o por "medico".
+            "identificador" (str): Nombre del médico o especialidad según el tipo de agendamiento.
+            "name" (str): Nombre del paciente para el que se solicita la cita.
+            "dni" (str): Identificación única del paciente (DNI o equivalente).
+            "fecha" (str): Fecha solicitada para la cita en formato YYYY-MM-DD.
+            "hora" (str): Hora solicitada para la cita en formato HH:MM.
 
     Returns:
         str: Mensaje de solicitud para completar el agendamiento, o de error.
@@ -404,28 +406,48 @@ def iniciar_agendar_cita(params: dict) -> str:
     
     # Extraer parámetros del diccionario de entrada
     tipo = params.get('tipo_agendamiento') # Tipo de agendamiento: especialidad o médico
-    identificador = params.get('identificador') # Puede ser especialidad o nombre del médico
+    identificador = params.get('identificador') # Especialidad o nombre del médico, según corresponda.
     name = params.get('name') # Nombre del paciente
-    dni = params.get('dni') # DNI del paciente
-    fecha = params.get('fecha') # Fecha de la cita
-    hora = redondear_a_multiplo_20_minutos(params.get('hora')) # Hora redondeada a múltiplo de 20 minutos
-
-    # Inicializamos los posibles conjuntos de médicos y especialidades disponibles
-    medicos = set() # Conjunto para almacenar médicos
-    especialidades = set() # Conjunto para almacenar especialidades
+    dni = params.get('dni') # Identificación (DNI) del paciente.
+    fecha = params.get('fecha') # Fecha solicitada para la cita.
+    # La hora se redondea a múltiplos de 20 minutos para ajustarse al formato de la agenda.
+    hora = redondear_a_multiplo_20_minutos(params.get('hora'))
     
-    # Si el tipo de agendamiento es por especialidad
+    # Se verifican citas previas del usuario para la misma fecha y hora.
+    citas_reservadas = [
+        (row[0], row[1], row[2]) # Se obtiene la ID de la cita, el médico y la especialidad.
+        for row in agenda_worksheet.get_all_values() # Se recorren todas las citas en la hoja de trabajo.
+        # Filtra las citas que coinciden con el DNI del paciente, la fecha y hora, excluyendo las canceladas.
+        if row[4] in dni and row[5] == fecha and row[6] == hora and row[7].lower() != 'cancelada'
+    ]
+	
+    # Verifica si ya existen citas reservadas en ese horario
+    ya_tiene_citas = bool(citas_reservadas)
+    
+    if ya_tiene_citas:
+        # Si ya tiene una cita en la misma fecha y hora, devuelve un mensaje indicando los detalles de la cita existente.
+        return {
+            f"No se puede agendar una cita para la fecha {fecha}{hora} solicitadas por {name} (DNI {dni}) \
+porque ya dispone de citas agendadas. A continuación se indican los detalles de las \
+citas que ya tiene agendadas: {citas_reservadas}"
+        }
+    
+    # Inicializamos los posibles conjuntos de médicos y especialidades disponibles
+    medicos = set() # Conjunto para almacenar los nombres de los médicos disponibles
+    especialidades = set() # Conjunto para almacenar las especialidades disponibles
+    
+    # Maneja el agendamiento por especialidad
     if tipo == "especialidad":
         especialidad = identificador
-        # Buscar el nombre del médico según la especialidad
+        # Busca los médicos disponibles para la especialidad seleccionada
         medicos = buscar_medicos_especialidades(especialidad, tipo_busqueda = "especialidad")
         
-        # Si no se encuentran médicos para la especialidad, retorna un mensaje de error
+        # Si no se encuentran médicos disponibles para la especialidad, se retorna un mensaje de error
         if not medicos:
             return f"No se encontró a ningún médico para la especialidad {especialidad}."
         print(f"Nombre del/los médico/s para la especialidad {especialidad}: {medicos}")
 
-        # Verificar la disponibilidad de la cita por especialidad
+        # Verifica la disponibilidad de la especialidad en la fecha y hora solicitadas
         print(f"Verificando disponibilidad por especialidad: {especialidad}")
         disponibilidad = verificar_disponibilidad(
             fecha = fecha,
@@ -441,7 +463,7 @@ def iniciar_agendar_cita(params: dict) -> str:
 
         # Si hay más de un médico disponible, solicitar al usuario que elija uno
         if len(disponibilidad['medicos_libres']) > 1:
-            # Incializamos y guardamos el estado de conversación
+            # Incializamos y guardamos el estado de conversación para recordar la selección pendiente
             estado = obtener_estado_conversacion(dni)
             estado.update({
                 'dni': dni,
@@ -453,24 +475,24 @@ def iniciar_agendar_cita(params: dict) -> str:
             })
             actualizar_estado_conversacion(dni, estado)
             
-            # Mensaje con opciones de médicos disponibles
+            # Devuelve un mensaje solicitando al usuario que elija entre los médicos disponibles
             mensaje = f"Hay varios médicos disponibles para la especialidad {especialidad}. \
 ¿Cuál prefieres?\n{' / '.join(disponibilidad['medicos_libres'])}"
             return mensaje
         
-        # Si solo hay un médico disponible, seleccionarlo
+        # Si solo hay un médico disponible, se selecciona automáticamente
         medico = disponibilidad['medicos_libres'][0]
         
-    # Si el tipo de agendamiento es por médico
+    # Maneja el agendamiento por médico
     elif tipo == "medico":
         medico = identificador
-        # Buscar la especialidad del médico
+        # Busca las especialidades que ofrece el médico seleccionado
         especialidades = buscar_medicos_especialidades(medico, tipo_busqueda = "medico")
         if not especialidades:
             return f"No se encontró una especialidad para el médico {medico}."
         print(f"Nombre de la/s especialidad/es para el médico {medico}: {especialidades}")
 
-        # Verificar la disponibilidad de la cita por médico
+        # Verifica la disponibilidad del médico en la fecha y hora solicitadas
         print(f"Verificando disponibilidad por médico: {medico}")
         disponibilidad = verificar_disponibilidad(
             fecha = fecha,
@@ -479,14 +501,14 @@ def iniciar_agendar_cita(params: dict) -> str:
             tipo_verificacion = "medico"
         )
         
-        # Si no hay disponibilidad, retornar mensaje de error
+        # Si no hay disponibilidad, devuelve un mensaje de error
         if not disponibilidad['existe_disponibilidad']:
             print(f"Error en disponibilidad: {disponibilidad['mensaje']}")
             return disponibilidad['mensaje']
 
-        # Si hay más de una especialidad, solicitar al usuario que elija una
+        # Si el médico tiene más de una especialidad, solicita al paciente que elija una
         if len(especialidades) > 1:
-            # Inicializamos y guardamos el estado de conversación
+            # Actualiza el estado de la conversación para recordar la selección pendiente
             estado = obtener_estado_conversacion(dni)
             estado.update({
                 'dni': dni,
@@ -497,22 +519,23 @@ def iniciar_agendar_cita(params: dict) -> str:
                 'hora': hora
             })
             actualizar_estado_conversacion(dni, estado)
-            # Mensaje con opciones de especialidades disponibles
+            
+            # Devuelve un mensaje solicitando al usuario que elija entre las especialidades disponibles
             mensaje = f"Hay varias especialidad disponibles para el/la {medico}. \
 ¿Cuál prefieres?\n{' / '.join(especialidades)}"
             return mensaje
             
-        # Si solo hay una especialidad disponible, seleccionarla
+        # Si solo hay una especialidad disponible, se selecciona automáticamente
         especialidad = especialidades[0]
 
-    # Obtener un nuevo ID para la cita
+    # Genera un nuevo ID para la cita
     cita_id = obtener_nuevo_id_cita()
     print(f"Nuevo ID de cita: {cita_id}")
 
     # Agregar la cita a la hoja agenda_worksheet
     first_empty_row = len(agenda_worksheet.get_all_values()) + 1
     
-    # Crear una lista con los datos de la cita a agendar
+    # Crea una lista con los detalles de la cita para agregarla a la agenda
     cita_data = [
         [cita_id, medico, especialidad, name,
         dni, fecha, hora, 'Programada',
@@ -524,11 +547,10 @@ def iniciar_agendar_cita(params: dict) -> str:
     agenda_worksheet.update(
         f'A{first_empty_row}:I{first_empty_row}', # Rango donde se actualizarán los datos
         cita_data,
-        value_input_option='USER_ENTERED' # Opción para permitir entrada de usuario
+        value_input_option='USER_ENTERED' # Permite la entrada de datos por el usuario
     )
     
-    # Mensaje de éxito al agendar la cita
-    
+    # Devuelve un mensaje de éxito al agendar la cita
     result_message = f"Cita agendada con éxito con el médico {medico} \
     en la especialidad {especialidad} el {fecha} a las {hora}."
     print(result_message)
@@ -823,7 +845,7 @@ def buscar_cita_a_cancelar(params: dict) -> Dict[str, Union[bool, str]]:
 
     # Obtener todas las citas que no han sido canceladas de la hoja agenda_worksheet
     all_rows = agenda_worksheet.get_all_values()
-    rows_not_cancelled = [row for row in all_rows if row[7].lower() != 'Cancelada']
+    rows_not_cancelled = [row for row in all_rows if row[7].lower() != 'cancelada']
 
     cita = None # Inicializar la variable que almacenará la cita encontrada
 
@@ -1009,7 +1031,7 @@ def consultar_citas_agendadas(params):
     # Obtener todas las filas de la hoja agenda_worksheet
     all_rows = agenda_worksheet.get_all_values()
     # Filtrar las citas que no están canceladas
-    rows_not_cancelled = [row for row in all_rows if row[7].lower() != 'Cancelada']
+    rows_not_cancelled = [row for row in all_rows if row[7].lower() != 'cancelada']
     
     # Inicializa una lista para almacenar las citas encontradas
     citas = []
@@ -1036,6 +1058,335 @@ def consultar_citas_agendadas(params):
         
     # Si no se encontraron citas, retornar un mensaje adecuado
     return "No se encontraron citas para el DNI proporcionado en el periodo especificado."
+    
+        
+# Un diccionario para almacenar el estado de las modificaciones de citas
+estado_modificacion = {}    
+    
+def obtener_estado_modificacion(user_id: str) -> List[str]:
+    """
+    Obtiene el estado de la modificación de un usuario dado su ID.
+
+    Si el ID del usuario no existe en el diccionario de estados de modificación,
+    devuelve un diccionario vacío.
+
+    Args:
+        user_id (str): El ID del usuario para el que se desea obtener el estado de modificación.
+
+    Returns:
+        list: Valores de la cita (row) de la que se quiere confirmar la modificación,
+            o una lista vacía si todavía no está definida para el user_id.
+    """
+    return estado_modificacion.get(user_id, [])
+
+def actualizar_estado_modificacion(user_id: str, cita: List[str]) -> None:
+    """
+    Actualiza el estado de modificación de un usuario dado su ID.
+
+    Args:
+        user_id (str): El ID del usuario para el que se desea obtener el estado de modificación.
+        cita (list): Valores de la cita (row) de la que se quiere confirmar la modificación.
+    """
+    estado_modificacion[user_id] = cita       
+    
+def iniciar_modificar_cita(params: dict) -> Dict[str, Union[bool, List[str], str]]:
+    '''
+    Inicia el proceso para modificar una cita médica.
+    
+    Valida la existencia del paciente y la cita original, y verifica las nuevas fechas y horas disponibles.
+    Si la cita existe, busca opciones de horarios disponibles para la nueva fecha.
+
+    Args:
+        params (dict): Un diccionario con las siguientes claves:
+            "name" (str): Nombre del paciente.
+            "dni" (str): Identificación del paciente.
+            "cita_id" (str, opcional): ID de la cita que se desea modificar.
+            "fecha" (str): Fecha original de la cita en formato YYYY-MM-DD.
+            "hora" (str): Hora original de la cita en formato HH:MM.
+            "fecha_nueva" (str): Nueva fecha para la cita en formato YYYY-MM-DD.
+            "hora_nueva" (str): Nueva hora para la cita en formato HH:MM.
+    Returns:
+        dict: Un diccionario con:
+            - "cita_modificar" (bool): Indica si se puede continuar con la modificación.
+            - "horas_disponibles" (list): Horarios disponibles para la nueva cita.
+            - "mensaje_modificar" (str): Mensaje de confirmación o error.
+    '''
+    print(f"Entrando en la función iniciar_modificar_cita con params: {params}")
+    
+    # Extraer parámetros del diccionario de entrada
+    name = params.get('name') # Nombre del paciente
+    dni = params.get('dni') # DNI del paciente
+    cita_id = params.get('cita_id') # ID de la cita (opcional)
+    fecha = params.get('fecha') # Fecha de la cita
+    # La hora se redondea a múltiplos de 20 minutos para ajustarse al formato de la agenda
+    hora = params.get('hora')
+    if hora:
+        hora = redondear_a_multiplo_20_minutos(hora)
+    fecha_nueva = params.get('fecha_nueva') # Nueva fecha para la cita
+    # Redondear la nueva hora solicitada a un múltiplo de 20 minutos
+    hora_nueva = params.get('hora_nueva')
+    if hora_nueva:
+        hora_nueva = redondear_a_multiplo_20_minutos(hora_nueva)
+
+    # Validar que se haya proporcionado el DNI
+    if not dni:
+        return {
+            "cita_modificar": False,
+            "horas_disponibles": [],
+            "mensaje_modificar": "DNI no proporcionado."
+        }
+
+    # Verificar si el paciente existe en el sistema utilizando su DNI
+    paciente_encontrado, nombre_paciente = buscar_paciente(dni)
+    if not paciente_encontrado:
+        # Si el paciente no existe, se retorna un mensaje de error
+        return {
+            "cita_modificar": False,
+            "horas_disponibles": [],
+            "mensaje_modificar": f"No se encontró a ningún paciente con el DNI {dni}."
+        } 
+
+    # Obtener todas las citas no canceladas de la hoja agenda_worksheet
+    all_rows = agenda_worksheet.get_all_values()
+    rows_not_cancelled = [row for row in all_rows if row[7].lower() != 'cancelada']
+
+    cita = None # Inicializar la variable para almacenar la cita encontrada
+    
+    # Búsqueda de la cita por ID (si se proporciona)
+    if cita_id:
+        # Iterar sobre todas las citas no canceladas para encontrar una coincidencia con el ID y el DNI
+        for row in rows_not_cancelled:
+            if row[0] == str(cita_id) and row[4] == dni:
+                cita = row # Guardar la cita encontrada
+                break # Salir del bucle, ya que la cita se encontró
+        # Si no se encontró una cita con el ID proporcionado, devolver un mensaje de error
+        
+        if not cita:
+            return {
+                "cita_modificar": False,
+                "horas_disponibles": [],
+                "mensaje_modificar": f"No se encontró la cita {cita_id} \
+    a nombre de {nombre_paciente} (DNI {dni})."
+            }
+        
+    else:
+        # Si no se proporciona un ID de cita, se requiere la fecha y la hora originales de la cita
+        if not (fecha and hora):
+            # Si faltan la fecha o la hora, devolver un mensaje de error
+            return {
+                "cita_modificar": False,
+                "horas_disponibles": [],
+                "mensaje_modificar": "Si no se proporciona 'cita_id' \
+se debe proporcionar 'fecha' y 'hora', o viceversa." 
+            }
+        
+        # Buscar la cita por fecha y hora si no se ha proporcionado un ID
+        for row in rows_not_cancelled:
+            if row[4] == dni and row[5] == fecha and row[6] == hora: # Coincidir con el DNI, fecha y hora
+                cita = row # Guardar la cita encontrada
+                break # Salir del bucle, ya que la cita se encontró
+                
+        # Si no se encontró una cita con la fecha y hora proporcionadas, devolver un mensaje de error
+        resultado_no_hay_cita = {
+            "cita_modificar": False,
+            "horas_disponibles": [],
+            "mensaje_modificar": f"No se encontró la cita de {nombre_paciente} (DNI {dni}) \
+para el {fecha} a las {hora}."
+        }
+    
+    # Si se encontró la cita original, proceder con la modificación
+    if cita:
+        actualizar_estado_modificacion(dni, {'row': cita}) # Marcar la cita para modificación
+        
+        # Definir el rango de atención: de 8:00 AM a 7:00 PM con citas de 20 minutos
+        hora_inicio_dt = time(8, 0)  
+        hora_fin_dt = time(19, 0)   
+        duracion_cita = timedelta(minutes=20) 
+        
+        # Obtener todas las citas reservadas del mismo médico, especialidad y fecha
+        citas_reservadas = [
+        (row[1], row[2], row[5], row[6]) # (Médico, especialidad, fecha, hora)
+        for row in agenda_worksheet.get_all_values() 
+        if row[1] in cita[1] and row[2] == cita[2] and row[5] == fecha_nueva and row[7].lower() != 'cancelada' 
+        ]
+        
+        # Si no se proporciona una hora nueva, devolver todas las horas disponibles para la fecha
+        if not hora_nueva:
+            horas_disponibles = [] # Lista para almacenar las horas disponibles
+
+            # Empezar a verificar desde las 8:00 AM
+            hora_actual_dt = datetime.combine(datetime.strptime(fecha_nueva, '%Y-%m-%d'), hora_inicio_dt)
+            
+            # Iterar desde la hora de inicio hasta la hora de cierre, incrementando cada 20 minutos
+            while hora_actual_dt.time() < hora_fin_dt:
+                hora_actual_str = hora_actual_dt.strftime('%H:%M') # Formatear la hora actual como string
+                # Verificar si el médico está disponible en esa hora
+                if (cita[1], cita[2], cita[5], cita[6]) not in citas_reservadas:
+                    if hora_actual_str not in horas_disponibles:
+                        horas_disponibles.append(hora_actual_str) # Añadir la hora disponible
+                hora_actual_dt += duracion_cita # Incrementar la hora en 20 minutos
+                
+            # Si hay horas disponibles, devolver la lista
+            if horas_disponibles:
+                return {
+                    "cita_modificar": False,
+                    "horas_disponibles": list(horas_disponibles),
+                    "mensaje": f"Necesito le des al usuario los datos completos de su cita inicial \
+cita  de {cita[3]} (DNI {cita[4]}) \ con ID {cita[0]}, programada para el {cita[5]} \
+a las {cita[6]} con el médico {cita[1]} (Especialidad: {cita[2]}) y le indiques los horarios \
+disponibles, solicitándole especificar cuá prefiere para modificar su cita: {horas_disponibles}. Por favor, \
+si hay muchas horas disponibles dáselo de una mejor forma, no como un listado en vertical."
+                }
+                
+            # Si no hay horarios disponibles
+            return {
+                "cita_modificar": False,
+                "horas_disponibles": [],
+                "mensaje": f"Para la fecha {fecha} no hay horarios disponibles."
+            }
+
+        # Si se especifica una hora, verificar la disponibilidad en esa hora
+        hora_redondeada = redondear_a_multiplo_20_minutos(hora_nueva) # Redondear la hora solicitada
+        hora_actual_redondeada_dt = datetime.strptime(hora_redondeada, '%H:%M').time()
+
+        # Verificar si la hora está dentro del horario de atención
+        if not hora_inicio_dt <= hora_actual_redondeada_dt < hora_fin_dt:
+            return {
+                "cita_modificar": False,
+                "horas_disponibles": [],
+                "mensaje": "Hora no válida. Por favor elige una hora dentro del horario de atención."
+            }
+           
+        # Verificar si ya existe una cita en la hora especificada
+        existe_cita_con_hora = any(cita[3] == hora_redondeada for cita in citas_reservadas)
+        
+        # Si la hora es válida y está disponible, devolver el mensaje de éxito
+        if not existe_cita_con_hora:
+            return {
+                "cita_modificar": True,
+                "horas_disponibles": hora_redondeada,
+                "mensaje": f"Necesito le des al usuario los datos completos de su cita inicial \
+cita  de {cita[3]} (DNI {cita[4]}) \ con ID {cita[0]}, programada para el {cita[5]} \
+a las {cita[6]} con el médico {cita[1]} (Especialidad: {cita[2]}) y le solicites confirmar \
+si está seguro de querer modificar a la hora que ha solicitado {hora_nueva} de la fecha {fecha_nueva}."
+            }
+       
+        # Si la hora está ocupada, buscar la siguiente hora disponible en el día
+        fecha_actual_dt = datetime.strptime(fecha_nueva, '%Y-%m-%d')
+        hora_actual_dt = datetime.combine(fecha_actual_dt, hora_actual_redondeada_dt) + duracion_cita    
+        
+        # Continuar buscando horas disponibles hasta el cierre de la clínica
+        while hora_actual_dt.time() < hora_fin_dt:
+            hora_actual_str = hora_actual_dt.strftime('%H:%M')
+            existe_cita_con_hora = any(cita[3] == hora_actual_str for cita in citas_reservadas)
+            # Si se encuentra una hora disponible, devolver True e indicar la siguiente hora libre
+            if not existe_cita_con_hora:
+                return {
+                    "cita_modificar": False,
+                    "horas_disponibles": hora_actual_str,
+                    "mensaje": f"Necesito le des al usuario los datos completos de su cita inicial \
+cita  de {cita[3]} (DNI {cita[4]}) \ con ID {cita[0]}, programada para el {cita[5]} \
+a las {cita[6]} con el médico {cita[1]} (Especialidad: {cita[2]}) y le indiques que la hora {hora_nueva} \
+y fecha {fecha_nueva} ya está reservada.  \n\
+Informa que la siguiente hora disponible: {hora_actual_str}. Y solicita confirmar si desea continuar con \
+la modificación."
+            }
+        hora_actual_dt += duracion_cita # Incrementar la hora en 20 minutos
+        
+    # Si no hay horas disponibles, devolver False
+    return {
+        "cita_modificar": False,
+        "horas_disponibles": [],
+        "mensaje": f"La hora {hora_nueva}, y todas las horas siguientes, para el médico {cita[0]} de la especialidad {cita[1]} \
+y fecha {fecha_nueva} solicitada ya están reservadas."
+    }
+    
+    
+def confirmar_modificar_cita(params: dict) -> Dict[str, Union[bool, str]]:
+    """
+    Confirma la modificación de una cita según la elección del usuario.
+
+    Args:
+        params (dict): Un diccionario con la siguiente clave:
+            "dni" (str): Identificador del usuario (DNI). 
+            "confirmacion" (str): Confirmación del Usuario ("SI" o "NO").
+            "fecha_nueva" (str): Fecha nueva de la cita en formato YYYY-MM-DD.
+            "hora_nueva" (str): Hora nueva de la cita en formato HH:MM.
+
+    Returns:
+        Returns:
+            Dict: Un diccionario con las siguientes claves:
+                "cita_modificada" (bool): Indica si la cita fue modificada o no..
+                "mensaje_modificacion" (str): Mensaje informativo.
+    """
+    print(f"Entrando en la función confirmar_modificar_cita con params: {params}")
+    
+    # Obtener el DNI y la elección de confirmación de los parámetros
+    dni = params.get('dni')
+    eleccion = params.get('confirmacion')
+    fecha_nueva = params.get('fecha_nueva')
+    hora_nueva = params.get('hora_nueva')
+    
+    # Validar que se hayan proporcionado el DNI y la elección
+    if not dni or not eleccion or not fecha_nueva or not hora_nueva:
+        return {
+            "cita_modificada": False,
+            "mensaje_modificacion": "DNI, elección de confirmación, fecha y hora a la que hay que modificar son requeridos."
+        }
+    
+    # Recuperar la cita de la que se quiere confirmar la cancelación
+    cita = obtener_estado_modificacion(dni)
+    
+    # Verificar si se encontró una cita pendiente de confirmación
+    if not cita:
+        return {
+            "cita_modificada": False,
+            "mensaje_modificacion": f"No hay una cita pendiente de confirmación para el DNI {dni}."
+        }
+    
+    row = cita.get('row') # Obtener la fila de la cita
+    
+    # Comprobar si la fila de la cita es válida
+    if not row:
+        return {
+            'cita_modificada': False,
+            'mensaje_modificacion': "No se encontró información de la cita para confirmar."
+        }
+    
+    # Desempaquetar la información relevante de la fila
+    cita_id = row[0]
+    medico = row[1]
+    especialidad = row[2]
+    nombre_paciente = row[3]
+    dni = row[4]
+    fecha = row[5]
+    hora = row[6]    
+    
+    # Procesar la elección del usuario
+    if eleccion.upper() == 'SI':  # Si el usuario confirma la cancelación
+        # Obtener todas las citas de la hoja agenda_worksheet
+        all_rows = agenda_worksheet.get_all_values()
+        # Encontrar la fila original en la hoja de cálculo completa
+        original_row = all_rows.index(row) + 1
+        # Modicar la cita actualizando el estado en la hoja de cálculo
+        agenda_worksheet.update_cell(original_row, 6, fecha_nueva)
+        agenda_worksheet.update_cell(original_row, 7, hora_nueva)
+        agenda_worksheet.update_cell(original_row, 8, 'Reprogramada')
+        agenda_worksheet.update_cell(original_row, 9, datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        return {
+            'cita_modificada': True,
+            'mensaje_modificacion': f"Cita de {nombre_paciente} (DNI {dni}) \
+con ID {cita_id} con el médico {medico} (Especialidad: {especialidad}) y \
+ {fecha} {row[6]} es MODIFICADA con éxito a {fecha_nueva}{hora_nueva}   "
+        }
+    
+    # Si el usuario no confirma la modificación
+    return {
+        'cita_modificada': False, # Indicar que la cita no ha sido modificada
+        'mensaje_modificacion': f"Modificación de cita de {nombre_paciente} \
+        (DNI {dni}) con ID {cita_id} y  {fecha} a las {hora} \
+        con el médico {medico} (Especialidad: {especialidad}) NO modificada."
+    }   
 
 def wait_on_run(run, thread):
     '''
@@ -1061,7 +1412,7 @@ def wait_on_run(run, thread):
             run_id=run.id,          # Usar el ID del run para identificarlo
         )
         # Espera 0.1 segundos antes de la próxima consulta
-        t.sleep(0.1)
+        t.sleep(0.4)
         
     # Devuelve el objeto run actualizado, que ahora debería tener un estado final
     return run
@@ -1229,7 +1580,9 @@ def handle_message(update: Update, context: CallbackContext):
             "consultar_disponibilidad": consultar_disponibilidad,
             "buscar_cita_a_cancelar": buscar_cita_a_cancelar,
             "confirmar_cita_a_cancelar": confirmar_cita_a_cancelar,
-            "consultar_citas_agendadas": consultar_citas_agendadas
+            "consultar_citas_agendadas": consultar_citas_agendadas,
+            "iniciar_modificar_cita": iniciar_modificar_cita,
+            "confirmar_modificar_cita": confirmar_modificar_cita
         }
 
         # Obtener la función a ejecutar de forma segura
