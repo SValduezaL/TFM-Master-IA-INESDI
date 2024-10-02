@@ -29,14 +29,16 @@ from telegram.ext import Updater, MessageHandler, Filters, CallbackContext
 # Importar excepciones para manejar errores en las solicitudes
 from requests.exceptions import RequestException
 
+# Importar dotenev para cargar variables de entorno desde un archivo .env
+from dotenv import load_dotenv
+
 # Inicializar el cliente de OpenAI con la clave API proporcionada
-client = OpenAI(api_key='sk-proj-Uced5j5iSx13bk7IUtbLT3BlbkFJmJpHhTPQDRZaLtuivsUc')
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 ASSISTANT_ID = 'asst_BGagd32hcZB3h8WlNvX2J1ku' # MediAgenda Solutions
 assistant = client.beta.assistants.retrieve(assistant_id=ASSISTANT_ID)
 
 # Inicializar el cliente de Telegram con el token del bot
-# TELEGRAM_TOKEN = '7365309172:AAHkGNnXzUPHyv8-Mo5VgiorIWTvIm_NXSo' # https://t.me/MediAgendaBot
-TELEGRAM_TOKEN = '7193381473:AAHNVUdTBPXKCB0rMXGeOwsY53r90nG6eyg' # https://t.me/Basilio_MediAgenda_bot
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN') # https://t.me/Basilio_MediAgenda_bot
 
 # Función para mostrar JSON en consola, usada para depuración
 def show_json(obj):
@@ -53,14 +55,14 @@ scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/au
 # Obtener el directorio del script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # Construir la ruta al archivo JSON basado en el directorio del script
-json_path = os.path.join(script_dir, 'mediagenda-solutions-5e8208b2d6a6.json')
+json_path = os.path.join(script_dir, os.getenv('GOOGLE_SHEETS_CREDENTIALS'))
 # Credenciales
 creds = Credentials.from_service_account_file(json_path, scopes = scope)
 
 client_gspread = gspread.authorize(creds)
 
 # ID de la hoja de cálculo de Google Sheets
-SPREADSHEET_ID = '1QXAV39MG5pE9JD7YW4H3bJowMXoI72bjvcD4MBN7Jww'
+SPREADSHEET_ID = os.getenv('SPREADSHEET_ID')
 
 # Abrir la hoja de cálculo por su ID y seleccionar las hojas necesarias
 spreadsheet = client_gspread.open_by_key(SPREADSHEET_ID)
