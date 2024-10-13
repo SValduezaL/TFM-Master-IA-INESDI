@@ -2,9 +2,6 @@
 Asistente Virtual Basilio para MediAgendaSolutions
 '''
 
-# Importar las bibliotecas necesarias para interactuar con OpenAI y manejar eventos
-from openai import OpenAI, AssistantEventHandler
-
 # Importar bibliotecas para manejar el tiempo y las fechas
 import time as t
 from datetime import datetime, time, timedelta
@@ -15,6 +12,9 @@ import json
 import os
 import logging
 
+# Importar las bibliotecas necesarias para interactuar con OpenAI y manejar eventos
+from openai import OpenAI, AssistantEventHandler
+
 # Importar override para facilitar la anotación de métodos en clases
 from typing_extensions import override
 
@@ -23,7 +23,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 # Importar bibliotecas de Telegram para manejar actualizaciones y mensajes
-from telegram import Update, Bot, ChatAction
+from telegram import Update, ChatAction
 from telegram.ext import Updater, MessageHandler, Filters, CallbackContext
 
 # Importar excepciones para manejar errores en las solicitudes
