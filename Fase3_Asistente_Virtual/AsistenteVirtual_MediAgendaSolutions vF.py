@@ -34,7 +34,7 @@ from dotenv import load_dotenv
 
 # Inicializar el cliente de OpenAI con la clave API proporcionada
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-ASSISTANT_ID = 'asst_BGagd32hcZB3h8WlNvX2J1ku' # MediAgenda Solutions
+ASSISTANT_ID = os.getenv('ASSISTANT_ID') # MediAgenda Solutions
 assistant = client.beta.assistants.retrieve(assistant_id=ASSISTANT_ID)
 
 # Inicializar el cliente de Telegram con el token del bot
@@ -50,14 +50,14 @@ def show_json(obj):
 # Configuración de credenciales de Google Sheets para acceder a las hojas de cálculo
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
-# creds = Credentials.from_service_account_file('C:\\Users\\nerea\\Downloads\\mediagenda-solutions-5e8208b2d6a6.json', scopes=scope)
-
 # Obtener el directorio del script
-script_dir = os.path.dirname(os.path.abspath(__file__))
-# Construir la ruta al archivo JSON basado en el directorio del script
-json_path = os.path.join(script_dir, os.getenv('GOOGLE_SHEETS_CREDENTIALS'))
+script_directory  = os.path.dirname(os.path.abspath(__file__))
+# Obtiene el nombre del archivo desde la variable de entorno
+json_filename = os.getenv("JSON_FILENAME")
+# Construye la ruta al archivo JSON basado en el directorio del script
+json_file_path = os.path.join(script_directory , json_filename)
 # Credenciales
-creds = Credentials.from_service_account_file(json_path, scopes = scope)
+creds = Credentials.from_service_account_file(json_file_path, scopes = scope)
 
 client_gspread = gspread.authorize(creds)
 
