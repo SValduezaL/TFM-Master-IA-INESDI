@@ -1,12 +1,12 @@
 ﻿# TFM-Master-IA-INESDI
 
-Este repositorio de GitHub incluye toda la documentación relacionada con el Trabajo Final del Master (TFM) del Master IA para la Transformación de Negocios.
+Este repositorio de GitHub incluye toda la documentación relacionada con el Trabajo Final del Master (TFM): IA en la Gestión de Citas Médicas: Innovando en Confirmación y Reducción de Ausencias
 
-Institución: INESDI Business TechSchool
+Master: Maestría en Inteligencia Artificial para la Transformación de Negocios
 
-TFM: IA en la Gestión de Citas Médicas: Innovando en Confirmación y Reducción de Ausencias
+Institución: INESDI Business TechSchool / UNIE Universidad
 
-Componentes del Grupo 03:
+Integrantes del Grupo 03:
 
     Hernando Acevedo Aguilar
     
@@ -18,6 +18,8 @@ Componentes del Grupo 03:
 
 Tutor:
     Carlos Mérida
+
+Enlaces externos de Interes:
 
 Demo Basilio Bot
 https://drive.google.com/file/d/1J4nnc2hMYwIcFcSS820uVcRrw4ip8D1B/view?usp=sharing
