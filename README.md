@@ -1,10 +1,6 @@
 ﻿# TFM-Master-IA-INESDI
 
-Este repositorio de GitHub es para incluir toda la documentación relacionada con el Trabajo Final del Master (TFM),
-pero básicamente el código de programación que se desarrolle,
-y así facilitar un control de versiones entre los miembros del Grupo.
-
-Máster: Máster en IA para la Transformación de Negocios
+Este repositorio de GitHub incluye toda la documentación relacionada con el Trabajo Final del Master (TFM) del Master IA para la Transformación de Negocios.
 
 Institución: INESDI Business TechSchool
 
@@ -22,6 +18,9 @@ Componentes del Grupo 03:
 
 Tutor:
     Carlos Mérida
+
+Demo Basilio Bot
+https://drive.google.com/file/d/1J4nnc2hMYwIcFcSS820uVcRrw4ip8D1B/view?usp=sharing
 
 Tablero MIRO con el Plan:
 
