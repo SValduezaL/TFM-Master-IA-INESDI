@@ -2,7 +2,7 @@
 
 Este repositorio de GitHub incluye toda la documentación relacionada con el Trabajo Final del Master (TFM): IA en la Gestión de Citas Médicas: Innovando en Confirmación y Reducción de Ausencias
 
-Master: Maestría en Inteligencia Artificial para la Transformación de Negocios
+Master: Master en Inteligencia Artificial para la Transformación de Negocios
 
 Institución: INESDI Business TechSchool / UNIE Universidad
 
